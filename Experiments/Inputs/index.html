@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inputs</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Inputs</h1>
+
+        <p>
+            How an input works varies considerably depending on the value of 
+            its type attribute, hence the different types are covered in their 
+            own separate reference pages. If this attribute is not specified, 
+            the default type adopted is text.
+        </p>
+      
+        <p><b>This is a field input with a label element.</b></p>
+       
+        <label for="name">Name (4 to 8 characters):</label>
+
+        <input
+            type="text"
+            id="name"
+            required
+            minlength="4"
+            maxlength="8"
+            size="10"
+        />
+
+        <p><b>This is a button input.</b></p>
+        
+        <input
+            type="button"
+            value="button"
+        >
+
+        <p><b>This is also a button input.</b></p>
+
+        <button>button</button>
+
+        <p><b>This is a form example.</b></p>
+
+        <form>
+            <div>
+                <label for="uname">Choose a username: </label>
+                <input type="text" id="uname" name="name" />
+            </div>
+
+            <div>
+                <button>Submit</button>
+            </div>
+        </form>
+
+        <p>
+            When submitted, the data name/value pair sent to the server will be 
+            name=Chris (if "Chris" was entered as the input value before 
+            submission). You must remember to include name attribute on the 
+            input element, otherwise the text field's value won't be included 
+            with the submitted data.
+        </p>
+
+        <p><b>This is a field with a placeholder.</b></p>
+
+        <input
+            type="text"
+            id="uname"
+            name="name"
+            placeholder="Lower case, all one word" 
+        />
+
+        <p><b>This is a color picker element.</b></p>
+
+        <div>
+            <input type="color" id="head" name="head" value="#e1a177" />
+            <label for="head">Pick Your Color</label>
+        </div>
+
+        <p><b>This is a fieldset element with checkboxes.</b></p>
+
+        <fieldset>
+            <legend>Choose your monster's features:</legend>
+
+            <div>
+                <input type="checkbox" id="scales" name="scales" checked />
+                <label for="scales">Scales</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="horns" name="horns" />
+                <label for="horns">Horns</label>
+            </div>
+        </fieldset>
+
+        <label for="start">Start date:</label>
+
+        <p><b>This is a date input element.</b></p>
+
+        <input
+            type="date"
+            id="start"
+            name="trip-start"
+            value="2018-07-22"
+            min="2018-01-01"
+            max="2026-12-31" 
+        />
+
+        <p><b>This is a date with time input element.</b></p>
+
+        <label for="meeting-time">Choose a time for your appointment:</label>
+
+        <input
+            type="datetime-local"
+            id="meeting-time"
+            name="meeting-time"
+            value="2018-06-12T19:30"
+            min="2018-06-07T00:00"
+            max="2018-06-14T00:00" 
+        />
+
+        <p><b>This is an email input element.</b></p>
+
+        <label for="email">Enter your example.com email:</label>
+
+        <input 
+            type="email" 
+            id="email" 
+            pattern=".+@example\.com" 
+            size="30" 
+            required 
+        />
+
+        <p><b>This is a file input element.</b></p>
+
+        <label for="avatar">Choose a profile picture:</label>
+
+        <input 
+            type="file" 
+            id="avatar" 
+            name="avatar" 
+            accept="image/png, image/jpeg, image/webp" 
+        />
+
+
+    </body>
+</html>
