@@ -7,9 +7,21 @@ body {
     font-family: sans-serif;
     background-color: rgb(21, 37, 33);
     color:rgb(136, 125, 106);
-    justify-self: center;    
+    justify-self: center;  
 }
 
 h1 {
     text-align: center;
+}
+
+p {
+    width: 600px;
+}
+
+b, h3 {
+    color: rgb(151, 96, 50);
+}
+
+a {
+    color: rgb(176, 146, 87);
 }
