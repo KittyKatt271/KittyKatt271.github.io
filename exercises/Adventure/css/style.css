@@ -5,4 +5,11 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: rgb(21, 37, 33);
+    color:rgb(136, 125, 106);
+    justify-self: center;    
+}
+
+h1 {
+    text-align: center;
 }
