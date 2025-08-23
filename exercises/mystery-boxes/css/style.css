@@ -5,4 +5,26 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    justify-self: center;  
+    text-align: center;
+}
+
+#triforce {
+    color: rgb(151, 96, 50);
+}
+
+#heart {
+    color: rgb(195, 0, 65);
+}
+
+#green {
+    color: rgb(4, 112, 19);
+}
+
+#red {
+    color: rgb(212, 0, 4);
+}
+
+#blue {
+    color: rgb(6, 57, 168);
 }
