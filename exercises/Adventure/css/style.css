@@ -25,3 +25,24 @@ b, h3 {
 a {
     color: rgb(176, 146, 87);
 }
+
+@media only screen and (max-width: 767px) {
+            body {
+                width: 100%;
+                padding:15px;                
+            }
+
+            p {
+                width: 100%;
+                font-size:13px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+            h4 {
+                width: 100%;
+                font-size: 13px;
+            }
