@@ -5,12 +5,12 @@
 body {
     margin: 0px;
     font-family: sans-serif;
-    padding:1%;
+    padding: 1%;
 }
 
 hr {
-    margin-top:5%;
-    margin-bottom:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 li {
@@ -19,5 +19,5 @@ li {
 }
 
 h1 {
-    margin-top:5%;
+    margin-top: 5%;
 }
