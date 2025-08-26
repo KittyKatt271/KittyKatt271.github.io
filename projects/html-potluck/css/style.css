@@ -6,11 +6,14 @@ body {
     margin: 0px;
     font-family: sans-serif;
     padding: 1%;
+    background-color: #B6DEF3;
+    color: #1C3948;
 }
 
 hr {
     margin-top: 5%;
     margin-bottom: 5%;
+    border-color: #3f6c84;
 }
 
 li {
@@ -22,4 +25,14 @@ h1 {
     margin-top: 4%;
     text-align: center;
     margin-bottom:4%;
+    
+}
+
+a {
+    color: #3F6173;
+}
+
+img {
+    border: 5px solid #3f6c84;
+    box-shadow: 5px 5px 15px 1px #3f6c84;
 }
