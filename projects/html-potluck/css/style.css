@@ -47,3 +47,7 @@ img {
 .movie-blocks {
     width: 600px;
 }
+
+.movie-return {
+    text-align: end;
+}
