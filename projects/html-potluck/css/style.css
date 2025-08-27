@@ -35,3 +35,11 @@ img {
     border: 5px solid #3f6c84;
     box-shadow: 5px 5px 15px 1px #3f6c84;
 }
+
+.poster-link {
+    text-decoration: none;
+}
+
+.poster-link-group {
+    justify-self: center;
+}
