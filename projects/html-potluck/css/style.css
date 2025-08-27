@@ -43,3 +43,7 @@ img {
 .poster-link-group {
     justify-self: center;
 }
+
+.movie-blocks {
+    width: 600px;
+}
