@@ -60,38 +60,33 @@ img {
     display: flex;
 }
 
-.column-duration {
-    ol {
-        list-style-type: none;
-    }
-
-    li {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }  
-
-    margin-left: 30px;
-}
-
-.column-artist {
-    ol {
-        list-style-type: none;
-    }
-
-    li {
-        margin-top: 2.5%;
-        margin-bottom: 2.5%;
-    }
-
-    margin-left: 30px;
-    
-}
-
-.column-track {
-    li {
-        margin-top: 5%;
-        margin-bottom: 5%;
-    }   
-
+.column-tracks {
     margin-left: 15px;
+}
+
+.column {
+    margin-left: 1%;
+    align-content: center;
+}
+
+.h4-title {
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-track {
+    display: flex;
+    .column-track {
+        width: 200px;
+        margin-right: 25px;
+    }
+    .column-artist {
+        width: 400px;
+        margin-right: 25px;
+    }
+    .column-duration {
+        width: 100px;
+    }
+    font-size:small;
+    align-items:center
 }
