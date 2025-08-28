@@ -75,17 +75,25 @@ img {
 
 .flex-container-track {
     display: flex;
-    .column-track {
-        width: 200px;
-        margin-right: 25px;
-    }
-    .column-artist {
-        width: 400px;
-        margin-right: 25px;
-    }
-    .column-duration {
-        width: 100px;
-    }
-    font-size:small;
-    align-items:center
+    font-size: small;
+    align-items: center;
+}
+
+.column-track {
+    width: 200px;
+    margin-right: 25px;
+}
+.column-artist {
+    width: 400px;
+    margin-right: 25px;
+}
+.column-duration {
+    width: 100px;
+}    
+
+.flex-container-links {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    text-align: center;
 }
