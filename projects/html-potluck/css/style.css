@@ -52,3 +52,10 @@ img {
 .movie-return {
     text-align: end;
 }
+
+.album-feature {
+}
+
+.flex-container {
+    display: flex;
+}
