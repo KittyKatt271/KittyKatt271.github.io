@@ -59,3 +59,39 @@ img {
 .flex-container {
     display: flex;
 }
+
+.column-duration {
+    ol {
+        list-style-type: none;
+    }
+
+    li {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }  
+
+    margin-left: 30px;
+}
+
+.column-artist {
+    ol {
+        list-style-type: none;
+    }
+
+    li {
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+
+    margin-left: 30px;
+    
+}
+
+.column-track {
+    li {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }   
+
+    margin-left: 15px;
+}
