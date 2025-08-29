@@ -97,3 +97,17 @@ img {
     justify-content: center;
     text-align: center;
 }
+
+.column-featured-album {
+    text-align: center;
+}
+
+.flex-container-featured-album {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.album {
+    text-align: center;
+}

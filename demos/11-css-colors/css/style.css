@@ -15,3 +15,13 @@ body {
     color: rgb(33, 103, 15);
     background-color: rgb(159, 209, 179)
 }
+
+#span-1 {
+    background-color: navy;
+    color:pink;
+}
+
+#span-2 {
+    background-color: pink;
+    color:navy;
+}
