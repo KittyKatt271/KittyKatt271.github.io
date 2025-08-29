@@ -6,3 +6,12 @@ body {
     margin: 0px;
     font-family: sans-serif;
 }
+
+#first-paragraph {
+    color: rgb(71, 15, 103);
+}
+
+#second-paragraph {
+    color: rgb(33, 103, 15);
+    background-color: rgb(159, 209, 179)
+}
