@@ -113,7 +113,12 @@ img {
 }
 
 .album:hover {
-    scale:calc(1.1);
-    transition: 1s;
+    scale: calc(1.1);
+    transition: .5s;
     
+}
+
+a:hover {
+    color:rgb(189, 40, 125);
+    transition: .5s;
 }
