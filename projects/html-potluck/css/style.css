@@ -111,3 +111,9 @@ img {
 .album {
     text-align: center;
 }
+
+.album:hover {
+    scale:calc(1.1);
+    transition: 1s;
+    
+}
