@@ -14,26 +14,34 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body id="top">        
-        <div class="flex-container-featured-playlist">             
+        <div id="flex-container-featured-playlist">             
             <div class="column-playlisttracks">
-                <h1 class="h1-playlist-title">
+                <h1 id="h1-playlist-title">
                     Welcome & Enjoy!<br>The K-Pop Demon Hunters Playlist!
                 </h1>
 
                 <hr>
 
-                <div class="flex-container"> 
+                <div class="flex-container-current"> 
                     <div class="column-current-track"> 
-                        <img 
-                            src="images/kpop-soundtrack-5.jpg"
-                            alt="Album Cover for K-Pop Demon Hunters Soundtrack"
-                            width="150"
-                            class="current-track"
-                        >
+                        <div class="image-container">
+                            <img 
+                                src="images/kpop-soundtrack-5.jpg"
+                                alt="Album Cover for K-Pop Demon Hunters Soundtrack"
+                                id="img-current-track"
+                            >
+
+                            <div class="overlay-text">
+                                <i class="fa-solid fa-ranking-star"></i>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="column-tracklist">  
-                        <h3 class="h3-title">Currently Playing</h3>      
+                        <h3 id="h3-title-current">
+                            Now Playing
+                            <i class="fa-solid fa-ranking-star"></i>
+                        </h3>      
                                             
                         <div class="flex-container">
                             <div class="column-title">
@@ -68,11 +76,11 @@
                             </div>
                         </div>
 
-                        <ol class="playlist-tracklist">
+                        <ol id="playlist-tracklist">
                             <li>
                                 <div class="flex-container-track">
                                     <div class="column-playlisttrack">
-                                        Takedown
+                                        What It Sounds Like
                                     </div>
                                     <div class="column-playlistartist">
                                         <i>
@@ -85,25 +93,81 @@
                                     </div>
                                 </div>
                             </li>
-                        </ol>                       
+                        </ol> 
+                        
+                        <h4 id="h4-title-next">Up Next</h4>      
+                                            
+                        <div class="flex-container">
+                            <div class="column-title">
+                                <h5 class="h5-title">
+                                    <i class="fa-solid fa-music"></i>&nbsp;
+                                    Track Title
+                                </h5>
+                            </div>
+
+                            <div class="column-title">
+                                <h5 class="h5-title">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <i class="fa-solid fa-user"></i>&nbsp;
+                                    Artist Name
+                                </h5>
+                            </div>
+
+                            <div class="column-title">
+                                <h5 class="h5-title"> 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;                 
+                                    <i 
+                                        class="fa-solid fa-clock-rotate-left">
+                                    </i>&nbsp;
+                                    Duration
+                                </h5>
+                            </div>
+                        </div>
+
+                        <ol id="next-tracklist">
+                            <li class="next-tracklist">
+                                <div class="flex-container-track">
+                                    <div class="column-playlisttrack-next">
+                                        Takedown
+                                    </div>
+                                    <div class="column-playlistartist-next">
+                                        <i>
+                                            Huntr/x: Ejae, Audrey Nuna, and 
+                                            Rei Ami
+                                        </i>
+                                    </div>
+                                    <div class="column-playlistduration-next">
+                                       4:10 Minutes
+                                    </div>
+                                </div>
+                            </li>
+                        </ol>
                     </div>
                 </div>
             </div>
             
 
-            <div class="column-featured-album">
+            <div class="column-playlist-cover">
                 <img 
                     src="images/kpop-playlist.jpg"
                     alt="Cover image for K-Pop Demon Hunters Playlist"
-                    width="300"
-                    class="playlist-cover"
+                    id="playlist-cover"
                 >
             </div>
         </div>
 
         <hr>
 
-        <h2 class="album-section-title">Featured Albums</h2>
+        <h2 id="album-section-title">Featured Albums</h2>
         
         
         <div class="flex-container-featured-album">             
@@ -112,7 +176,6 @@
                     <img
                         src="images/takedown-album.jpg"
                         alt="Album Cover for Takedown [7 in. Vinyl Release]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -130,7 +193,6 @@
                     <img
                         src="images/how-its-done-album.jpg"
                         alt="Album Cover for How It's Done [7 in. Vinyl Release]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -149,7 +211,6 @@
                     <img
                         src="images/kpop-soundtrack-5.jpg"
                         alt="Album Cover for K-Pop Demon Hunters Soundtrack"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -168,7 +229,6 @@
                     <img
                         src="images/soda-pop-album.jpg"
                         alt="Album Cover for Soda Pop [7 in. Vinyl Release]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -186,7 +246,6 @@
                     <img
                         src="images/your-idol-album.jpg"
                         alt="Album Cover for Your Idol [7 in. Vinyl Release]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -206,7 +265,6 @@
                     <img
                         src="images/golden-single.jpg"
                         alt="Album Cover for Golden [7 in. Vinyl Single]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -224,7 +282,6 @@
                     <img
                         src="images/golden-single.jpg"
                         alt="Album Cover for Golden [CD Single Release]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -242,7 +299,6 @@
                     <img
                         src="images/golden-single.jpg"
                         alt="Album Cover for Golden [Single Compilation]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -260,7 +316,6 @@
                     <img
                         src="images/golden-remx.jpg"
                         alt="Album Cover for Golden [David Guetta REM/X Compilation]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -278,7 +333,6 @@
                         <img
                         src="images/briller-single.jpg"
                         alt="Album Cover for Golden [Translation Compilation]"
-                        width="200"
                         class="album"
                     >
                 </a>
@@ -292,7 +346,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -326,7 +380,7 @@
                 <img 
                     src="images/kpop-soundtrack-5.jpg"
                     alt="Album Cover for K-Pop Demon Hunters Soundtrack"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -545,7 +599,7 @@
             </div>
         </div> 
         
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -582,7 +636,7 @@
                 <img 
                     src="images/golden-single.jpg"
                     alt="Album Cover for Golden [7 in. Vinyl Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -655,7 +709,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -693,7 +747,7 @@
                 <img 
                     src="images/golden-single.jpg"
                     alt="Album Cover for Golden [CD Single Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -783,7 +837,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -817,7 +871,7 @@
                 <img 
                     src="images/golden-single.jpg"
                     alt="Album Cover for Golden Cd Single"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -952,7 +1006,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -990,7 +1044,7 @@
                 <img 
                     src="images/golden-remx.jpg"
                     alt="Album Cover for Golden [David Guetta REM/X]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -1083,7 +1137,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -1118,7 +1172,7 @@
                 <img 
                     src="images/briller-single.jpg"
                     alt="Album Cover for Golden Cd Single"
-                    width="300"
+                    class="album-cover""
                 >
             </div>
 
@@ -1228,7 +1282,7 @@
             </div>
         </div>
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -1263,7 +1317,7 @@
                 <img 
                     src="images/how-its-done-album.jpg"
                     alt="Album Cover for How It's Done [7 in. Vinyl Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -1336,7 +1390,7 @@
             </div>
         </div>      
         
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -1374,7 +1428,7 @@
                 <img 
                     src="images/soda-pop-album.jpg"
                     alt="Album Cover for Soda Pop [7 in. Vinyl Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -1453,7 +1507,7 @@
             </div>
         </div>   
         
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
 
@@ -1491,7 +1545,7 @@
                 <img 
                     src="images/your-idol-album.jpg"
                     alt="Album Cover for Your Idol [7 in. Vinyl Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -1570,7 +1624,7 @@
             </div>
         </div>  
         
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
         <hr id="takedown">
@@ -1604,7 +1658,7 @@
                 <img 
                     src="images/takedown-album.jpg"
                     alt="Album Cover for Takedown [7 in. Vinyl Release]"
-                    width="300"
+                    class="album-cover"
                 >
             </div>
 
@@ -1677,7 +1731,7 @@
             </div>
         </div> 
 
-        <a href="#top" class="movie-return">
+        <a href="#top" class="playlist-return">
             <h4>Return to Top</h4>
         </a>
     </body>
