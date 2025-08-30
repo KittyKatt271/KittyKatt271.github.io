@@ -33,7 +33,7 @@ a {
 }
 
 a:hover {
-    color:rgb(189, 40, 125);
+    color: rgb(189, 40, 125);
     transition: .5s;
 }
 
@@ -61,7 +61,7 @@ img {
     text-align: end;
 }
 
-    /*PLaylist Spotlight*/
+/*PLaylist Spotlight*/
 #flex-container-featured-playlist {
     display: flex;
     gap: 25px;
@@ -70,24 +70,24 @@ img {
 }
 
 .image-container {
-  position: relative;
-  display: inline-block;
+    position: relative;
+    display: inline-block;
 }
 
 .image-container img {
-  display: block;
-  width: 100%;
-  height: auto;
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .overlay-text {
-  position: absolute;
-  top: 30%; 
-  left: 25%; 
-  padding: 10px 20px; 
-  font-size: 50px; 
-  text-align: center;
-  color: #3f6c84a2;
+    position: absolute;
+    top: 30%; 
+    left: 25%; 
+    padding: 10px 20px; 
+    font-size: 50px; 
+    text-align: center;
+    color: #3f6c84a2;
 }
 
 .flex-container-current {
@@ -120,7 +120,7 @@ img {
 
 #h4-title-next {
     margin-top: 25px;
-    margin-bottom:15px;
+    margin-bottom: 15px;
     padding-top: 0;
     text-decoration: underline;
     color: #3f6c84;
@@ -186,9 +186,9 @@ img {
     width: 300px;
 }
 
-    /*Playlist Spotlight*/
+/*Playlist Spotlight*/
 
-    /*Featured ALbums*/
+/*Featured ALbums*/
 #album-section-title {
     text-align: center;
 }
@@ -212,9 +212,9 @@ img {
     transition: .5s;
     
 }
-    /*Featured Albums*/
+/*Featured Albums*/
 
-    /*Full Album*/
+/*Full Album*/
 .album-cover {
     width: 300px;
 }
@@ -237,7 +237,7 @@ img {
 .column-duration {
     width: 100px;
 }  
-    /*Full Album*/
+/*Full Album*/
 /*END: Playlist Section*/
 
 .poster-link {
@@ -263,5 +263,3 @@ img {
     justify-content: center;
     text-align: center;
 }
-
-
