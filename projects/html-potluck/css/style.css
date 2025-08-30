@@ -248,7 +248,12 @@ img {
 #h1-movie {
     font-style: italic;
     line-height: 2;
-    font-family: 'Gelato Fresco Variable';
+    font-family: "gelato-fresco-variable";
+    font-size: larger;
+}
+
+#h1-movie2 {
+    font-family: "alasassy-caps";
 }
 
 
