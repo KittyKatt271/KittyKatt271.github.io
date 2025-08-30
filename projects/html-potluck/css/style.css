@@ -248,12 +248,19 @@ img {
 #h1-movie {
     font-style: italic;
     line-height: 2;
-    font-family: "gelato-fresco-variable";
-    font-size: larger;
+    font-family: 'Berkshire Swash';
+    font-size: xx-large;
 }
 
 #h1-movie2 {
-    font-family: "alasassy-caps";
+    font-family: 'Berkshire Swash';
+    line-height: 2;
+    font-size: xxx-large;
+}
+#h1-movie3 {
+    font-family: 'Berkshire Swash';
+    line-height: 2;
+    font-size: larger;
 }
 
 
