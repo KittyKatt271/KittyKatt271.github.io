@@ -240,6 +240,18 @@ img {
 /*Full Album*/
 /*END: Playlist Section*/
 
+/*START: Movie Section*/
+.movie-return {
+    text-align: end;
+}
+
+#h1-movie {
+    font-weight: normal;
+    font-style: normal;
+    font-family: ;
+}
+
+
 .poster-link {
     text-decoration: none;
 }
@@ -253,9 +265,7 @@ img {
     justify-self: center;
 }
 
-.movie-return {
-    text-align: end;
-}
+
 
 .flex-container-links {
     display: flex;
