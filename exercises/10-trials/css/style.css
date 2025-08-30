@@ -59,20 +59,22 @@ body {
     font-size: 36px;
 }
 
-#trial-9-p1 {
+#trial-10-p1 {
     font-size: 12px;
     margin: 0;
     text-align: center;
+    font-weight: bold;
 }
 
-#trial-9-p2 {
+#trial-10-p2 {
     font-size: 48px;
     margin: 0;
     text-align: center;
 }
 
-#trial-9-p3 {
+#trial-10-p3 {
     font-size: 24px;
     margin: 0;
     text-align: center;
+    font-style: italic;
 }
