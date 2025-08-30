@@ -284,8 +284,8 @@ img {
 
 #movie-title {
     background-image: 
-        linear-gradient(rgb(26, 28, 0), rgb(251, 255, 0)), 
-        url(../images/ghibli9.jpg);
+        linear-gradient(rgba(8, 7, 2, 0.91), rgba(214, 208, 14, 0.666)), 
+        url(../images/ghibli17.jpg);
     background-position: center;
     background-size: 1000px;
     background-repeat: no-repeat;
