@@ -9,6 +9,7 @@ body {
 
 #span1 {
     font-weight: bold;
+    text-decoration: line-through;
 }
 
 #span2 {
@@ -22,14 +23,17 @@ body {
 
 #ff-1 {
     font-family: serif;
+    text-align: left;
 }
 
 #ff-2 {
     font-family: sans-serif;
+    text-align: center;
 }
 
 #ff-3 {
     font-family: monospace;
+    text-align: right;
 }
 
 #ff-4 {
@@ -38,4 +42,16 @@ body {
 
 #ff-5 {
     font-family: fantasy;
+}
+
+#no-underline {
+    text-decoration: none;
+}
+
+#img-align {
+    width: 100px;    
+}
+
+#alignment-test {
+    text-align: center;
 }
