@@ -59,6 +59,10 @@ img {
 
 .playlist-return {
     text-align: end;
+    width: 125px;
+    justify-self: end;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /*PLaylist Spotlight*/
@@ -185,7 +189,6 @@ img {
 #playlist-cover {
     width: 300px;
 }
-
 /*Playlist Spotlight*/
 
 /*Featured ALbums*/
@@ -210,7 +213,6 @@ img {
 .album:hover {
     scale: calc(1.1);
     transition: .5s;
-    
 }
 /*Featured Albums*/
 
@@ -243,6 +245,11 @@ img {
 /*START: Movie Section*/
 .movie-return {
     text-align: end;
+    margin-top: 35px;
+    width: 125px;
+    justify-self: end;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 /*Banner*/
@@ -296,14 +303,36 @@ img {
 }
 /*Banner*/
 
+/*Featured Movies*/
+#movie-section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.flex-containter-poster-link-group {
+    justify-self: center;
+    display: flex;
+    gap: 50px;
+}
 
 .poster-link {
     text-decoration: none;
 }
 
-.poster-link-group {
-    justify-self: center;
+.poster {
+    height: 350px;
 }
+
+.poster:hover {
+    scale: calc(1.1);
+    transition: .5s;
+    box-shadow: 0px 0px 25px 5px #ffee6dcf;    
+}
+/*Featured Movies*/
+
+
+
+
 
 .movie-blocks {
     width: 600px;
