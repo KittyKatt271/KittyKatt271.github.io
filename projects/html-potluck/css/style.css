@@ -290,6 +290,9 @@ img {
     background-size: 1000px;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
+    border: 5px solid #3f6c84;
+    width: 1000px;
+    justify-self: center;
 }
 /*Banner*/
 
