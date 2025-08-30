@@ -246,9 +246,9 @@ img {
 }
 
 #h1-movie {
-    font-weight: normal;
-    font-style: normal;
-    font-family: ;
+    font-style: italic;
+    line-height: 2;
+    font-family: 'Alana';
 }
 
 
