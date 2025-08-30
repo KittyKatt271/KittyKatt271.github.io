@@ -26,6 +26,7 @@ h1 {
     margin-top: 4%;
     text-align: center;
     margin-bottom: 4%;    
+    font-family: 'Berkshire Swash';
 }
 
 a {
@@ -243,13 +244,8 @@ img {
 /*END: Playlist Section*/
 
 /*START: Movie Section*/
-.movie-return {
-    text-align: end;
-    margin-top: 35px;
-    width: 125px;
-    justify-self: end;
-    margin-left: 0;
-    padding-left: 0;
+#fin {
+    font-family: 'Berkshire Swash';
 }
 
 /*Banner*/
@@ -304,9 +300,19 @@ img {
 /*Banner*/
 
 /*Featured Movies*/
+.movie-return {
+    text-align: end;
+    margin-top: 35px;
+    width: 125px;
+    justify-self: end;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 #movie-section-title {
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Berkshire Swash';
 }
 
 .flex-containter-poster-link-group {
@@ -330,14 +336,54 @@ img {
 }
 /*Featured Movies*/
 
-
-
-
-
-.movie-blocks {
-    width: 600px;
-    justify-self: center;
+/*Synopsis Blocks*/
+.movie-return-2 {
+    text-align: end;
+    width: 125px;
+    justify-self: end;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 0;
 }
+
+.block-title {
+    font-family: 'Berkshire Swash';
+}
+
+.flex-container-movie-block {
+    display: flex;
+    gap: 25px;
+}
+
+.flex-container-title-rating {
+    display: flex;
+    justify-content: space-between;
+}
+
+.syn-title {
+    font-family: 'Berkshire Swash';
+}
+
+.flex-container-icon-titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.syn-sum {
+    height: 185px;
+}
+
+.movie-scene {
+    width: 600px;
+}
+/*Synopsis Blocks*/
+/*END: Movie Section*/
+
+
+
+
+
+
 
 
 
