@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#span1 {
+    font-weight: bold;
+}
+
+#span2 {
+    font-style: italic;
+}
+
+#big-para {
+    font-size: 11px;
+    font-family: 'Banshee STD';
+}
+
+#ff-1 {
+    font-family: serif;
+}
+
+#ff-2 {
+    font-family: sans-serif;
+}
+
+#ff-3 {
+    font-family: monospace;
+}
+
+#ff-4 {
+    font-family: cursive;
+}
+
+#ff-5 {
+    font-family: fantasy;
+}
