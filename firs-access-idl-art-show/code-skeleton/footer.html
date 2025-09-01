@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <link href="css/footer.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="flex-container-banner">
+            <div class="column-banner-img">
+                <img 
+                    src="images/temp-banner-2.jpg"
+                    alt="temp banner"
+                >
+            </div>
+
+            <div class="column-banner-text">
+                <h1>Join F.I.R.S.T.<br>Institute Today!</h1>
+                
+                <button id="downloadbutton" class="styled">
+                    Download Brochure
+                </button>
+
+                <button id="applybutton" class="styled">
+                    Apply Now
+                </button>
+            </div>
+        </div> 
+        
+        <div class="flex-container-footer">
+            <div class="column-site-map">
+                <h3>Guidelines</h3>
+
+                <ul>
+                    <li>Digital Film & Video Production</li>
+                    <li>Digital Photography</li>
+                    <li>Graphic Design & Web Development</li>
+                    <li>Recording Arts & Show Production</li>
+                </ul>
+            </div>
+
+            <div class="column-site-map">
+                <h3>Galleries</h3>
+
+                <ul>
+                    <li>Digital Film & Video Production</li>
+                    <li>Digital Photography</li>
+                    <li>Graphic Design & Web Development</li>
+                    <li>Recording Arts & Show Production</li>
+                </ul>
+            </div>
+
+            <div class="column-logo">
+                <img 
+                    src="images/first-logo-white.png"
+                    alt="F.I.R.S.T. Institute Logo"
+                    id="header-logo"
+                >
+
+                <p id="slogan">CREATIVITY Meets Career</p>
+
+                <h3>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                </h3>
+
+                <div class="flex-container-info">
+                    <div class="column">
+                        <p>423 S Keller Road, Orlando, FL 32810</p>
+                    </div>
+
+                    <div class="column">
+                        <p>(407) 316-8310</p>
+                    </div>
+                </div>
+
+                <p id="cr">Copyright © 2025 F.I.R.ST. Institute</p>
+            </div>
+
+            <div class="column-buttons">
+                <div id="showcountdown-timer">
+                    <span id="showdays"></span> :
+                    <span id="showhours"></span> :
+                    <span id="showminutes"></span> :
+                    <span id="showseconds"></span> 
+                </div>
+
+                <button 
+                    id="showbutton" 
+                    hidden
+                    class="styled"
+                >
+                    View Show
+                </button>
+
+                <div id="submitcountdown-timer" hidden>
+                    <span id="submitdays"></span> :
+                    <span id="submithours"></span> :
+                    <span id="submitminutes"></span> :
+                    <span id="submitseconds"></span> 
+                </div>
+
+                <button id="submitbutton" class="styled">
+                    Submit Now 
+                </button>
+
+                <h3 id="submittext" hidden>
+                    Submissions Closed
+                </h3>
+            </div>
+        </div>
+
+        <script src="java/showcountdown.js"></script>
+        <script src="java/submitcountdown.js"></script>
+    </body>
+</html>
