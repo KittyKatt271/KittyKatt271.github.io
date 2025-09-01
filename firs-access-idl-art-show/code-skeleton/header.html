@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Header</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <link href="css/headerstyle.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="flex-container-header">
+            <div class="column-header">
+                <img
+                    src="images/first-logo-white.png"
+                    alt="FIRST Institute Logo"
+                    id="header-logo"
+                >
+            </div>
+
+            <div class="column-header">
+                <h1>
+                    Galleries
+                    <sub>
+                        <sup>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </sup>
+                    </sub>
+                </h1>
+            </div>
+
+            <div class="column-header">
+                <div id="showcountdown-timer">
+                    <span id="showdays"></span> :
+                    <span id="showhours"></span> :
+                    <span id="showminutes"></span> :
+                    <span id="showseconds"></span> 
+                </div>
+
+                <button 
+                    id="showbutton" 
+                    hidden
+                    class="styled"
+                >
+                    View Show
+                </button>
+            </div>
+
+            <div class="column-header">
+                <h1>
+                    Guidelines
+                    <sub>
+                        <sup>
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </sup>
+                    </sub>
+                </h1>
+            </div>
+
+            <div class="column-header">
+                <div id="submitcountdown-timer" hidden>
+                    <span id="submitdays"></span> :
+                    <span id="submithours"></span> :
+                    <span id="submitminutes"></span> :
+                    <span id="submitseconds"></span> 
+                </div>
+                <button id="submitbutton" class="styled">
+                    Submit Now 
+                </button>
+
+                <h3 id="submittext" hidden>
+                    Submissions Closed
+                </h3>
+            </div>
+        </div>        
+        
+        <script src="java/showcountdown.js"></script>
+        <script src="java/submitcountdown.js"></script>
+    </body>
+</html>
