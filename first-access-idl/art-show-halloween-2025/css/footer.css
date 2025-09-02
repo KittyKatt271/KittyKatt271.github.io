@@ -1,0 +1,226 @@
+/*
+    Style Notes: 
+    Main Colors: 
+    #7e005e
+    #981e7a
+    Accent Colors
+    #4aaad0
+    #9deaec
+    #27B50A
+    Body Font Family:
+    Avenir
+    Optional Header Family:
+    Great Sejagad
+    Primary Header Family:
+    Bebas Neue
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: 'Bebas Neue';
+    color: #FFFFFF;
+}
+
+img {
+    height: 350px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-banner {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: 
+        linear-gradient(#4aaad0d3, #4aaad0c5), 
+        url(../images/temp-banner-2.jpg);
+        background-position: center;
+    height: 350px;
+}
+
+.column-banner-img {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.column-banner-text {
+    width: 40%;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    align-content: center;
+}
+
+h1 {
+    letter-spacing: 4.5px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+h3 {
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+.styled {
+    border: 0;
+    line-height: 1.75;
+    letter-spacing: 2px;
+    padding: 0px 25px;
+    padding-top: 2px;
+    font-size: 1.5em;
+    font-family: 'Bebas Neue';
+    text-align: center;
+    color: white;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    margin-bottom: 35px;
+    margin-right: 15px;
+}
+
+.styled:hover {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+.styled:active {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
+}
+
+#header-logo {
+    height: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #000000;
+    height: 205px;
+}
+
+#showcountdown-timer {
+    font-family: 'Bebas Neue';
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#showcountdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    padding-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    margin-bottom:35px;
+    margin-top: 45px;
+}
+
+
+#submitcountdown-timer {
+    font-family: 'Bebas Neue';
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#submitcountdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    padding-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+}
+
+li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: 'Avenir LT STD';
+    font-size: 12px;
+    width: 125px;
+}
+
+ul {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0;
+}
+
+p {
+    font-family: 'Avenir LT STD';
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+#slogan {
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-style: normal;
+    font-size: 12px;
+    font-family: 'Bebas Neue';
+}
+
+.flex-container-info {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+#cr {
+    font-family: 'Avenir LT STD';
+    font-size: 9px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+.column-logo {
+    text-align: center;    
+    align-content: center;
+}
+
+.column-buttons {
+    text-align: center;
+    align-content: center;
+}
+
+.column-site-map {
+    align-content: center;
+    padding-top: 25px;
+}
