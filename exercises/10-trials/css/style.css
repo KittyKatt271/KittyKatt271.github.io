@@ -5,12 +5,41 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    margin-left: 20px;
+    background-color: rgb(218, 197, 155);
 }
 
-div {
+#inner1,
+#inner2,
+#inner3,
+#inner4,
+#inner5,
+#inner6,
+#inner7,
+#inner8,
+#inner9,
+#inner10 {
     box-shadow: 5px 5px 10px 1px rgba(61, 61, 61, 0.303);
     width: 570px;  
     padding: 5px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+
+#outer1,
+#outer2,
+#outer3,
+#outer4,
+#outer5,
+#outer6,
+#outer7,
+#outer8,
+#outer9,
+#outer10 {
+    width: 625px;  
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.818);
+    margin: 35px;
 }
 
 #trial-1 {
