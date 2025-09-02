@@ -20,34 +20,29 @@
 }
 
 @font-face {
-      font-family: 'Bebas Neue';
+      font-family: "Bebas Neue";
       src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+      src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+      src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
 }
 
 @font-face {
-      font-family: 'Great Sejagad';
+      font-family: "Great Sejagad";
       src: url('../fonts/GreatSejagad.ttf') format('ttf');
+      src: url('../fonts/GreatSejagad.woff') format('woff');
+      src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
 }
 
 @font-face {
-      font-family: 'Avenir LT STD';
+      font-family: "Avenir LT STD";
       src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Oblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-MediumOblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Medium.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-LightOblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Light.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-HeavyOblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Heavy.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-BookOblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Book.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-BlackOblique.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Black.otf') format('otf');
+      src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+      src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
 }
 
 body {
     margin: 0px;
-    font-family: 'Avenir LT STD';
+    font-family: "Avenir LT STD";
     background-color: #000000;
 }
 
@@ -60,7 +55,13 @@ iframe {
     height: 450px;
 }
 
-p, ul, li {
+p, ul, li, h1 {
     background-color: #FFFFFF;
     margin: 0;
+}
+
+h1 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    padding: 50px;
 }
