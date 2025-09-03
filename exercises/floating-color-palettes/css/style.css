@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.color-pallette {
+    box-shadow: 6px 6px 12px #989898;
+    text-align: center;
+    margin: 24px; 
+    padding: 24px; 
+}
+
+.color {
+    margin: 0px; 
+    padding: 24px;
+}
+
+#A-Blue {
+    background-color: #EDF6F9;
+    color: #56876D;
+}
+
+#AF-Blue {
+    background-color: #698996;
+    color: #022F40;
+}
+
+#P-Blue {
+    background-color: #022F40;
+    color: #56876D;
+}
+
+#C-Violet {
+    background-color: #78586F;
+    color: #022F40;
+}
+
+#Viridian {
+    background-color: #56876D;
+    color: #022F40;
+}
+
+#Night {
+    background-color: #0A090C;
+    color: #7DF9FF;
+}
+
+#S-Green {
+    background-color: #76FF7A;
+    color: #0A090C;
+}
+
+#E-Blue {
+    background-color: #7DF9FF;
+    color: #0A090C;
+}
+
+#E-Indigo {
+    background-color: #6F00FF;
+    color: #7DF9FF;
+}
+
+#E-Violet {
+    background-color: #8F00FF;
+    color: #7DF9FF;
+}
+
+#Mindaro {
+    background-color: #C3E991;
+    color: #191919;
+}
+
+#Wisteria {
+    background-color: #C9A0DC;
+    color: #191919;
+}
+
+#E-Black {
+    background-color: #191919;
+    color: #FC9E4F;
+}
+
+#S-Brown {
+    background-color: #FC9E4F;
+    color: #191919;
+}
+
+

@@ -15,5 +15,18 @@ body {
     background-color: lightcyan;
     margin: 25px;
     padding: 25px;
-    box-shadow: 5px 5px 5px 5px pink;    
+    box-shadow: 
+        4px 4px 5px 5px pink, 
+        -4px -4px 0px 0px lightsteelblue,
+        inset 0px 0px 25px lightslategray;    
+}
+
+p {
+    background: 
+        linear-gradient(to top left, 
+            rgba(127, 255, 212, 0.576), 
+            rgba(153, 50, 204, 0.468)
+        );
+    font-size: 18px;
+    color: darkgreen;
 }

@@ -186,6 +186,10 @@ p {
     letter-spacing: 2px;
 }
 
+i {
+    margin: 7px;
+}
+
 #slogan {
     letter-spacing: 2px;
     margin: 0;
