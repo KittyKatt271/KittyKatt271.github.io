@@ -1,0 +1,62 @@
+/*
+    Style Notes: 
+    Main Colors: 
+    #7e005e
+    #981e7a
+    Accent Colors
+    #4aaad0
+    #9deaec
+    #27B50A
+    Body Font Family:
+    Avenir
+    Optional Header Family:
+    Great Sejagad
+    Primary Header Family:
+    Bebas Neue
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+      font-family: "Bebas Neue";
+      src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+      src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+      src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+}
+
+@font-face {
+      font-family: "Great Sejagad";
+      src: url('../fonts/GreatSejagad.ttf') format('ttf');
+      src: url('../fonts/GreatSejagad.woff') format('woff');
+      src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
+}
+
+@font-face {
+      font-family: "Avenir LT STD";
+      src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
+      src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+      src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
+}
+
+body {
+    margin: 0px;
+    font-family: "Avenir LT STD";
+    background-color: grey;
+}
+
+#sub-form {
+    width: 750px;
+    height: 500px;
+    background-color: white;
+}
+
+input {
+    font-style: italic;
+}
+
+fieldset {
+    width: 50px;
+    padding-bottom: 12px;
+}
