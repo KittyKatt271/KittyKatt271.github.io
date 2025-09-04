@@ -1,0 +1,29 @@
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Bulletin Board assignment.
+
+    Good luck, and have fun!
+*/
+
+.post-it {
+    display: inline-block;
+    margin: 24px; 
+    padding: 24px;
+    vertical-align: top;
+    background-color: palegoldenrod;
+    width: 150px;
+    height: 150px;
+}
+
+.polaroid {
+    background-color: whitesmoke;
+    height: 250px;
+    width: 200px;
+    padding: 15px;
+}
+
+.polaroid-image {
+    width: 100%;
+}
