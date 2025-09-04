@@ -1,0 +1,168 @@
+/*
+    Style Notes: 
+    Main Colors: 
+    #7e005e
+    #981e7a
+    Accent Colors
+    #4aaad0
+    #9deaec
+    #27B50A
+    Body Font Family:
+    Avenir
+    Optional Header Family:
+    Great Sejagad
+    Primary Header Family:
+    Bebas Neue
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Avenir LT STD";
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.flex-container-header {
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    margin-top: 15px;    
+}
+
+#header-logo {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-family: "Bebas Neue";
+    margin-top: 9px;
+    letter-spacing: 2px;
+}
+
+.styled {
+    border: 0;
+    line-height: 1.75;
+    letter-spacing: 2px;
+    padding: 0px 25px;
+    padding-top: 2px;
+    font-size: 1.5em;
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    margin-top: 5px;
+}
+
+.styled:hover {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+.styled:active {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
+}
+
+#showcountdown-timer {
+    font-family: "Bebas Neue";
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#showcountdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    padding-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+}
+
+h3 {
+    font-family: "Avenir LT STD";
+    font-style: italic;
+    font-weight: 100;
+}
+
+#submitcountdown-timer {
+    font-family: "Bebas Neue";
+    font-size: 1.75em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#submitcountdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    padding-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+}
+
+@font-face {
+      font-family: "Bebas Neue";
+      src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+      src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+      src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+}
+
+@font-face {
+      font-family: "Great Sejagad";
+      src: url('../fonts/GreatSejagad.ttf') format('ttf');
+      src: url('../fonts/GreatSejagad.woff') format('woff');
+      src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
+}
+
+@font-face {
+      font-family: "Avenir LT STD";
+      src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
+      src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+      src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
+}
+
+body {
+    margin: 0;
+}
+
+#hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: lavender;
+    color:black;
+    font-family: sans-serif;
+}

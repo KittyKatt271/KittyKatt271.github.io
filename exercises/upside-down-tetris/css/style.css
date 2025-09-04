@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#container {
+    width: 500px;
+    height: 100vh;
+    background-color: black;
+    font-size: 0px;
+}
+
+.block {
+    display: inline-block;
+    width: 50px; 
+    height: 50px; 
+    background-color: grey;
+}
+
+.cyan {
+    background-color: cyan;
+    background: linear-gradient(to top left, cyan, rgb(0, 210, 210));
+    border: 10px outset cyan;
+}
+
+.red {
+    background-color: red;
+    background: linear-gradient(to top left, red, rgb(218, 0, 0));
+    border: 10px outset red;
+}
+
+.yellow {
+    background-color: yellow;
+    background: linear-gradient(to top left, yellow, rgb(223, 223, 0));
+    border: 10px outset yellow;
+}
+
+.blue {
+    background-color: blue;
+    background: linear-gradient(to top left, blue, rgb(0, 0, 213));
+    border: 10px outset blue;
+}
+
+.orange {
+    background-color: orange;
+    background: linear-gradient(to top left, orange, rgb(229, 149, 0));
+    border: 10px outset orange;
+}
+
+.magenta {
+    background-color: magenta;
+    background: linear-gradient(to top left, magenta, rgb(220, 0, 220));
+    border: 10px outset magenta;
+}
+
+.green {
+    background-color: rgb(0, 255, 0);
+    background: linear-gradient(to top left, rgb(0, 255, 0), rgb(0, 220, 0));
+    border: 10px outset rgb(0, 255, 0);
+}
+
+.empty {
+    background-color: black;
+}

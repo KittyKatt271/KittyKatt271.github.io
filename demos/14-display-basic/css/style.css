@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+span {
+    background-color: pink;
+    /*display: block;*/
+}
+
+div {
+    background-color: lightblue; 
+    /*display: inline;*/
+}
+
+.narrow {
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 25px;
+    padding: 25px;
+}
