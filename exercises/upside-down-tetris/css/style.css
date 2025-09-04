@@ -5,6 +5,8 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: black;
+    color: white;
 }
 
 #container {
@@ -12,6 +14,28 @@ body {
     height: 100vh;
     background-color: black;
     font-size: 0px;
+    display: inline-block;
+    vertical-align: top;    
+}
+
+#border-left {
+    width: 100px;
+    height: 100vh;
+    background-color: black;
+    font-size: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: -5px;
+}
+
+#border-right {
+    width: 550px;
+    height: 100vh;
+    background-color: black;
+    font-size: 0px;
+    display: inline-block;
+    vertical-align: top;
+    margin-left: -5px;
 }
 
 .block {
@@ -65,4 +89,10 @@ body {
 
 .empty {
     background-color: black;
+}
+
+.border-block {
+    background-color: grey;
+    background: linear-gradient(to top left, grey, rgb(92, 92, 92));
+    border: 10px outset grey;
 }
