@@ -15,6 +15,7 @@
     background-color: palegoldenrod;
     width: 150px;
     height: 150px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.557);
 }
 
 .polaroid {
@@ -22,8 +23,35 @@
     height: 250px;
     width: 200px;
     padding: 15px;
+    transform: rotate(5deg);
 }
 
 .polaroid-image {
-    width: 100%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    object-position: 55%;
+    border: 3px groove rgba(36, 36, 35, 0.619);
+}
+
+.polaroid-script {
+    font-family: cursive;
+    font-style: italic;
+    transform: rotate(-2.5deg);
+    margin: 0;
+    padding: 0;
+    line-height: .75;  
+    color: darkolivegreen;  
+}
+
+.caption {
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.details {
+    font-size: 9px;
+    padding-top: 10px;
+    transform: rotate(0deg);
+    text-align: center;
 }
