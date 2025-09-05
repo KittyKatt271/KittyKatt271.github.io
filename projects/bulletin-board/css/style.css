@@ -32,6 +32,7 @@
 
 #star-polaroid {
     transform: rotate(-2deg);
+    margin-right: 50px;
 }
 
 .polaroid-image {
@@ -92,6 +93,8 @@
     padding: 10px;
     transform: rotate(8deg);
     background-color: powderblue;
+    margin-left: 200px;
+    margin-right: 50px;
 }
 
 #timey-wimey-text {
