@@ -87,3 +87,35 @@
 #details-star {
     margin-top: 10px    
 }
+
+#timey-wimey-post-it{
+    padding: 10px;
+    transform: rotate(8deg);
+    background-color: powderblue;
+}
+
+#timey-wimey-text {
+    font-size: 9px;
+    font-family: cursive;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+#timey-head {
+    font-size: 15px;
+    font-family: cursive;
+    font-style: italic;
+    transform: rotate(-25deg);
+    margin: 0;
+    padding: 0;
+    color: navy;
+}
+
+#tenth {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 7px;
+    text-align: end;
+    margin-top: 20px;
+}
