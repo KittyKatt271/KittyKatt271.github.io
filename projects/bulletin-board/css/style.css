@@ -26,11 +26,11 @@
     
 }
 
-.sunglass-polaroid {
+#sunglass-polaroid {
     transform: rotate(5deg);
 }
 
-.star-polaroid {
+#star-polaroid {
     transform: rotate(-2deg);
 }
 
@@ -41,11 +41,11 @@
     border: 3px groove rgba(36, 36, 35, 0.619);
 }
 
-.sunglass-image {
+#sunglass-image {
     object-position: 55%;
 }
 
-.star-image {
+#star-image {
     object-position: 35%;
 }
 
@@ -68,12 +68,12 @@
     margin-top: 5px;
 }
 
-.caption-sun{
+#caption-sun{
     font-size: 17px;
     letter-spacing: 2px;
 }
 
-.caption-star {
+#caption-star {
     font-size: 16.5px;
 }
 
@@ -84,6 +84,6 @@
     text-align: center;
 }
 
-.details-star {
+#details-star {
     margin-top: 10px    
 }
