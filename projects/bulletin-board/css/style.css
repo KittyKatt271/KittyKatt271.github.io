@@ -23,30 +23,58 @@
     height: 250px;
     width: 200px;
     padding: 15px;
+    
+}
+
+.sunglass-polaroid {
     transform: rotate(5deg);
+}
+
+.star-polaroid {
+    transform: rotate(-2deg);
 }
 
 .polaroid-image {
     width: 170px;
     height: 170px;
-    object-fit: cover;
-    object-position: 55%;
+    object-fit: cover;    
     border: 3px groove rgba(36, 36, 35, 0.619);
+}
+
+.sunglass-image {
+    object-position: 55%;
+}
+
+.star-image {
+    object-position: 35%;
 }
 
 .polaroid-script {
     font-family: cursive;
-    font-style: italic;
-    transform: rotate(-2.5deg);
+    font-style: italic;    
     margin: 0;
     padding: 0;
-    line-height: .75;  
-    color: darkolivegreen;  
+    line-height: .75;   
 }
 
-.caption {
+.sunglass-font {
+    color: darkolivegreen;
+    transform: rotate(-2.5deg);
+}
+
+.star-font  {
+    color: teal;
+    transform: rotate(2.5deg);
+    margin-top: 5px;
+}
+
+.caption-sun{
     font-size: 17px;
     letter-spacing: 2px;
+}
+
+.caption-star {
+    font-size: 16.5px;
 }
 
 .details {
@@ -54,4 +82,8 @@
     padding-top: 10px;
     transform: rotate(0deg);
     text-align: center;
+}
+
+.details-star {
+    margin-top: 10px    
 }
