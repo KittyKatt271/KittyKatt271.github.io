@@ -7,6 +7,11 @@
     Good luck, and have fun!
 */
 
+body {
+    font-family: cursive;
+    font-style: italic; 
+}
+
 .post-it {
     display: inline-block;
     margin: 24px; 
@@ -51,8 +56,7 @@
 }
 
 .polaroid-script {
-    font-family: cursive;
-    font-style: italic;    
+       
     margin: 0;
     padding: 0;
     line-height: .75;   
@@ -99,16 +103,12 @@
 
 #timey-wimey-text {
     font-size: 9px;
-    font-family: cursive;
-    font-style: italic;
     margin: 0;
     padding: 0;
 }
 
 #timey-head {
     font-size: 15px;
-    font-family: cursive;
-    font-style: italic;
     transform: rotate(-25deg);
     margin: 0;
     padding: 0;
@@ -116,8 +116,6 @@
 }
 
 #tenth {
-    font-family: cursive;
-    font-style: italic;
     font-size: 7px;
     text-align: end;
     margin-top: 20px;
@@ -131,8 +129,6 @@
 
 #bowtie-text {
     color: navy;
-    font-family: cursive;
-    font-style: oblique;
     font-weight: bold;
     font-size: 25px;
     transform: rotate(30deg);
@@ -144,20 +140,14 @@
 
 .list-title {
     margin: 0;
-    font-family: cursive;
-    font-style: italic;
 }
 
 #groceries {
-    font-family: cursive;
-    font-style: italic;
     color: rebeccapurple;
     transform: rotate(2deg);
 }
 
 #to-do {
-    font-family: cursive;
-    font-style: italic;
     color: indianred;
     transform: rotate(4deg);
 }
