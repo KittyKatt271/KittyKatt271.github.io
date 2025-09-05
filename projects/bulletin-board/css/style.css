@@ -119,3 +119,35 @@
     text-align: end;
     margin-top: 20px;
 }
+
+#bowtie-post-it {
+    background-color: powderblue;
+    padding: 10px;
+    transform: rotate(-10deg);
+}
+
+#bowtie-text {
+    color: navy;
+    font-family: cursive;
+    font-style: oblique;
+    font-weight: bold;
+    font-size: 25px;
+    transform: rotate(30deg);
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    text-align: center;
+}
+
+.list-title {
+    margin: 0;
+    font-family: cursive;
+    font-style: italic;
+}
+
+#groceries {
+    font-family: cursive;
+    font-style: italic;
+    color: rebeccapurple;
+    transform: rotate(2deg);
+}
