@@ -8,16 +8,44 @@
     </head>
     <body>
         <div id="sub-form">
-            <fieldset>
-                <legend for="name">Artist Name(s):</legend>
-                <input
+            <label for="name">Artist Name:</label>
+            <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Artist Name(s) (Seperated by ,)..."
+                placeholder="Artist Name..."
                 required
-                size="40"/>
-            </fieldset>
+                size="40"
+            />
+
+            <label for="cohort">Student Cohort #:</label>
+            <input
+                type="textSS"
+                id="cohort"
+                name="cohort"
+                placeholder="Cohort #..."
+                required
+                maxlength ="8"
+                size="8"
+            />
+
+            <label for="email">Student Email:</label>
+            <input 
+                type="email" 
+                id="email" 
+                pattern=".+@example\.com" 
+                size="40" 
+                placeholder="Student Email..."
+                required 
+            />
+
+                <label for="file-upload">Upload your file:</label>
+                <input 
+                    type="file" 
+                    id="file-upload" 
+                    name="file-upload" 
+                    accept=""
+                />
         </div>
     </body>
 </html>
