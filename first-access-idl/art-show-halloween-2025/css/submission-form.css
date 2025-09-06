@@ -46,17 +46,68 @@ body {
     background-color: grey;
 }
 
-#sub-form {
-    width: 750px;
+#modal {
+    width: 575px;
     height: 500px;
     background-color: white;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+#sub-form {
+    width: 575px;
+    height: 500px;
+    background-color: white;
+    padding: 25px;
+    padding-top: 0px;    
 }
 
 input {
     font-style: italic;
 }
 
-fieldset {
-    width: 50px;
-    padding-bottom: 12px;
+legend {
+    font-family: "Bebas Neue";
+    font-size: 25px;
+    letter-spacing: 2px;
 }
+
+fieldset {
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+
+#first-name {
+    margin-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 15px;
+}
+
+select {
+    border-radius: 3px;
+    height: 25px;
+    padding-left: 7px;
+    width: 310px;
+    margin-right: 15px;
+    margin-top: 3px;
+}
+
+input {
+    border-radius: 3px;
+    border-width: 1px;
+    height: 25px;
+    padding: 5px;
+    padding-left: 7px;
+    margin-top: 3px;
+}
+
+#close {
+    justify-self: end;
+    color: grey;
+}
+

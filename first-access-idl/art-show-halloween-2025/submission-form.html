@@ -4,48 +4,97 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
         <link href="css/submission-form.css" rel="stylesheet">
     </head>
     <body>
-        <div id="sub-form">
-            <label for="name">Artist Name:</label>
-            <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Artist Name..."
-                required
-                size="40"
-            />
+        <div id="modal">
+            <div id="close">
+                <i class="fa-solid fa-x"></i>
+            </div>
 
-            <label for="cohort">Student Cohort #:</label>
-            <input
-                type="textSS"
-                id="cohort"
-                name="cohort"
-                placeholder="Cohort #..."
-                required
-                maxlength ="8"
-                size="8"
-            />
+            <div id="sub-form">
+                <fieldset>
+                    <legend>Submission Form</legend>
+                    <label for="first-name last-name">Artist Name:</label>
+                    <br>
+                    <input
+                        type="text"
+                        id="first-name"
+                        name="first-name"
+                        placeholder="First Name..."
+                        required
+                        size="30"
+                    />
 
-            <label for="email">Student Email:</label>
-            <input 
-                type="email" 
-                id="email" 
-                pattern=".+@example\.com" 
-                size="40" 
-                placeholder="Student Email..."
-                required 
-            />
+                    <input
+                        type="text"
+                        id="last-name"
+                        name="last-name"
+                        placeholder="Last Name..."
+                        required
+                        size="30"
+                    />
 
-                <label for="file-upload">Upload your file:</label>
-                <input 
-                    type="file" 
-                    id="file-upload" 
-                    name="file-upload" 
-                    accept=""
-                />
+                    <br>
+
+                    <div class="flex-container">
+                        <div class="column">
+                            <label for="course-program">Course Program:</label>
+                            <select name="course" id="course-program">
+                                <option value="">--Please choose an option--</option>
+                                <option value="dfvp">Digitial Film & Video Production</option>
+                                <option value="dp">Digitial Photography</option>
+                                <option value="gdwd">Graphic Design & Web Development</option>
+                                <option value="rasp">Recording Arts & Show Production</option>
+                            </select>
+                        </div>
+
+                        <div class="column">
+                            <label for="cohort">Cohort #:</label>
+                            <input
+                                type="textSS"
+                                id="cohort"
+                                name="cohort"
+                                placeholder="Cohort #..."
+                                required
+                                maxlength ="8"
+                                size="18"
+                            />
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <label for="email">Student Email:</label>
+                    <br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        pattern=".+@example\.com" 
+                        size="67" 
+                        placeholder="Student Email..."
+                        required 
+                    />
+
+                    <br>
+
+                    <label for="file-upload">Upload your file:</label>
+                    <br>
+                    <input 
+                        type="file" 
+                        id="file-upload" 
+                        name="file-upload" 
+                        accept=""
+                    />                
+                </fieldset>
+            </div>
         </div>
     </body>
 </html>
