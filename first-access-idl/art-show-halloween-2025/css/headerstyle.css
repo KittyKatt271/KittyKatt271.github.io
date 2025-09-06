@@ -152,3 +152,8 @@ h3 {
       src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
       src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
 }
+
+a {
+    text-decoration: none;
+    color: white;
+}

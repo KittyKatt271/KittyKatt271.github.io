@@ -43,7 +43,7 @@
 body {
     margin: 0px;
     font-family: "Avenir LT STD";
-    background-color: grey;
+    background-color: transparent;
 }
 
 #modal {
@@ -123,7 +123,9 @@ textarea:focus,
 input[type="text"]:active,
 input[type="text"]:focus,
 input[type="email"]:active,
-input[type="email"]:focus {
+input[type="email"]:focus,
+select:active,
+select:focus {
     outline-width: 5px;
     outline-color: #7e005e;
 }
