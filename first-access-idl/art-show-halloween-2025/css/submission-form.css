@@ -48,7 +48,7 @@ body {
 
 #modal {
     width: 575px;
-    height: 500px;
+    height: 635px;
     background-color: white;
     padding-top: 15px;
     padding-right: 15px;
@@ -62,14 +62,11 @@ body {
     padding-top: 0px;    
 }
 
-input {
-    font-style: italic;
-}
-
 legend {
     font-family: "Bebas Neue";
     font-size: 25px;
     letter-spacing: 2px;
+    color: #7e005e;    
 }
 
 fieldset {
@@ -77,6 +74,7 @@ fieldset {
     padding-top: 10px;
     padding-right: 10px;
     border-radius: 5px;
+    border-color: #981e7a;
 }
 
 #first-name {
@@ -104,30 +102,113 @@ input {
     padding: 5px;
     padding-left: 7px;
     margin-top: 3px;
+    font-style: italic;
+}
+
+textarea {
+    padding: 5px;
+    padding-left: 7px;
+    margin-top: 3px;
+    margin-bottom: 15px;
+    margin-right: 0;
+    font-style: italic;
+    border-radius: 3px;
+    border-width: 1px;
+    font-family: "Avenir LT Std";
+    border-color: #7e005e
+}
+
+textarea:active,
+textarea:focus,
+input[type="text"]:active,
+input[type="text"]:focus,
+input[type="email"]:active,
+input[type="email"]:focus {
+    outline-width: 5px;
+    outline-color: #7e005e;
 }
 
 #close {
     justify-self: end;
-    color: grey;
+    color: #981e7a;
+}
+
+#close:hover {
+    color: #7e005e;
 }
 
 #upload-block {
-    border: 2px dashed gray;
-    border-radius: 25px;
+    border: 2px dashed #7e005e;
+    border-radius: 15px;
     text-align: center;
     padding: 25px;
-    width: 250px;
+    padding-top: 35px;
+    width: 225px;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-bottom: 15px;
 }
 
-input[type=file]::file-selector-button {
-  border: 2px solid #6c5ce7;
-  padding: .2em .4em;
-  border-radius: .2em;
-  background-color: #a29bfe;
-  transition: 1s;
+h4 {
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: "Bebas Neue";
+    font-size: 20px;
+    letter-spacing: 1.5px;
+    color: #7e005e;
 }
 
-input[type=file]::file-selector-button:hover {
-  background-color: #81ecec;
-  border: 2px solid #00cec9;
+#about-section {
+    margin-top: 13px;
+    padding-right: 0;
+    width: 235px;
+}
+
+.styled {
+    border: 0;
+    line-height: 1.75;
+    letter-spacing: 2px;
+    padding: 0px 25px;
+    padding-top: 2px;
+    font-size: 1.5em;
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    margin-top: 5px;
+    margin-left: 160px;
+}
+
+.styled:hover,
+.btn:hover {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+.styled:active,
+.btn:active {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
+}
+
+.btn {
+    padding: 15px;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
 }
