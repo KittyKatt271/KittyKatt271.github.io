@@ -102,7 +102,7 @@ h1 {
     );
 }
 
-h3 {
+.submit-closed {
     font-family: "Avenir LT STD";
     font-style: italic;
     font-weight: 100;

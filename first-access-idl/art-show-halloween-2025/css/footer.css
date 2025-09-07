@@ -21,11 +21,9 @@
 
 body {
     margin: 0px;
-    font-family: "Bebas Neue";
-    color: #FFFFFF;
 }
 
-img {
+#main-banner-image {
     height: 350px;
     margin: 0;
     padding: 0;
@@ -54,22 +52,29 @@ img {
     margin-left: 30px;
     padding: 0;
     align-content: center;
+    font-family: "Bebas Neue";
+    color: #FFFFFF;
 }
 
-h1 {
+#join {
     letter-spacing: 4.5px;
     font-size: 60px;
     margin-bottom: 20px;
     margin-top: 15px;
+    font-family: "Bebas Neue";
+    color: #FFFFFF;
 }
 
-h3 {
+.sitemap-h3,
+#logos {
     letter-spacing: 1px;
     margin: 0;
     padding: 0;
+    font-family: "Bebas Neue";
+    color: #FFFFFF;
 }
 
-.styled {
+.styled-footer {
     border: 0;
     line-height: 1.75;
     letter-spacing: 2px;
@@ -90,12 +95,12 @@ h3 {
     margin-right: 15px;
 }
 
-.styled:hover {
+.styled-footer:hover {
     background-color: #4aaad0;
     transition: .45s;
 }
 
-.styled:active {
+.styled-footer:active {
     box-shadow:
         inset -2px -2px 3px #9de9ec53,
         inset 2px 2px 3px rgb(0 0 0 / 30%);
@@ -114,7 +119,7 @@ h3 {
     height: 205px;
 }
 
-#showcountdown-timer {
+#f-showcountdown-timer {
     font-family: "Bebas Neue";
     font-size: 1.75em;
     text-align: center;
@@ -123,7 +128,7 @@ h3 {
     margin-top: 5px;
 }
 
-#showcountdown-timer span {
+#f-showcountdown-timer span {
     display: inline-block;
     padding: 0 10px;
     padding-top: 2px;
@@ -141,7 +146,7 @@ h3 {
 }
 
 
-#submitcountdown-timer {
+#f-submitcountdown-timer {
     font-family: "Bebas Neue";
     font-size: 1.75em;
     text-align: center;
@@ -150,7 +155,7 @@ h3 {
     margin-top: 5px;
 }
 
-#submitcountdown-timer span {
+#f-submitcountdown-timer span {
     display: inline-block;
     padding: 0 10px;
     padding-top: 2px;
@@ -165,28 +170,37 @@ h3 {
     );
 }
 
-li {
+.footer-li {
     list-style: none;
     margin-bottom: 10px;
     font-family: "Avenir LT STD";
     font-size: 12px;
     width: 125px;
+    color: white;
+    background-color: black;
 }
 
-ul {
+.footer-ul {
     margin-left: 0;
     margin-top: 10px;
     padding: 0;
+    color: white;
+    background-color: black;
 }
 
-p {
+#slogan,
+#address,
+#phone,
+#cr {
     font-family: "Avenir LT STD";
     font-size: 10px;
     font-weight: 100;
     letter-spacing: 2px;
+    color: white;
+    background-color: black;
 }
 
-i {
+#logos {
     margin: 7px;
 }
 

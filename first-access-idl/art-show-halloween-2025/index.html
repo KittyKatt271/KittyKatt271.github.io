@@ -11,6 +11,7 @@
             crossorigin="anonymous" 
             referrerpolicy="no-referrer"
         >
+        <link href="css/footer.css" rel="stylesheet">
         <link href="css/headerstyle.css" rel="stylesheet">
         <link href="css/submission-form.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
@@ -80,7 +81,7 @@
                         Submit Now 
                 </button>
 
-                <h3 id="submittext" hidden>
+                <h3 id="submittext" class="submit-closed" hidden>
                     Submissions Closed
                 </h3>
             </div>
@@ -264,10 +265,124 @@
             </ul>
         </div>
         
-        <iframe src="footer.html" width="100%" height="560px"></iframe>
+        <!--Begin Footer-->
+        <div id="footer">
+            <div class="flex-container-banner">
+                <div class="column-banner-img">
+                    <img 
+                        src="images/temp-banner-2.jpg"
+                        alt="temp banner"
+                        id="main-banner-image"
+                    >
+                </div>
+
+                <div class="column-banner-text">
+                    <h1 id="join">Join F.I.R.S.T.<br>Institute Today!</h1>
+                    
+                    <button id="downloadbutton" class="styled-footer">
+                        Download Brochure
+                    </button>
+
+                    <button id="applybutton" class="styled-footer">
+                        Apply Now
+                    </button>
+                </div>
+            </div> 
+            
+            <div class="flex-container-footer">
+                <div class="column-site-map">
+                    <h3 class="sitemap-h3">Guidelines</h3>
+
+                    <ul class="footer-ul">
+                        <li class="footer-li">Digital Film & Video Production</li>
+                        <li class="footer-li">Digital Photography</li>
+                        <li class="footer-li">Graphic Design & Web Development</li>
+                        <li class="footer-li">Recording Arts & Show Production</li>
+                    </ul>
+                </div>
+
+                <div class="column-site-map">
+                    <h3 class="sitemap-h3">Galleries</h3>
+
+                    <ul class="footer-ul">
+                        <li class="footer-li">Digital Film & Video Production</li>
+                        <li class="footer-li">Digital Photography</li>
+                        <li class="footer-li">Graphic Design & Web Development</li>
+                        <li class="footer-li">Recording Arts & Show Production</li>
+                    </ul>
+                </div>
+
+                <div class="column-logo">
+                    <img 
+                        src="images/first-logo-white.png"
+                        alt="F.I.R.S.T. Institute Logo"
+                        id="header-logo"
+                    >
+
+                    <p id="slogan">CREATIVITY Meets Career</p>
+
+                    <h3 id="logos">
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </h3>
+
+                    <div class="flex-container-info">
+                        <div class="column">
+                            <p id="address">423 S Keller Road, Orlando, FL 32810</p>
+                        </div>
+
+                        <div class="column">
+                            <p id="phone">(407) 316-8310</p>
+                        </div>
+                    </div>
+
+                    <p id="cr">Copyright © 2025 F.I.R.ST. Institute</p>
+                </div>
+
+                <div class="column-buttons">
+                    <div id="f-showcountdown-timer">
+                        <span id="f-showdays"></span> :
+                        <span id="f-showhours"></span> :
+                        <span id="f-showminutes"></span> :
+                        <span id="f-showseconds"></span> 
+                    </div>
+
+                    <button 
+                        id="showbutton" 
+                        hidden
+                        class="styled"
+                    >
+                        View Show
+                    </button>
+
+                    <div id="f-submitcountdown-timer" hidden>
+                        <span id="f-submitdays"></span> :
+                        <span id="f-submithours"></span> :
+                        <span id="f-submitminutes"></span> :
+                        <span id="f-submitseconds"></span> 
+                    </div>
+
+                    <button 
+                        id="submitbutton" 
+                        class="styled-footer" 
+                        onclick="document.getElementById('modal').style.display='block'"
+                    >
+                        Submit Now 
+                    </button>
+
+                    <h3 id="submittext" class="submit-closed" hidden>
+                        Submissions Closed
+                    </h3>
+                </div>
+            </div>
+        </div>
 
         <script src="java/subform.js"></script>
         <script src="java/showcountdown.js"></script>
         <script src="java/submitcountdown.js"></script>
+        <script src="java/f-showcountdown.js"></script>
+        <script src="java/f-submitcountdown.js"></script>
     </body>
 </html>
