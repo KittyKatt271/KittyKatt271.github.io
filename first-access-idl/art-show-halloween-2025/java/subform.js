@@ -4,3 +4,9 @@ document.querySelector("#files").onchange = function() {
   label.innerText = fileName ?? "Browse Files";
 }
 
+const myForm = document.getElementById('myForm');
+  const submitBtn = document.getElementById('form-submitbutton');
+
+  myForm.addEventListener('submit', function() {
+    submitBtn.textContent = 'Submitting...'; 
+  });

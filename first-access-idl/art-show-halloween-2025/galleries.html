@@ -149,6 +149,7 @@
                             method="POST" 
                             action="https://formcarry.com/s/vde0EDcUN5A" 
                             enctype="multipart/form-data"
+                            id="myForm"
                         >
                             <label for="first-name last-name">
                                 Artist Name:
@@ -287,15 +288,19 @@
                             </label>
                             <br>
                             <textarea 
-                                id="about-artist" 
-                                name="about-artist" 
+                                id="asset-credit" 
+                                name="asset-credit" 
                                 placeholder="List any required accreditation for assets used in your submission..."
                                 rows="2" 
                                 cols="68"
                             ></textarea> 
                             <!--Dirty for functionality of placeholder-->
 
-                            <button id="submitbutton" class="styled">
+                            <button 
+                                id="form-submitbutton" 
+                                class="styled" 
+                                type="submit"
+                            >
                                 Submit Now 
                             </button>
                         </form>
