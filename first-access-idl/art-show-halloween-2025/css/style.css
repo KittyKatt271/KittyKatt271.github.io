@@ -53,15 +53,11 @@ iframe {
 #hero {
     width: 100%;
     height: 450px;
+    z-index: 50;
 }
 
-p, ul, li, h1 {
+p, ul, li {
     background-color: #FFFFFF;
     margin: 0;
-}
-
-h1 {
-    font-family: "Bebas Neue";
-    text-align: center;
-    padding: 50px;
+    color: black;
 }
