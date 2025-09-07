@@ -269,3 +269,7 @@ body {
 .sitemap-h3 a:hover {
     text-decoration: underline;
 }
+
+#logos a:hover {
+    color: #9deaec;
+}
