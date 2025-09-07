@@ -4,10 +4,306 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link 
+            rel="stylesheet" 
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+            crossorigin="anonymous" 
+            referrerpolicy="no-referrer"
+        >
+        <link href="css/footer.css" rel="stylesheet">
+        <link href="css/headerstyle.css" rel="stylesheet">
+        <link href="css/submission-form.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <iframe src="header.html" width="100%" height="85px"></iframe>
+        <!--Begin Header Bar-->
+        <div class="flex-container-header">
+            <div class="column-header">
+                <a href="index.html">
+                    <img
+                        src="images/first-logo-white.png"
+                        alt="FIRST Institute Logo"
+                        id="header-logo"
+                    >
+                </a>
+            </div>
+
+            <div class="column-header dropdown-container">
+                <a href="galleries.html">
+                    <h1>
+                        Galleries
+                        <sub>
+                            <sup>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </sup>
+                        </sub>
+                    </h1>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="galleries/dfvp.html">
+                        Digital Film & Video Production
+                    </a>
+
+                    <a href="galleries/dp.html">
+                        Digital Photography
+                    </a>
+
+                    <a href="galleries/gdwd.html">
+                        Graphic Design & Web Development
+                    </a>
+
+                    <a href="galleries/rasp.html">
+                        Recording Arts & Show Produciton
+                    </a>
+                </div>
+            </div>
+
+            <div class="column-header">
+                <div id="showcountdown-timer">
+                    <span id="showdays"></span> :
+                    <span id="showhours"></span> :
+                    <span id="showminutes"></span> :
+                    <span id="showseconds"></span> 
+                </div>
+
+                <button 
+                    id="showbutton" 
+                    hidden
+                    class="styled"
+                >
+                    View Show
+                </button>
+            </div>
+
+            <div class="column-header dropdown-container">
+                <a href="guidelines.html">
+                    <h1>
+                        Guidelines
+                        <sub>
+                            <sup>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </sup>
+                        </sub>
+                    </h1>
+                </a>
+
+                <div class="dropdown-menu">
+                    <a href="guidelines.html#dfvp">
+                        Digital Film & Video Production
+                    </a>
+
+                    <a href="guidelines.html#dp">
+                        Digital Photography
+                    </a>
+
+                    <a href="guidelines.html#gdwd">
+                        Graphic Design & Web Development
+                    </a>
+
+                    <a href="guidelines.html#rasp">
+                        Recording Arts & Show Produciton
+                    </a>
+                </div>
+            </div>
+
+            <div class="column-header">
+                <div id="submitcountdown-timer" hidden>
+                    <span id="submitdays"></span> :
+                    <span id="submithours"></span> :
+                    <span id="submitminutes"></span> :
+                    <span id="submitseconds"></span> 
+                </div>
+                <button 
+                    id="submitbutton" 
+                    class="styled-submitbutton" 
+                    onclick="document.getElementById('modal').style.display='block'"
+                >
+                    Submit Now 
+                </button>
+
+                <h3 id="submittext" class="submit-closed" hidden>
+                    Submissions Closed
+                </h3>
+            </div>
+        </div>  
+        <!--End Header Bar-->      
+        
+        <!--Begin Submission Modal-->
+        <div id="modal" hidden>
+            <div id="modal-overlay"></div>
+            <div id="modal-form">
+                <span 
+                    onclick="document.getElementById('modal').style.display='none'"
+                >
+                    <div id="close">
+                        <i class="fa-solid fa-x"></i>
+                    </div>
+                </span>
+
+                <div id="sub-form">
+                    <fieldset>
+                        <legend>Submission Form</legend>
+                        <form 
+                            method="POST" 
+                            action="https://getform.io/f/aolzqmrb" 
+                            enctype="multipart/form-data"
+                        >
+                            <label for="first-name last-name">
+                                Artist Name:
+                            </label>
+                            <br>
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="First Name..."
+                                required
+                                size="30"
+                            />
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Last Name..."
+                                required
+                                size="30"
+                            />
+
+                            <br>
+
+                            <div class="flex-container">
+                                <div class="column">
+                                    <label for="course-program">
+                                        Course Program:
+                                    </label>
+                                    <select name="course" id="course-program">
+                                        <option value="">
+                                            --Which Program is/was the Artist 
+                                            Enrolled In?--
+                                        </option>
+
+                                        <option value="dfvp">
+                                            Digitial Film & Video Production
+                                        </option>
+
+                                        <option value="dp">
+                                            Digitial Photography
+                                        </option>
+
+                                        <option value="gdwd">
+                                            Graphic Design & Web Development
+                                        </option>
+
+                                        <option value="rasp">
+                                            Recording Arts & Show Production
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="column">
+                                    <label for="cohort">Cohort #:</label>
+                                    <input
+                                        type="text"
+                                        id="cohort"
+                                        name="cohort"
+                                        placeholder="Cohort #..."
+                                        required
+                                        maxlength ="8"
+                                        size="18"
+                                    />
+                                </div>
+                            </div>
+
+                            <br>
+
+                            <label for="email">Student Email:</label>
+                            <br>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                size="67" 
+                                placeholder="Student Email..."
+                                required 
+                            />
+
+                            <br>
+
+                            <div class="flex-container">
+                                <div class="input_container" id="upload-block">
+                                    <h4>Upload Your File:</h4>
+                                    <br>
+                                    <label 
+                                        for="files" 
+                                        class="btn" 
+                                        id="file-name-display"
+                                    >
+                                        Browse Files
+                                    </label>
+                                    <input 
+                                        id="files" 
+                                        name="files"
+                                        style="display:none;" 
+                                        type="file"
+                                        required
+                                    >
+                                </div>
+
+                                <div id="about-section">
+                                    <label for="about-piece">
+                                        About Your Piece:
+                                    </label>
+                                    <br>
+                                    <textarea 
+                                        id="about-piece" 
+                                        name="about-piece" 
+                                        placeholder="Say something about your submission piece..."
+                                        required
+                                        rows="2" 
+                                        cols="31"
+                                    ></textarea> 
+                                    <!--Dirty for functionality of placeholder-->
+
+                                    <label for="about-artist">
+                                        About the Artist:
+                                    </label>
+                                    <br>
+                                    <textarea 
+                                        id="about-artist" 
+                                        name="about-artist" 
+                                        placeholder="Say something about yourself..."
+                                        required
+                                        rows="2" 
+                                        cols="31"
+                                    ></textarea> 
+                                    <!--Dirty for functionality of placeholder-->
+                                </div>
+                            </div>
+                            
+                            <label for="asset-credit">
+                                Asset Accreditation:
+                            </label>
+                            <br>
+                            <textarea 
+                                id="about-artist" 
+                                name="about-artist" 
+                                placeholder="List any required accreditation for assets used in your submission..."
+                                rows="2" 
+                                cols="68"
+                            ></textarea> 
+                            <!--Dirty for functionality of placeholder-->
+
+                            <button id="submitbutton" class="styled">
+                                Submit Now 
+                            </button>
+                        </form>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+        <!--End Submission Form Modal-->
 
         <h1>Page Building in Progress</h1>
 
@@ -91,6 +387,204 @@
             ratione!
         </p>
 
-        <iframe src="footer.html" width="100%" height="560px"></iframe>
+        <!--Begin Footer-->
+        <div id="footer">
+            <div class="flex-container-banner">
+                <div class="column-banner-img">
+                    <img 
+                        src="images/temp-banner-2.jpg"
+                        alt="temp banner"
+                        id="main-banner-image"
+                    >
+                </div>
+
+                <div class="column-banner-text">
+                    <h1 id="join">Join F.I.R.S.T.<br>Institute Today!</h1>
+                    
+                    <a 
+                        href="https://learn.first.edu/general-website-brochure?campaignid=1052"
+                        target="_blank"
+                    >
+                        <button id="downloadbutton" class="styled-footer">
+                            Download Brochure
+                        </button>
+                    </a>
+
+                    <a href="https://www.first.edu/apply/" target="_blank">
+                        <button id="applybutton" class="styled-footer">
+                            Apply Now
+                        </button>
+                    </a>
+                </div>
+            </div> 
+            
+            <div class="flex-container-footer">
+                <div class="column-site-map">
+                    <h3 class="sitemap-h3">
+                        <a href="galleries.html">
+                            Galleries
+                        </a>
+                    </h3>
+
+                    <ul class="footer-ul">
+                        <li class="footer-li">
+                            <a href="galleries/dfvp.html">
+                                Digital Film & Video Production
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/dp.html">
+                                Digital Photography
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/gdwd.html">
+                                Graphic Design & Web Development
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/rasp.html">
+                                Recording Arts & Show Production
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column-site-map">
+                    <h3 class="sitemap-h3">
+                        <a href="guidelines.html">
+                            Guidelines
+                        </a>
+                    </h3>
+
+                    <ul class="footer-ul">
+                        <li class="footer-li">
+                            <a href="guidelines.html#dfvp">
+                                Digital Film & Video Production
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#dp">
+                                Digital Photography
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#gdwd">
+                                Graphic Design & Web Development
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#rasp">
+                                Recording Arts & Show Production
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="column-logo">
+                    <a href="index.html">
+                        <img 
+                            src="images/first-logo-white.png"
+                            alt="F.I.R.S.T. Institute Logo"
+                            id="footer-logo"
+                        >
+                    </a>
+
+                    <p id="slogan">CREATIVITY Meets Career</p>
+
+                    <h3 id="logos">
+                        <a 
+                            href="https://www.youtube.com/channel/UCgwtOgDipbC8RYXbMG4Q4aA"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.linkedin.com/school/f.i.r.s.t.-institute/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.instagram.com/first_edu/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.facebook.com/FIRST.EDU"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </h3>
+
+                    <div class="flex-container-info">
+                        <div class="column">
+                            <p id="address">
+                                423 S Keller Road, Orlando, FL 32810
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <p id="phone">(407) 316-8310</p>
+                        </div>
+                    </div>
+
+                    <p id="cr">
+                        Copyright © 2025 F.I.R.ST. Institute
+                    </p>
+                </div>
+
+                <div class="column-buttons">
+                    <div id="f-showcountdown-timer">
+                        <span id="f-showdays"></span> :
+                        <span id="f-showhours"></span> :
+                        <span id="f-showminutes"></span> :
+                        <span id="f-showseconds"></span> 
+                    </div>
+
+                    <button 
+                        id="showbutton" 
+                        hidden
+                        class="styled"
+                    >
+                        View Show
+                    </button>
+
+                    <div id="f-submitcountdown-timer" hidden>
+                        <span id="f-submitdays"></span> :
+                        <span id="f-submithours"></span> :
+                        <span id="f-submitminutes"></span> :
+                        <span id="f-submitseconds"></span> 
+                    </div>
+
+                    <button 
+                        id="submitbutton" 
+                        class="styled-footer" 
+                        onclick="document.getElementById('modal').style.display='block'"
+                    >
+                        Submit Now 
+                    </button>
+
+                    <h3 id="submittext" class="submit-closed" hidden>
+                        Submissions Closed
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!--End Footer-->
+
+        <script src="java/subform.js"></script>
+        <script src="java/showcountdown.js"></script>
+        <script src="java/submitcountdown.js"></script>
+        <script src="java/f-showcountdown.js"></script>
+        <script src="java/f-submitcountdown.js"></script>
     </body>
 </html>
