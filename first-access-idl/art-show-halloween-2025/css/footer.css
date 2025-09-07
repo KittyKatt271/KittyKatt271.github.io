@@ -106,7 +106,7 @@ body {
         inset 2px 2px 3px rgb(0 0 0 / 30%);
 }
 
-#header-logo {
+#footer-logo {
     height: 75px;
     margin: 0;
     padding: 0;
@@ -115,8 +115,9 @@ body {
 .flex-container-footer {
     display: flex;
     justify-content: space-evenly;
-    background-color: #000000;
+    background-color: black;
     height: 205px;
+    padding-top: 5px;
 }
 
 #f-showcountdown-timer {
@@ -225,7 +226,7 @@ body {
     font-size: 9px;
     font-weight: 100;
     letter-spacing: 0.5px;
-    margin-bottom: 25px;
+    padding-bottom: 15px;
 }
 
 .column-logo {
