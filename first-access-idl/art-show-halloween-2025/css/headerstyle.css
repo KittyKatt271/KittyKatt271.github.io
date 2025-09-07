@@ -46,7 +46,7 @@ h1 {
     letter-spacing: 2px;
 }
 
-.styled-submitbutton{
+.styled-submitbutton {
     border: 0;
     line-height: 1.75;
     letter-spacing: 2px;
@@ -132,24 +132,24 @@ h1 {
 }
 
 @font-face {
-      font-family: "Bebas Neue";
-      src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
-      src: url('../fonts/BebasNeue-Regular.woff') format('woff');
-      src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-family: "Bebas Neue";
+    src: url('../fonts/BebasNeue-Regular.ttf') format('ttf');
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff');
+    src: url('../fonts/BebasNeue-Regular.woff2') format('woff2');
 }
 
 @font-face {
-      font-family: "Great Sejagad";
-      src: url('../fonts/GreatSejagad.ttf') format('ttf');
-      src: url('../fonts/GreatSejagad.woff') format('woff');
-      src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
+    font-family: "Great Sejagad";
+    src: url('../fonts/GreatSejagad.ttf') format('ttf');
+    src: url('../fonts/GreatSejagad.woff') format('woff');
+    src: url('../fonts/Great\ Sejagad.woff2') format('woff2');
 }
 
 @font-face {
-      font-family: "Avenir LT STD";
-      src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
-      src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
-      src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
+    font-family: "Avenir LT STD";
+    src: url('../fonts/AvenirLTStd-Roman.otf') format('otf');
+    src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
+    src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
 }
 
 a {
@@ -216,4 +216,3 @@ a {
     text-decoration: underline;
     transition: .45s;
 }
-
