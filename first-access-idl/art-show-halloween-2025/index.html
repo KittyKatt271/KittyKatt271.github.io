@@ -20,15 +20,17 @@
         <!--Begin Header Bar-->
         <div class="flex-container-header">
             <div class="column-header">
-                <img
-                    src="images/first-logo-white.png"
-                    alt="FIRST Institute Logo"
-                    id="header-logo"
-                >
+                <a href="index.html">
+                    <img
+                        src="images/first-logo-white.png"
+                        alt="FIRST Institute Logo"
+                        id="header-logo"
+                    >
+                </a>
             </div>
 
             <div class="column-header dropdown-container">
-                <a href="#">
+                <a href="galleries.html">
                     <h1>
                         Galleries
                         <sub>
@@ -40,10 +42,21 @@
                 </a>
 
                 <div class="dropdown-menu">
-                    <a href="#">Digital Film & Video Production</a>
-                    <a href="#">Digital Photography</a>
-                    <a href="#">Graphic Design & Web Development</a>
-                    <a href="#">Recording Arts & Show Produciton</a>
+                    <a href="galleries/dfvp.html">
+                        Digital Film & Video Production
+                    </a>
+
+                    <a href="galleries/dp.html">
+                        Digital Photography
+                    </a>
+
+                    <a href="galleries/gdwd.html">
+                        Graphic Design & Web Development
+                    </a>
+
+                    <a href="galleries/rasp.html">
+                        Recording Arts & Show Produciton
+                    </a>
                 </div>
             </div>
 
@@ -65,7 +78,7 @@
             </div>
 
             <div class="column-header dropdown-container">
-                <a href="#">
+                <a href="guidelines.html">
                     <h1>
                         Guidelines
                         <sub>
@@ -77,10 +90,21 @@
                 </a>
 
                 <div class="dropdown-menu">
-                    <a href="#">Digital Film & Video Production</a>
-                    <a href="#">Digital Photography</a>
-                    <a href="#">Graphic Design & Web Development</a>
-                    <a href="#">Recording Arts & Show Produciton</a>
+                    <a href="guidelines.html#dfvp">
+                        Digital Film & Video Production
+                    </a>
+
+                    <a href="guidelines.html#dp">
+                        Digital Photography
+                    </a>
+
+                    <a href="guidelines.html#gdwd">
+                        Graphic Design & Web Development
+                    </a>
+
+                    <a href="guidelines.html#rasp">
+                        Recording Arts & Show Produciton
+                    </a>
                 </div>
             </div>
 
@@ -121,8 +145,14 @@
                 <div id="sub-form">
                     <fieldset>
                         <legend>Submission Form</legend>
-                        <form method="POST" action="https://getform.io/f/aolzqmrb" enctype="multipart/form-data">
-                            <label for="first-name last-name">Artist Name:</label>
+                        <form 
+                            method="POST" 
+                            action="https://getform.io/f/aolzqmrb" 
+                            enctype="multipart/form-data"
+                        >
+                            <label for="first-name last-name">
+                                Artist Name:
+                            </label>
                             <br>
                             <input
                                 type="text"
@@ -146,13 +176,30 @@
 
                             <div class="flex-container">
                                 <div class="column">
-                                    <label for="course-program">Course Program:</label>
+                                    <label for="course-program">
+                                        Course Program:
+                                    </label>
                                     <select name="course" id="course-program">
-                                        <option value="">--Which Program is/was the Artist Enrolled In?--</option>
-                                        <option value="dfvp">Digitial Film & Video Production</option>
-                                        <option value="dp">Digitial Photography</option>
-                                        <option value="gdwd">Graphic Design & Web Development</option>
-                                        <option value="rasp">Recording Arts & Show Production</option>
+                                        <option value="">
+                                            --Which Program is/was the Artist 
+                                            Enrolled In?--
+                                        </option>
+
+                                        <option value="dfvp">
+                                            Digitial Film & Video Production
+                                        </option>
+
+                                        <option value="dp">
+                                            Digitial Photography
+                                        </option>
+
+                                        <option value="gdwd">
+                                            Graphic Design & Web Development
+                                        </option>
+
+                                        <option value="rasp">
+                                            Recording Arts & Show Production
+                                        </option>
                                     </select>
                                 </div>
 
@@ -205,7 +252,9 @@
                                 </div>
 
                                 <div id="about-section">
-                                    <label for="about-piece">About Your Piece:</label>
+                                    <label for="about-piece">
+                                        About Your Piece:
+                                    </label>
                                     <br>
                                     <textarea 
                                         id="about-piece" 
@@ -217,7 +266,9 @@
                                     ></textarea> 
                                     <!--Dirty for functionality of placeholder-->
 
-                                    <label for="about-artist">About the Artist:</label>
+                                    <label for="about-artist">
+                                        About the Artist:
+                                    </label>
                                     <br>
                                     <textarea 
                                         id="about-artist" 
@@ -231,7 +282,9 @@
                                 </div>
                             </div>
                             
-                            <label for="asset-credit">Asset Accreditation:</label>
+                            <label for="asset-credit">
+                                Asset Accreditation:
+                            </label>
                             <br>
                             <textarea 
                                 id="about-artist" 
@@ -268,10 +321,10 @@
             <p>WORK IN PROGRESS!</p>
             <p>Next to be coded:</p>
             <ul>
-                <li>Enabling Links</li>
                 <li>Guidelines</li>
                 <li>Galleries</li>
                 <li>Countdown Display Over Video when Finished</li>
+                <li>Mobile Compatibility</li>
             </ul>
             <p>Asset Procurements Needed:</p>
             <ul>
@@ -299,53 +352,128 @@
                 <div class="column-banner-text">
                     <h1 id="join">Join F.I.R.S.T.<br>Institute Today!</h1>
                     
-                    <button id="downloadbutton" class="styled-footer">
-                        Download Brochure
-                    </button>
+                    <a 
+                        href="https://learn.first.edu/general-website-brochure?campaignid=1052"
+                        target="_blank"
+                    >
+                        <button id="downloadbutton" class="styled-footer">
+                            Download Brochure
+                        </button>
+                    </a>
 
-                    <button id="applybutton" class="styled-footer">
-                        Apply Now
-                    </button>
+                    <a href="https://www.first.edu/apply/" target="_blank">
+                        <button id="applybutton" class="styled-footer">
+                            Apply Now
+                        </button>
+                    </a>
                 </div>
             </div> 
             
             <div class="flex-container-footer">
                 <div class="column-site-map">
-                    <h3 class="sitemap-h3">Guidelines</h3>
+                    <h3 class="sitemap-h3">
+                        <a href="galleries.html">
+                            Galleries
+                        </a>
+                    </h3>
 
                     <ul class="footer-ul">
-                        <li class="footer-li">Digital Film & Video Production</li>
-                        <li class="footer-li">Digital Photography</li>
-                        <li class="footer-li">Graphic Design & Web Development</li>
-                        <li class="footer-li">Recording Arts & Show Production</li>
+                        <li class="footer-li">
+                            <a href="galleries/dfvp.html">
+                                Digital Film & Video Production
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/dp.html">
+                                Digital Photography
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/gdwd.html">
+                                Graphic Design & Web Development
+                            </a>
+                        </li>
+                        <li class="footer-li">
+                            <a href="galleries/rasp.html">
+                                Recording Arts & Show Production
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="column-site-map">
-                    <h3 class="sitemap-h3">Galleries</h3>
+                    <h3 class="sitemap-h3">
+                        <a href="guidelines.html">
+                            Guidelines
+                        </a>
+                    </h3>
 
                     <ul class="footer-ul">
-                        <li class="footer-li">Digital Film & Video Production</li>
-                        <li class="footer-li">Digital Photography</li>
-                        <li class="footer-li">Graphic Design & Web Development</li>
-                        <li class="footer-li">Recording Arts & Show Production</li>
+                        <li class="footer-li">
+                            <a href="guidelines.html#dfvp">
+                                Digital Film & Video Production
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#dp">
+                                Digital Photography
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#gdwd">
+                                Graphic Design & Web Development
+                            </a>
+                        </li>
+
+                        <li class="footer-li">
+                            <a href="guidelines.html#rasp">
+                                Recording Arts & Show Production
+                            </a>
+                        </li>
                     </ul>
                 </div>
 
                 <div class="column-logo">
-                    <img 
-                        src="images/first-logo-white.png"
-                        alt="F.I.R.S.T. Institute Logo"
-                        id="footer-logo"
-                    >
+                    <a href="index.html">
+                        <img 
+                            src="images/first-logo-white.png"
+                            alt="F.I.R.S.T. Institute Logo"
+                            id="footer-logo"
+                        >
+                    </a>
 
                     <p id="slogan">CREATIVITY Meets Career</p>
 
                     <h3 id="logos">
-                        <i class="fa-brands fa-youtube"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook"></i>
+                        <a 
+                            href="https://www.youtube.com/channel/UCgwtOgDipbC8RYXbMG4Q4aA"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.linkedin.com/school/f.i.r.s.t.-institute/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.instagram.com/first_edu/"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+
+                        <a 
+                            href="https://www.facebook.com/FIRST.EDU"
+                            target="_blank"
+                        >
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
                     </h3>
 
                     <div class="flex-container-info">
@@ -358,7 +486,9 @@
                         </div>
                     </div>
 
-                    <p id="cr">Copyright © 2025 F.I.R.ST. Institute</p>
+                    <p id="cr">
+                        Copyright © 2025 F.I.R.ST. Institute
+                    </p>
                 </div>
 
                 <div class="column-buttons">

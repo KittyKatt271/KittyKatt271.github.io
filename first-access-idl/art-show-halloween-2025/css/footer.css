@@ -264,3 +264,8 @@ body {
       src: url('../fonts/AvenirLTStd-Roman.woff') format('woff');
       src: url('../fonts/AvenirLTStd-Roman.woff2') format('woff2');
 }
+
+.footer-ul a:hover,
+.sitemap-h3 a:hover {
+    text-decoration: underline;
+}
