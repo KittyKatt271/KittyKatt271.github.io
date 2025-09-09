@@ -9,10 +9,10 @@ const xShowF = setInterval(function() {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("f-showdays").innerText = days;
-  document.getElementById("f-showhours").innerText = hours;
-  document.getElementById("f-showminutes").innerText = minutes;
-  document.getElementById("f-showseconds").innerText = seconds;
+  document.getElementById("f-showdays").innerText = String(days).padStart(2, '0');
+  document.getElementById("f-showhours").innerText = String(hours).padStart(2, '0');
+  document.getElementById("f-showminutes").innerText = String(minutes).padStart(2, '0');
+  document.getElementById("f-showseconds").innerText = String(seconds).padStart(2, '0');
 
   if (distance < 0) {
     clearInterval(xShowF);
