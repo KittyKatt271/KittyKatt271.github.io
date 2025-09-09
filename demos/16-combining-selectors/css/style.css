@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    text-align: center;
+    padding: 25px;
+    background-color: blue;
+}
+
+/*Descendant Selectors!
+Key definer is the space between selectors. 
+This space is crucial to the function.
+Start with the eldest ancestor and finish with the youngest decendants. 
+Compatible with any number of generations.
+Key word for using descndant selectors is INSIDE.
+Remember the baby rule. Use of these types are to target babies!!*/
+
+/*This is a descendant selector.  
+It targets a elements inside of the id named navbar.*/
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/*This is also a descendant selector.
+It targets a elements inside of p elements.*/
+p a {
+    color: teal;
+}
+
+/*Compound Selectors!
+Key definer is the lack of space or any other combinator (others include + , ~).
+This is crucial to its function.
+Must start with the html element but the classes or ids can be added in any order.
+Only compatible with on html element.
+Compatible with any number of classes or ids (though the element really should only have 1 id).
+Key word for using compund selectors is WITH!
+Essentially you are finetuning the selector to target only elements(etc.) that have all the classes and ids listed.*/
+
+/*This is a compound selector. 
+It targets any p elements that also have a class named warning on it.*/
+p.warning {
+    background-color: red;
+}
+
+/*This is both a compound selector and a descendant selector
+It targets a elements that are found INSIDE of p elements WITH the warning class on it.*/
+p.warning a {
+    color: orange;
+}
+
+/*Presentation also included Group Selectors but we didn't demo.
+We already started talking about them but officially learned them today.*/
+
+/*Group Selectors!
+Key definer is the , between selectors.
+The , is crucial to its function.
+Elements(etc.) can be listed in any order.
+Compatible with any number of elements, ids and classes.
+Function is to condense the css to eradicate duplicate code 
+- so elements(etc.) that share css properties can be grouped together.*/
+
+/*This is a group selector.
+It targets p elements and the header id.*/
+p, 
+#header {
+    font-family: cursive;
+}
