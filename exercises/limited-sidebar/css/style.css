@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    border: 1px solid #333333;
 }
 
 #sidebar {
@@ -42,4 +43,21 @@ body {
 #sidebar ul ul li {
     margin-bottom: 5px;
     margin-top: 0;
+}
+
+#sidebar + div {
+    width: 50vw;
+    margin: 25px;
+}
+
+#sidebar + div, 
+#sidebar {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#sidebar + div h4.chapter {
+    font-size: 25px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
