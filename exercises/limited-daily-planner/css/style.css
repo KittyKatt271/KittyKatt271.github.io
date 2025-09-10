@@ -41,7 +41,7 @@ body {
 #afternoon .important,
 #evening .important {
     font-weight: bold;
-    color: darkred;
+    color: azure;
 }
 
 #morning .completed.important,
@@ -59,7 +59,19 @@ body {
     border: 2px solid black;
     padding: 10px 15px;
     margin: 10px 25px;
-    background: linear-gradient(to top, cadetblue, cornsilk);
+    
+}
+
+#morning .button {
+    background: linear-gradient(to top, rgb(101, 168, 195), azure);
+}
+
+#afternoon .button {
+    background: linear-gradient(to top, rgb(211, 167, 62), azure);
+}
+
+#evening .button {
+    background: linear-gradient(to top, rgb(121, 71, 149), azure);
 }
 
 #morning h2,
