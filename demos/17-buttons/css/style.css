@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+
+.button.simple {
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 4px;
+    padding: 4px;
+    background-color: rgb(227, 227, 227);
+    transition: .5s;
+}
+
+.button.simple:hover {
+    background-color: lightgoldenrodyellow;
+}
+
+.button.simple:active {
+    box-shadow: inset 0px 0px 5px gray;
+}
+
+.button.background {
+    background: linear-gradient(to top, wheat, skyblue);
+    color: white;
+    padding: 24px;
+    border-radius: 36px;
+    margin: 8px;
+    font-size: 24px;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.button.background:hover {
+    box-shadow: 0px 0px 5px grey;
+}
+
+.button.background:active {
+    background: linear-gradient(to bottom, wheat, skyblue);
+    box-shadow: inset 0px 0px 10px grey;
+}
+
+
+.button.border {
+    color: midnightblue;
+    border: 3px solid midnightblue;
+    padding: 12px 20px;
+    margin: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+    transition: .5s;
+}
+
+.button.border:hover {
+    background-color: midnightblue;
+    color: white;
+}
+
+.button.border:active {
+    box-shadow: inset 0px 0px 0px 3px white;
+    background-color: rgba(25, 25, 112, 0.878);
+}
+
+.button.wide {
+    display: block;
+    text-align: center;
+}
+
+#section-3 {
+    max-width: 600px;
+}
+
+#section-2 {
+    background-color: midnightblue;
+}
+
+#section-2 .button.border {
+    color: white;
+    border-color: white;
+}
+
+#section-2 .button.border:hover {
+    background-color: white;
+    color: midnightblue;
+}
+
+#section-2 .button.border:active {
+    box-shadow: inset 0px 0px 0px 3px midnightblue;
+    background-color: rgba(255, 255, 255, 0.877);
+}
