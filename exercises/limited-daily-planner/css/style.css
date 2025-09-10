@@ -13,18 +13,21 @@ body {
     padding: 24px;
     padding-top: 5px;
     margin: 24px;
+    border-radius: 24px;
+    max-width: 500px;
+    text-align: center;
 }
 
 #morning {
-    background-color: skyblue;
+    background-color: rgb(172, 230, 253);
 }
 
 #afternoon {
-    background-color: goldenrod;
+    background-color: rgb(255, 212, 112);
 }
 
 #evening {
-    background-color: indigo;
+    background-color: rgb(157, 120, 179);
 }
 
 #morning .completed,
@@ -54,6 +57,33 @@ body {
     color: black;
     border: 2px solid black;
     padding: 10px 15px;
-    margin: 10px;
+    margin: 10px 25px;
     background: linear-gradient(to top, cadetblue, cornsilk);
+}
+
+#morning h2,
+#afternoon h2,
+#evening h2 {
+    font-size: 40px;
+    font-family: "thirsty-rough-two";
+    text-decoration: underline;
+    text-decoration-thickness: 5px;
+}
+
+#morning ul,
+#afternoon ul,
+#evening ul {
+    background-color: rgba(255, 255, 255, 0.207);
+    border-radius: 25px;
+    padding: 25px;
+    padding-left: 35px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+#morning li,
+#afternoon li,
+#evening li {
+    padding: 10px;
+    font-size: 20px;
 }
