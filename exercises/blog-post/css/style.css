@@ -132,3 +132,14 @@ body {
     color: #8d0c22;
     font-size: 15px;
 }
+
+@media (max-width: 780px) {
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .img-column,
+    .txt-column {
+        width: 100%;
+    }
+}
