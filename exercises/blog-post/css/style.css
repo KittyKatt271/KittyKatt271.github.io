@@ -159,7 +159,18 @@ body {
     }
 
     #header h3 {
-        font-size: 16px;
+        font-size: 15px;
     }
 
+    #header span.warning {
+        font-size: 20px;
+    }
+
+    #header h3 .warning {
+        line-height: 2;
+    }
+
+    #summary {
+        margin-top: 25px;
+    }
 }
