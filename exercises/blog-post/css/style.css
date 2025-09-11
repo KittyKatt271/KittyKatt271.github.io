@@ -183,4 +183,12 @@ body {
     #summary {
         margin-top: 25px;
     }
+
+    #source {
+        font-size: 15px;
+    }
+    
+    #source a {
+        font-size: 12px;
+    }
 }
