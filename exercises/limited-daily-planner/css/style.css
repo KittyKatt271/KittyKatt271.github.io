@@ -77,7 +77,7 @@ body {
 #morning .button:hover,
 #afternoon .button:hover,
 #evening .button:hover {
-   background: azure;
+    background: azure;
 }
 
 #morning .button:active {
