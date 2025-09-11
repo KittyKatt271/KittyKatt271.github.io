@@ -59,10 +59,10 @@ body {
     border: 2px solid black;
     padding: 10px 15px;
     margin: 10px 25px;
-    
+    background-color: azure;
 }
 
-#morning .button {
+#morning .button {    
     background: linear-gradient(to top, rgb(101, 168, 195), azure);
 }
 
@@ -72,6 +72,23 @@ body {
 
 #evening .button {
     background: linear-gradient(to top, rgb(121, 71, 149), azure);
+}
+
+#morning .button:hover,
+#afternoon .button:hover,
+#evening .button:hover {
+   background: azure;
+}
+
+#morning .button:active {
+    background: linear-gradient(to bottom, rgb(101, 168, 195), azure);
+}
+#afternoon .button:active {
+    background: linear-gradient(to bottom, rgb(211, 167, 62), azure);
+}
+#evening .button:active {    
+    background: linear-gradient(to bottom, rgb(121, 71, 149), azure);
+
 }
 
 #morning h2,
