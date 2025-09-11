@@ -154,6 +154,8 @@ body {
     .single-column {
         margin-top: 20px;
         margin-bottom: 2px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
     }
 
     #header h1 {
