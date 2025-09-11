@@ -65,10 +65,15 @@ body {
     margin-top: 15px;
 }
 
+#header h3 .warning {
+    line-height: 2;
+}
+
 #summary {
     background-color: rgba(185, 106, 28, 0.263);
     border-radius: 25px;
     padding: 5px 25px;
+    margin-top: 25px;
 }
 
 #summary h3 {
@@ -98,10 +103,10 @@ body {
 
 .section h2 {
     color: #8d0c22;
-    letter-spacing: 1px;
     text-align: center;
     margin: 0;
     padding: 0;
+    font-size: 25px;
 }
 
 .flex-container {
@@ -113,7 +118,9 @@ body {
 .section .flex-container-h2 {
     margin-top: 25px;
     margin-bottom: 25px;
-    gap: 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
 }
 
 .img-column,
@@ -176,12 +183,9 @@ body {
         font-size: 20px;
     }
 
-    #header h3 .warning {
-        line-height: 2;
-    }
-
-    #summary {
-        margin-top: 25px;
+    .section .flex-container-h2 {
+        gap: 0;
+        flex-direction: column;
     }
 
     #source {
