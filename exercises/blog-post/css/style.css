@@ -4,15 +4,17 @@
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "alegreya";
     background-color: #8d0c22;
+    font-size: 18px;
+    letter-spacing: .5px;
 }
 
 .single-column {
     background-color: #f4dba7;
     max-width: 1000px;
     border-radius: 25px;
-    margin: 25px auto;
+    margin: 50px auto;
     padding: 25px;
 }
 
@@ -23,6 +25,7 @@ body {
 #header h2,
 #header h3 {
     margin: 0; 
+    letter-spacing: 2px;
 }
 
 #header h1 {
@@ -32,6 +35,7 @@ body {
     border-bottom: 3px solid #8d0c22;
     padding-bottom: 10px;
     color: black;
+    letter-spacing: 2px;
 }
 
 #header h2 {
@@ -52,4 +56,79 @@ body {
 
 #header h3 span {
     color: #8d0c22;
+}
+
+#header h3.warning {
+    color: #8d0c22;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+#summary {
+    background-color: rgba(185, 106, 28, 0.263);
+    border-radius: 25px;
+    padding: 5px 25px;
+}
+
+#summary h3 {
+    color: #8d0c22;
+    text-decoration: underline;
+}
+
+#summary ul {
+    list-style: "\2740";
+    margin: 0;
+    padding: 0 15px;
+}
+
+#summary li::marker {
+    color: #8d0c22;
+}
+
+#summary li {
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.section img {
+    width: 100%;
+}
+
+.section h2 {
+    color: #8d0c22;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.img-column,
+.txt-column {
+    width: 50%;
+}
+
+#section-2 .txt-column p, 
+#section-3 .txt-column p {
+    margin: 0;
+}
+
+#section-4 .txt-column p {
+    margin-top: 10px;
+}
+
+#source {
+    color: #8d0c22;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+#source a {
+    color: #8d0c22;
+    font-size: 15px;
 }
