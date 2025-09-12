@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Knewave&family=Pacifico&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Delius";
+}
+
+.outer-container {
+    text-align: center;
+}
+
+.single-column {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+}
+
+.flex-container {
+    display: flex;
+    gap: 25px;
+}
+
+.img-column,
+.txt-column {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+#sylveon {
+    background-color: pink;
+}
+
+h2, h3 {
+    font-family: "Pacifico";
+    font-weight: normal;
+}
+
+.new {
+    font-family: "Knewave";
+}
+
+h2 sup {
+    font-family: "Delius";
+    font-weight: bold;
+}
