@@ -165,21 +165,21 @@ p {
 
 #umbreon {
     background-color: rgb(11, 16, 23);
-    color: #781f2a;
+    color: #f5d031;
 }
 
 #umbreon sup {
-    color: #781f2a;
+    color: #f5d031;
 }
 
 #umbreon h2,
 #umbreon h3 {
-    color: #f5d031;
+    color: #781f2a;
 }
 
 #umbreon .button {
-    background-color: #d8b82a;
-    border: 1px solid #f5d031;
+    background-color: #781f2a;
+    border: 1px solid #781f2a;
 }
 
 #umbreon .button:active {
