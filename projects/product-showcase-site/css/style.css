@@ -210,3 +210,21 @@ p {
 #vaporeon h3 {
     color: #2b5f88;
 }
+
+#jolteon {
+    background-color: #ffdd55;
+}
+
+#jolteon h2,
+#jolteon h3 {
+    color: white;
+}
+
+#flareon {
+    background-color: rgb(223, 130, 37);
+}
+
+#flareon h2,
+#flareon h3 {
+    color: rgb(248, 218, 52);
+}
