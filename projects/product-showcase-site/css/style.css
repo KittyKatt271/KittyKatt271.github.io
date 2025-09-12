@@ -22,16 +22,20 @@ body {
 
 .flex-container {
     display: flex;
-    gap: 25px;
+    gap: 40px;
 }
 
-.img-column,
+.img-column {
+    width: 40%;
+}
+
 .txt-column {
-    width: 50%;
+    width: 60%;
 }
 
 img {
     width: 100%;
+    border-radius: 25px;
 }
 
 #sylveon {
@@ -41,13 +45,115 @@ img {
 h2, h3 {
     font-family: "Pacifico";
     font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    font-size: 20px;
+    line-height: 1;
+    text-align: left;
+}
+
+h2 {
+    font-size: 30px;
+    text-align: right;
+    letter-spacing: 1.25px;
+    margin-bottom: 25px;
 }
 
 .new {
     font-family: "Knewave";
+    color: black;
+    border-radius: 10px;
+    padding: 2px 12px;
+    letter-spacing: 2px;
+    font-size: 24px;
 }
 
+
 h2 sup {
-    font-family: "Delius";
-    font-weight: bold;
+    font-family: "Knewave";
+    font-weight: normal;
+    color: black;
+}
+
+p {
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    font-size: 14px;
+    text-align: left;
+}
+
+#sylveon h2,
+#sylveon h3 {
+    color: #547bcf;
+}
+
+.button {
+    justify-self: center;
+    background-color: black;
+    padding: 10px 25px;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-family: "Knewave";
+    font-size: 25px;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+#sylveon .button {
+    background-color: #547bcf;
+    border: 1px solid #547bcf;
+}
+
+#sylveon .button:hover,
+#leafeon .button:hover,
+#glaceon .button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+
+#sylveon .button:active {
+    box-shadow: inset 0 0 5px 5px pink;
+}
+
+#leafeon {
+    background-color: #65a96f;
+}
+
+#leafeon h2,
+#leafeon h3 {
+    color: #eac367;
+}
+
+#leafeon .button {
+    background-color: #eac367;
+    border: 1px solid #eac367;
+}
+
+#leafeon .button:active {
+    box-shadow: inset 0 0 5px 5px #65a96f;
+}
+
+#glaceon {
+    background-color: #b1def4;
+}
+
+#glaceon h2,
+#glaceon h3 {
+    color: #008bae;
+}
+
+#glaceon .button {
+    background-color: #008bae;
+    border: 1px solid #008bae;
+}
+
+#glaceon .button:active {
+    box-shadow: inset 0 0 5px 5px #b1def4;
 }
