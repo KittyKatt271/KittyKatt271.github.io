@@ -111,7 +111,8 @@ p {
 
 #sylveon .button:hover,
 #leafeon .button:hover,
-#glaceon .button:hover {
+#glaceon .button:hover,
+#eevee .button:hover {
     background-color: white;
     color: black;
     border: 1px solid white;
@@ -227,4 +228,22 @@ p {
 #flareon h2,
 #flareon h3 {
     color: rgb(248, 218, 52);
+}
+
+#eevee {
+    background-color: #ac762e;
+}
+
+#eevee h2,
+#eevee h3 {
+    color: rgb(230, 217, 152);
+}
+
+#eevee .button {
+    background-color: rgb(230, 217, 152);
+    border: 1px solid rgb(230, 217, 152);
+}
+
+#eevee .button:active {
+    box-shadow: inset 0 0 5px 5px #ac762e;
 }
