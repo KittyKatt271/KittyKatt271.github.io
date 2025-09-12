@@ -190,4 +190,14 @@ p {
     text-align: center;
     font-size: 20px;
     font-weight: bold;
+    color: darkred;
+}
+
+#espeon {
+    background-color: rgb(223, 170, 209);
+}
+
+#espeon h2,
+#espeon h3 {
+    color: #71558e;
 }
