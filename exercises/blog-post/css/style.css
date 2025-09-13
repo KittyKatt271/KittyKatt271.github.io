@@ -190,9 +190,18 @@ body {
 
     #source {
         font-size: 15px;
+        margin-top: 35px;
     }
     
     #source a {
         font-size: 12px;
+    }
+
+    .txt-column {
+        order: 1;
+    }
+
+    .img-column {
+        order: 2;
     }
 }
