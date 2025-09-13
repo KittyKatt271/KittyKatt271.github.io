@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#single-column {
+    max-width: 500px;
+    margin: 30px auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.profile-card {
+    
+}
+
+h4,
+img {
+    display: inline-block;
+}
