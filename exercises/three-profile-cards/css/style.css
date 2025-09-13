@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Mr+Dafoe&family=Protest+Revolution&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ body {
     gap: 25px;
 }
 
-.profile-card {
+.card {
     border: 5px solid black;
     padding: 25px;
     border-radius: 25px;
@@ -41,8 +43,8 @@ h4 {
     transform: rotate(-35deg);
     font-weight: 100;
     font-style: italic;
-    font-family: cursive;
-    font-size: 25px;
+    font-family: "Protest Revolution";
+    font-size: 30px;
     margin-top: 25px;
     text-align: center;
     padding-left: 15px;
@@ -57,4 +59,18 @@ h4 {
     display: flex;
     justify-content: right;
     gap: 40px;
+}
+
+h3 {
+    font-family: "Mr Dafoe";
+    font-size: 40px;
+    text-align: center;
+    font-weight: normal;
+    margin: 20px 0;
+}
+
+p {
+    font-family: "Edu VIC WA NT Beginner";
+    font-weight: 550;
+    font-size: 15px;
 }
