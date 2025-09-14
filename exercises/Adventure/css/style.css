@@ -20,8 +20,13 @@ body {
     background-color: rgb(21, 37, 33);
 }
 
+#narrative h4 {
+    color: rgb(136, 125, 106);
+}
+
 h1 {
     font-size: 50px;
+    color: rgb(176, 146, 87)
 }
 
 img {
@@ -39,8 +44,12 @@ img {
     flex-wrap: wrap;
 }
 
-h4 {
+h4, h3 {
     color: rgb(151, 96, 50);
+}
+
+h3 {
+    margin: 35px 0 15px;
 }
 
 a {
