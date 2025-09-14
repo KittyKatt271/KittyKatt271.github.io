@@ -68,6 +68,7 @@ a:hover {
     #single-column {
         margin: auto;
         padding: 10px 35px 25px;
+        vertical-align: middle;
     }
 
     .flex-container {
