@@ -144,7 +144,9 @@ a {
     min-width: 200px;
 }
 
-.styled-submitbutton {
+.styled,
+.styled-submitbutton,
+.styled-footer {
     border: 0;
     line-height: 1.75;
     letter-spacing: 2px;
@@ -161,21 +163,32 @@ a {
         rgb(0 0 0 / 20%) 30%,
         transparent
     );
+}
+
+.styled-submitbutton {
     margin-top: 5px;
 }
 
-.styled-submitbutton:hover {
+.styled-footer {
+    margin-bottom: 35px;
+    margin-right: 15px;
+}
+
+.styled-submitbutton:hover,
+.styled-footer:hover {
     background-color: #4aaad0;
     transition: .45s;
 }
 
-.styled-submitbutton:active {
+.styled-submitbutton:active,
+.styled-footer:active {
     box-shadow:
         inset -2px -2px 3px #9de9ec53,
         inset 2px 2px 3px rgb(0 0 0 / 30%);
 }
 
-#showcountdown-timer {
+#showcountdown-timer,
+#f-showcountdown-timer {
     font-family: "Bebas Neue";
     font-size: 1.75em;
     text-align: center;
@@ -184,7 +197,8 @@ a {
     margin-top: 5px;
 }
 
-#showcountdown-timer span {
+#showcountdown-timer span,
+#f-showcountdown-timer span {
     display: inline-block;
     padding: 0 10px;
     padding-top: 2px;
@@ -199,6 +213,11 @@ a {
     );
 }
 
+#f-showcountdown-timer span {
+    margin-bottom: 35px;
+    margin-top: 45px;
+}
+
 .submit-closed {
     font-family: "Avenir LT STD";
     font-style: italic;
@@ -209,4 +228,203 @@ a {
     height: 350px;
     margin: 0;
     padding: 0;
+}
+
+.flex-container-banner {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: 
+        linear-gradient(#4aaad0d3, #4aaad0c5), 
+        url(../images/temp-banner-2.jpg);
+    background-position: center;
+    height: 350px;
+}
+
+.column-banner-img {
+    width: 60%;
+    margin: 0;
+    padding: 0;
+}
+
+.column-banner-text {
+    width: 40%;
+    margin: 0;
+    margin-left: 30px;
+    padding: 0;
+    align-content: center;
+    font-family: "Bebas Neue";
+}
+
+#slogan,
+#address,
+#phone,
+#cr {
+    font-size: 10px;
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: white;
+    background-color: black;
+}
+
+#join {
+    letter-spacing: 4.5px;
+    font-size: 60px;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    font-family: "Bebas Neue";
+}
+
+.sitemap-h3,
+#logos {
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+}
+
+#footer-logo {
+    height: 75px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container-footer {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    height: 205px;
+    padding-top: 5px;
+}
+
+.footer-li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-family: "Avenir LT STD";
+    font-size: 12px;
+    width: 125px;
+    color: white;
+    background-color: black;
+}
+
+.footer-ul {
+    margin-left: 0;
+    margin-top: 10px;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+.fa-brands {
+    margin: 7px;
+}
+
+#slogan {
+    letter-spacing: 2px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    font-style: normal;
+    font-size: 12px;
+    font-family: "Bebas Neue";
+}
+
+.flex-container-info {
+    display: flex;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+#cr {
+    font-family: "Avenir LT STD";
+    font-size: 9px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    padding-bottom: 15px;
+}
+
+.column-logo {
+    text-align: center;    
+    align-content: center;
+}
+
+.column-buttons {
+    text-align: center;
+    align-content: center;
+}
+
+.column-site-map {
+    align-content: center;
+    padding-top: 25px;
+}
+
+.footer-ul a:hover,
+.sitemap-h3 a:hover {
+    text-decoration: underline;
+}
+
+#logos a:hover {
+    color: #9deaec;
+}
+
+@media (max-width: 780px) {
+    .flex-container-header {
+        flex-wrap: wrap;  
+        padding: 0 0 35px;      
+    }
+
+    #header-logo-container {
+        order: 1;
+    }
+
+    #gallery-drop {
+        order: 3;
+    }
+
+    #header-count {
+        order: 2;
+    }
+
+    #guideline-drop {
+        order: 5;
+    }
+
+    #sub-button {
+        order: 4;
+    }
+
+    #gallery-drop h1,
+    #guideline-drop h1,
+    #gallery-drop a,
+    #guideline-drop a {
+        font-size: 15px;
+        padding: 2px 7px;
+        text-align: center;
+    }
+
+    #header-logo {
+        height: 40px;
+    }
+
+    #showcountdown-timer {
+        font-size: 20px;
+    }
+    
+    .styled,
+    .styled-submitbutton {
+        font-size: 20px;
+        padding: 2px 15px 0;
+    }
+
+    #flex-container a {
+        padding: 0;
+    }
+
+    #gallery-drop .dropdown-menu a,
+    #guideline-drop .dropdown-menu a{
+        font-size: 10px;
+        min-width: 115px;
+        max-width: 115px;
+        padding: 15px 10px;
+        text-align: start;
+    }
 }
