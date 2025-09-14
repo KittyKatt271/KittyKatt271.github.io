@@ -1,4 +1,4 @@
-const countdownDateShow = new Date("Oct 30, 2025 15:00:00").getTime();
+const countdownDateShow = new Date("Oct 30, 2024 15:00:00").getTime();
 
 const xShow = setInterval(function() {
   const now = new Date().getTime();
@@ -15,9 +15,9 @@ const xShow = setInterval(function() {
   document.getElementById("showseconds").innerText = String(seconds).padStart(2, '0');
 
   if (distance < 0) {
-    clearInterval(xShow);
-    document.getElementById("showcountdown-timer").innerHTML = ""
-    showbutton.hidden = false; 
+    clearInterval(countdownDateShow);
+    document.getElementById("showcountdown-timer").innerHTML = "";
+    document.getElementById("showbutton").hidden = false;
   }
 }, 1000);
 

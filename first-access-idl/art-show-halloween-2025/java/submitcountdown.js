@@ -1,4 +1,4 @@
-const countdownDateSubmit = new Date("Oct 10, 2025 23:59:59").getTime();
+const countdownDateSubmit = new Date("Oct 10, 2024 23:59:59").getTime();
 
 const xSubmit = setInterval(function() {
   const now = new Date().getTime();
@@ -17,8 +17,8 @@ const xSubmit = setInterval(function() {
   if (distance < 0) {
     clearInterval(xSubmit);
     document.getElementById("submitcountdown-timer").innerHTML = "expired"
-    submittext.hidden = false;
-    submitbutton.hidden = true;    
+    document.getElementById("submittext").hidden = false;
+    document.getElementById("submitbutton").hidden = true;    
   }
 }, 1000);
 
