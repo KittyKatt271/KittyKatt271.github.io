@@ -7,42 +7,44 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-        <h1>The New Path</h1>
+        <div id="single-column">
+            <h1>The New Path</h1>
 
-        <img 
-            src="images/crossroads-4.jpg"
-            alt="A Fork in the Path"
-            width="600"
-        >
+            <img 
+                src="images/crossroads-4.jpg"
+                alt="A Fork in the Path"
+            >
 
-        <p>
-            As a traveling merchant, you are no stranger to the road. However, 
-            upon your usual route to the Castle Town Market, you notice 
-            something odd.
-        </p>
+            <div id="narrative">
+                <p>
+                    As a traveling merchant, you are no stranger to the road. 
+                    However, upon your usual route to the Castle Town Market, 
+                    you notice something odd.
+                </p>
 
-        <p>
-            A new road, so new it has yet to be cobbled, has branched off from 
-            the main road.
-        </p>
+                <p>
+                    A new road, so new it has yet to be cobbled, has branched 
+                    off from the main road.
+                </p>
 
-        <p>
-            You can't help but to wonder, <i>“How curious?”</i>
-        </p>
-        
-        <p>
-            <b>Do you keep to the main road?</b> 
-            &nbsp; &nbsp; &nbsp;
-            <b>Or does your curiosity get the best of you?</b>
-        </p>
+                <p>
+                    You can't help but to wonder, <i>“How curious?”</i>
+                </p>
+            </div>
 
-        <h4>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-            <a href="the-main-road.html">The Main Road</a>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-            &nbsp; &nbsp;
-            <a href="your-curiosity-beckons.html">Your Curiosity Beckons</a>
-        </h4>     
+            <div id="choices" class="flex-container">
+                <div id="choice-1" class="choice column">
+                    <h4>Do you keep to the main road?</h4>
+                    <a href="the-main-road.html">The Main Road</a>
+                </div>
+
+                <div id="choice-2" class="choice column">
+                    <h4>Or does your curiosity get the best of you?</h4>
+                    <a href="your-curiosity-beckons.html">
+                        Your Curiosity Beckons
+                    </a>
+                </div>
+            </div>            
+        </div>    
     </body>
 </html>
