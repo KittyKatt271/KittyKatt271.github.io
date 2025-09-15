@@ -54,6 +54,7 @@ body #footer {
 body #main-content {
     background-color: white;
     color: black;
+    padding: 25px;
 }
 
 #hero {
@@ -374,6 +375,7 @@ a {
     display: none;
 }
 
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
@@ -460,6 +462,8 @@ a {
         flex-direction: column;
         height: auto;
         background-position: 20% 25%;
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .column-banner-img,
