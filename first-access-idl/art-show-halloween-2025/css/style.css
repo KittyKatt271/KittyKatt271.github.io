@@ -375,6 +375,15 @@ a {
     display: none;
 }
 
+.flex-container-guide {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column-guide {
+    max-width: 300px;
+}
+
 
 @media (max-width: 780px) {
     .flex-container-header {
