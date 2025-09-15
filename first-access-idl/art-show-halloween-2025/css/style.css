@@ -467,6 +467,11 @@ a {
         width: 100%;
     }
 
+    .column-banner-text {
+        margin: 0;
+        padding-left: 30px;
+    }
+
     #join {
         font-size: 50px;
     }
@@ -524,5 +529,9 @@ a {
     #mobile-cr-info .flex-container-info {
         flex-direction: column;
         gap: 0;
+    }
+
+    #main-content {
+        width: 100%;
     }
 }
