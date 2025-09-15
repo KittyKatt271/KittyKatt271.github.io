@@ -1,4 +1,4 @@
-const countdownDateSubmit = new Date("Oct 10, 2024 23:59:59").getTime();
+const countdownDateSubmit = new Date("Oct 10, 2025 23:59:59").getTime();
 
 const xSubmit = setInterval(function() {
   const now = new Date().getTime();

@@ -144,7 +144,7 @@ a {
     min-width: 200px;
 }
 
-.styled,
+#showbutton,
 .styled-submitbutton,
 .styled-footer {
     border: 0;
@@ -163,10 +163,6 @@ a {
         rgb(0 0 0 / 20%) 30%,
         transparent
     );
-}
-
-.styled {
-    margin: 0;
 }
 
 .styled-submitbutton {
@@ -241,7 +237,7 @@ a {
     background-image: 
         linear-gradient(#4aaad0d3, #4aaad0c5), 
         url(../images/temp-banner-2.jpg);
-    background-position: center;
+    background-position: 60% 50%;
     height: 350px;
 }
 
@@ -261,9 +257,9 @@ a {
 }
 
 #slogan,
-#address,
-#phone,
-#cr {
+.address,
+.phone,
+.cr {
     font-size: 10px;
     font-weight: 100;
     letter-spacing: 2px;
@@ -338,7 +334,7 @@ a {
     margin-top: 15px;
 }
 
-#cr {
+.cr {
     font-family: "Avenir LT STD";
     font-size: 9px;
     font-weight: 100;
@@ -368,6 +364,14 @@ a {
 
 #logos a:hover {
     color: #9deaec;
+}
+
+.flex-container-footer h3 {
+    font-family: "Bebas Neue";
+}
+
+#mobile-cr-info {
+    display: none;
 }
 
 @media (max-width: 780px) {
@@ -420,12 +424,14 @@ a {
         height: 40px;
     }
 
-    #showcountdown-timer {
+    #showcountdown-timer,
+    #f-showcountdown-timer {
         font-size: 20px;
     }
     
-    .styled,
-    .styled-submitbutton {
+    #showbutton,
+    .styled-submitbutton,
+    .styled-footer {
         font-size: 20px;
         padding: 2px 15px 0;
     }
@@ -443,5 +449,80 @@ a {
         text-align: center;
         font-size: 12px;
         width: 60px;
+    }
+
+    #main-banner-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .flex-container-banner {
+        flex-direction: column;
+        height: auto;
+        background-position: 20% 25%;
+    }
+
+    .column-banner-img,
+    .column-banner-text {
+        width: 100%;
+    }
+
+    #join {
+        font-size: 50px;
+    }
+
+    .flex-container-footer {
+        flex-wrap: wrap;
+        margin-top: 15px;
+    }
+
+    #footer-logo {
+        height: 50px;
+    }
+
+    #slogan {
+        font-size: 10px;
+    }
+
+    #logos {
+        font-size: 16px;
+    }
+
+    .column-site-map {
+        order: 3;
+    }
+
+    .column-logo {
+        order: 1,
+    }
+
+    .column-buttons {
+        order: 2;
+        justify-content: center;
+    }
+
+    #mobile-cr-info {
+        display: block;
+        order: 4;
+        text-align: center;
+    }
+
+    .column-logo .flex-container-info,
+    .column-logo .cr {
+        display: none;
+    }
+
+    #f-showcountdown-timer span {
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+
+    .flex-container-footer .styled-footer {
+        margin-bottom: 0;
+    }
+
+    #mobile-cr-info .flex-container-info {
+        flex-direction: column;
+        gap: 0;
     }
 }

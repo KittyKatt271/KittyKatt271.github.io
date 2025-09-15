@@ -89,7 +89,7 @@ fieldset {
     margin-right: 10px;
 }
 
-.flex-container {
+.flex-container-form {
     display: flex;
     margin-top: 15px;
 }
@@ -175,7 +175,7 @@ h4 {
     width: 235px;
 }
 
-.styled {
+#form-submitbutton {
     border: 0;
     line-height: 1.75;
     letter-spacing: 2px;
@@ -234,4 +234,83 @@ label {
     text-overflow: ellipsis;
     max-width: 175px;
     display: inline-block;
+}
+
+@media (max-width: 780px) {
+    #modal-form {
+        width: 85%;
+        height: 950px;
+    }
+
+    #sub-form {
+        width: 100%;
+        padding-right: 7px;
+    }
+
+    #first-name,
+    #last-name,
+    select,
+    #asset-credit,
+    #about-artist,
+    #about-piece,
+    #upload-block,
+    #email {
+        width: 97%;
+    }
+
+    .course {
+        order: 2;
+    }
+
+    .cohort {
+        order: 1;
+    }
+
+    #about-section {
+        width: 100%;
+    }
+
+    #asset-credit,
+    #about-artist,
+    #about-piece {
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .flex-container-form {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .column-form {
+        margin: 0;
+        padding: 0;
+    }
+
+    input,
+    select {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    br {
+        display: none;
+    }
+
+    #form-submitbutton {
+        margin-left: 47px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    #last-name,
+    #cohort,
+    #course-program {
+        margin-bottom: 15px;
+    }
+
+    #email {
+        margin-bottom: 20px;
+    }
 }

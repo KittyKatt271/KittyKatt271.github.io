@@ -19,7 +19,7 @@
     <body>
         <!--Begin Header Bar-->
         <div id="header" class="flex-container-header">
-            <div class="column-header">
+            <div id="header-logo-container" class="column-header">
                 <a href="index.html">
                     <img
                         src="images/first-logo-white.png"
@@ -29,7 +29,7 @@
                 </a>
             </div>
 
-            <div class="column-header dropdown-container">
+            <div id="gallery-drop" class="column-header dropdown-container">
                 <a href="galleries.html">
                     <h1>
                         Galleries
@@ -60,7 +60,7 @@
                 </div>
             </div>
 
-            <div class="column-header">
+            <div id="header-count" class="column-header">
                 <div id="showcountdown-timer">
                     <span id="showdays"></span> :
                     <span id="showhours"></span> :
@@ -77,7 +77,7 @@
                 </button>
             </div>
 
-            <div class="column-header dropdown-container">
+            <div id="guideline-drop" class="column-header dropdown-container">
                 <a href="guidelines.html">
                     <h1>
                         Guidelines
@@ -108,7 +108,7 @@
                 </div>
             </div>
 
-            <div class="column-header">
+            <div id="sub-button" class="column-header">
                 <div id="submitcountdown-timer" hidden>
                     <span id="submitdays"></span> :
                     <span id="submithours"></span> :
@@ -175,8 +175,8 @@
 
                             <br>
 
-                            <div class="flex-container">
-                                <div class="column">
+                            <div class="flex-container-form">
+                                <div class="column-form course">
                                     <label for="course-program">
                                         Course Program:
                                     </label>
@@ -204,7 +204,7 @@
                                     </select>
                                 </div>
 
-                                <div class="column">
+                                <div class="column-form cohort">
                                     <label for="cohort">Cohort #:</label>
                                     <input
                                         type="text"
@@ -456,17 +456,17 @@
 
                     <div class="flex-container-info">
                         <div class="column">
-                            <p id="address">
+                            <p class="address">
                                 423 S Keller Road, Orlando, FL 32810
                             </p>
                         </div>
 
                         <div class="column">
-                            <p id="phone">(407) 316-8310</p>
+                            <p class="phone">(407) 316-8310</p>
                         </div>
                     </div>
 
-                    <p id="cr">
+                    <p class="cr">
                         Copyright © 2025 F.I.R.ST. Institute
                     </p>
                 </div>
@@ -505,6 +505,24 @@
                     <h3 id="submittext" class="submit-closed" hidden>
                         Submissions Closed
                     </h3>
+                </div>
+
+                <div id="mobile-cr-info">
+                    <div class="flex-container-info">
+                        <div class="column">
+                            <p class="address">
+                                423 S Keller Road, Orlando, FL 32810
+                            </p>
+                        </div>
+
+                        <div class="column">
+                            <p class="phone">(407) 316-8310</p>
+                        </div>
+                    </div>
+
+                    <p class="cr">
+                        Copyright © 2025 F.I.R.ST. Institute
+                    </p>
                 </div>
             </div>
         </div>
