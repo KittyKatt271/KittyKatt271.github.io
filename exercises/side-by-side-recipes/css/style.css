@@ -13,6 +13,7 @@
 body {
     margin: 0px;
     font-family: "Work Sans";
+    background-color: rgb(247, 247, 247);
 }
 
 #single-column {
@@ -67,6 +68,7 @@ h2 {
 #recipe-intro .text-container h2 {
     font-size: 45px;
     margin: 15px 0;
+    text-align: start;
 }
 
 #recipe-intro .text-container p {
@@ -82,10 +84,17 @@ h2 {
     padding: 10px 15px;
     text-transform: uppercase;
     font-weight: 600;
+    transition: .5s;
+}
+
+#recipe-intro .text-container a:hover {
+    color: black;
+    background-color: rgb(224, 217, 207);
 }
 
 .detail-flex-container {
     gap: 25px;
+    margin-bottom: 20px;
 }
 
 .detail-flex-container h5 {
@@ -107,7 +116,9 @@ h2 {
 }
 
 #three-cards .card-column img {
-    max-width: 100%;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
 }
 
 #three-cards a {
