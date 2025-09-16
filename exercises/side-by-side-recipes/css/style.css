@@ -147,5 +147,5 @@ h2 {
     transition: 0.5s;
 }
 #three-cards a .img:hover:after {
-    opacity: .75;
+    opacity: 1;
 }
