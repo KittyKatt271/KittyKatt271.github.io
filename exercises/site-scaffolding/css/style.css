@@ -33,6 +33,12 @@ body {
     font-weight: bold;
     text-align: center;
     font-family: "Tangerine";
+    transition: .25s;
+}
+
+#navbar a:hover {
+    border-bottom: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.178);
 }
 
 #navbar #logo-name {
@@ -54,6 +60,12 @@ body {
     font-size: 25px;
     font-family: "Esteban";
     margin: 24px 0 24px auto;
+    transition: .5s;
+}
+
+#navbar #sub-btn:hover {
+    border-bottom: none;
+    color: rgb(141, 111, 48);
 }
 
 #body-single-column {
