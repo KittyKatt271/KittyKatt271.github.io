@@ -383,6 +383,10 @@ a {
     max-width: 300px;
 }
 
+#main-content p,
+#main-content h1 {
+    margin: 0;
+}
 
 @media (max-width: 780px) {
     .flex-container-header {
