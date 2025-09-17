@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Tangerine:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "Esteban";
+}
+
+#nav-single-column {
+    background: linear-gradient(
+        to top, 
+        rgb(232, 197, 123), 
+        rgb(248, 230, 196)
+    );
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#navbar a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Tangerine";
+}
+
+#navbar #logo-name {
+    font-size: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar #sub-btn {
+    background: linear-gradient(
+        to top, 
+        rgb(232, 220, 187), 
+        white 50%
+    );
+    color:rgb(232, 197, 123);
+    border-radius: 18px;
+    padding: 15px 30px;
+    margin: 24px 50px;
+    box-shadow: 0 0 5px 0px rgba(37, 37, 37, 0.291);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    font-family: "Esteban";
+}
+
+#body-single-column {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#body-single-column h1 {
+    color: rgb(232, 197, 123);
+    margin-top: 45px;
+    font-family: "Tangerine";
+    font-size: 60px;
+}
