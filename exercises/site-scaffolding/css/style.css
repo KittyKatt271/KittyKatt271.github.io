@@ -37,8 +37,8 @@ body {
 
 #navbar #logo-name {
     font-size: 50px;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
 }
 
 #navbar #sub-btn {
@@ -50,12 +50,10 @@ body {
     color: rgb(232, 197, 123);
     border-radius: 18px;
     padding: 15px 30px;
-    margin: 24px 50px;
     box-shadow: 0 0 5px 0px rgba(37, 37, 37, 0.291);
-    margin-left: auto;
-    margin-right: auto;
     font-size: 25px;
     font-family: "Esteban";
+    margin: 24px 0 24px auto;
 }
 
 #body-single-column {
