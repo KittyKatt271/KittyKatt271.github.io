@@ -388,6 +388,30 @@ a {
     margin: 0;
 }
 
+#main-content h1 {
+    font-family: "Bebas Neue";
+    text-align: center;
+    font-size: 50px;
+    padding: 50px 0 0;
+    letter-spacing: 3px;
+}
+
+#main-content #entrants {
+    font-family: "Great Sejagad";
+    text-align: center;
+    font-size: 50px;
+    font-weight: normal;
+    color: #7e005e;
+    margin: 75px;
+}
+
+#main-content #content-restrict h2 {
+    text-align: center;
+    font-family: "Bebas Neue";
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
