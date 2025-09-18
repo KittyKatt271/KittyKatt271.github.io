@@ -44,7 +44,7 @@ body {
     border-bottom-right-radius: 25px;
 }
 
-#sidebar-content ul li a{
+#sidebar-content ul li a {
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -198,77 +198,92 @@ body {
     font-size: 15px;
 }
 
-/*The following section here is what makes the page mobile friendly. 
+/*
+    The following section here is what makes the page mobile friendly. 
 
-The @media (or media quarry as Ryan said that it was called.) 
-seems to tell it to target these elements but only under specific circumstances. 
-I have this set to max-width: 780px. 
+    The @media (or media quarry as Ryan said that it was called.) 
+    seems to tell it to target these elements but only under specific 
+    circumstances. 
+    I have this set to max-width: 780px. 
 
-From my understanding how this works, is that it will only target the elements 
-as long as the width of the screen doesnot exceed 780px.
+    From my understanding how this works, is that it will only target the 
+    elements 
+    as long as the width of the screen doesnot exceed 780px.
 
-This is all learnt based on me googling how to make things mobile friendly 
-along with trial and error.*/
-/*@media (max-width: 780px) {*/
+    This is all learnt based on me googling how to make things mobile friendly 
+    along with trial and error.
+*/
+
+/*
+    @media (max-width: 780px) {
+*/
     
-/*The flex-direction property made it turn into a single column layout instead 
-of the inline layout that display: flex defaults to.*/
-    .flex-container {
-        flex-direction: column;
-    }
+/*
+    The flex-direction property made it turn into a single column layout instead 
+    of the inline layout that display: flex defaults to.
+*/
+.flex-container {
+    flex-direction: column;
+}
 
-    .img-column,
-    .txt-column {
-        width: 100%;
-    }
+.img-column,
+.txt-column {
+    width: 100%;
+}
 
-/*The order property was applied to flex-items within the flex-container to 
-change the order of appearance for the paragraphs and images within 
-my Media & Text blocks within the sections.*/
-    .txt-column {
-        order: 1;
-    }
+/*
+    The order property was applied to flex-items within the flex-container to 
+    change the order of appearance for the paragraphs and images within 
+    my Media & Text blocks within the sections.
+*/
+.txt-column {
+    order: 1;
+}
 
-    .img-column {
-        order: 2;
-    }
+.img-column {
+    order: 2;
+}
 
-    /*.single-column {
+/*
+    .single-column {
         margin-top: 0px;
         margin-bottom: 2px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-    }*/
+    }
+*/
 
-    #header h1 {
-        font-size: 28px;
-        border-width: 2.5px;
-    }
+#header h1 {
+    font-size: 28px;
+    border-width: 2.5px;
+}
 
-    #header h2 {
-        font-size: 20px;
-        margin: 0 30px;
-    }
+#header h2 {
+    font-size: 20px;
+    margin: 0 30px;
+}
 
-    #header h3 {
-        font-size: 15px;
-    }
+#header h3 {
+    font-size: 15px;
+}
 
-    #header span.warning {
-        font-size: 20px;
-    }
+#header span.warning {
+    font-size: 20px;
+}
 
-    .section .flex-container-h2 {
-        gap: 0;
-        flex-direction: column;
-    }
+.section .flex-container-h2 {
+    gap: 0;
+    flex-direction: column;
+}
 
-    #source {
-        font-size: 15px;
-        margin-top: 35px;
+#source {
+    font-size: 15px;
+    margin-top: 35px;
+}
+
+#source a {
+    font-size: 12px;
+}
+/*
     }
-    
-    #source a {
-        font-size: 12px;
-    }
-/*}*/
+*/
