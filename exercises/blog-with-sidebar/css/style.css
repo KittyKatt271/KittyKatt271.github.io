@@ -169,7 +169,6 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
-    flex-direction: column;
     gap: 5px;
     justify-content: center;
 }
@@ -234,12 +233,12 @@ my Media & Text blocks within the sections.*/
         order: 2;
     }
 
-    .single-column {
+    /*.single-column {
         margin-top: 0px;
         margin-bottom: 2px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-    }
+    }*/
 
     #header h1 {
         font-size: 28px;
