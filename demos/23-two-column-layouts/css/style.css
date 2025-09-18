@@ -9,6 +9,9 @@ body {
 
 #two-columns {
     display: flex;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #sidebar-content {
