@@ -205,3 +205,29 @@ body {
     font-weight: bold;
     margin-right: 5px;
 }
+
+#navbar {
+    margin: 25px auto;
+    width: 1100px;
+}
+
+#navbar h1 {
+    color: purple;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -8px;
+}
+
+#navbar #e {
+    color: #eb3325;
+}
+#navbar #b {
+    color: #006aec;
+}
+#navbar #a {
+    color: #fcbe06;
+}
+#navbar #y {
+    color: #90c922;
+}
