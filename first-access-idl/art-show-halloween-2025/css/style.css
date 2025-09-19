@@ -293,7 +293,16 @@ a {
     justify-content: space-evenly;
     background-color: black;
     height: 205px;
-    padding-top: 5px;
+    padding-top: 25px;
+    align-items: center;
+}
+
+.flex-container-site-map {
+    display: flex;
+    align-items: flex-start;
+    gap: 75px;
+    margin: 0;
+    padding: 0;
 }
 
 .footer-li {
