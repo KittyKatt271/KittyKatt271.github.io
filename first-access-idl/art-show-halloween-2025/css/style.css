@@ -363,7 +363,6 @@ a {
 
 .column-site-map {
     align-content: center;
-    padding-top: 25px;
 }
 
 .footer-ul a:hover,
@@ -649,8 +648,11 @@ a {
         font-size: 16px;
     }
 
-    .column-site-map {
+    .flex-container-site-map {
         order: 3;
+        padding-top: 40px;
+        padding-left: 25px;
+        gap: 100px;
     }
 
     .column-logo {
