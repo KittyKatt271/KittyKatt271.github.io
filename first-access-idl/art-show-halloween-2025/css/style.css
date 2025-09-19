@@ -408,7 +408,8 @@ a {
 #main-content #content-restrict h2,
 #main-content #file-req h2,
 #main-content #asset-accred h2,
-#main-content #prompts h2 {
+#main-content #prompts h2,
+#main-content #enter h2 {
     text-align: center;
     font-family: "Bebas Neue";
     font-size: 35px;
