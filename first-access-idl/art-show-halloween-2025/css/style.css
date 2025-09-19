@@ -504,6 +504,21 @@ a {
     margin: 100px 0 0;
 }
 
+#main-content #review {
+    font-family: "Bebas Neue";
+    font-size: 50px;
+    padding: 200px 0 0;
+    margin: 0;
+}
+
+#main-content #view-date {
+    text-align: center;
+    font-size: 30px;
+    color: #7e005e;
+    padding: 15px 0 200px;
+    margin: 0;
+}
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
