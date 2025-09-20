@@ -19,24 +19,23 @@ body {
 
 #navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     max-width: 1000px;
     margin: 0 auto;
 }
 
 #navbar a {
-    padding: 20px;
+    padding: 2%;
     text-decoration: none;
     color: #d3b090;
-    font-size: 35px;
+    font-size: 3vw;
     font-weight: bold;
     text-align: center;
 }
 
 #navbar #logo-name {
-    font-size: 45px;
-    margin: 0 auto 5px;
+    font-size: 4vw;
     order: 2;
     font-family: "Almendra SC";
 }
@@ -57,12 +56,16 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 2%;
+    padding-right: 5%;
 }
 
-#side-hero h1 {
+#side-hero .hero-content {
+    text-align: center;
+}
+
+#side-hero .hero-content h1 {
     color: #d3b090;
-    font-size: 55px;
+    font-size: 4vw;
     font-family: "Almendra SC";
     letter-spacing: 2px;
     line-height: 1.5;
@@ -75,9 +78,9 @@ body {
     text-align: center;
     color: #d3b090;
     padding: 15px 45px;
-    margin: 10px 15px;
+    margin: 10px 0;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 2vw;
 }
 
 .prime.btn {
@@ -85,4 +88,5 @@ body {
     border: 1px solid #744925;
     color: #d3b090;
     font-weight: bold;
+    margin-right: 5%;
 }
