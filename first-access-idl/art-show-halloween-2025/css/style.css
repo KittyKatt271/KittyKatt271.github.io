@@ -644,6 +644,21 @@ a {
     border: 1px solid #7e005e;
 }
 
+#main-content #welcome {
+    font-family: "Great Sejagad";
+    color: #7e005e;
+    font-weight: normal;
+    font-size: 55px;
+}
+
+#main-content #join-us {
+    font-family: "Avenir LT STD";
+    font-size: 35px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: normal;
+}
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
