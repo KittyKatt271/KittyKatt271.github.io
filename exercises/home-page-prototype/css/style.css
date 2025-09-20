@@ -11,8 +11,8 @@ body {
 
 #nav-single-column {
     background: linear-gradient(
-        to top, 
-        #190701, 
+        to top right, 
+        #190701 25%, 
         #744925
     );
 }
