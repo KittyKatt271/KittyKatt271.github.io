@@ -527,6 +527,89 @@ a {
     margin: 0;
 }
 
+#main-content #enter p {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+#main-content #enter .flex-container-guide {
+    margin-top: 25px;
+    justify-content: center;
+    gap: 75px;
+}
+
+#main-content #enter .flex-container-guide #enter-online {
+    max-width: 375px;
+}
+
+#main-content #enter .flex-container-guide #enter-direct {
+    max-width: 450px;
+}
+
+#main-content #enter .flex-container-guide h3,
+#main-content #enter #remember h3 {
+    font-family: "Bebas Neue";
+    color: #7e005e;
+    font-size: 25px;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+#main-content #enter .flex-container-guide p, 
+#main-content #enter #remember p{
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+#main-content #enter #remember p {
+    max-width: 550px;
+    text-align: center;
+}
+
+#main-content #enter #remember p span {
+    font-weight: bold;
+}
+
+#main-content #enter .flex-container-guide #enter-online #note {
+    font-size: 16px;
+}
+
+#main-content #enter .flex-container-guide p span {
+    font-weight: bold;
+    color: #7e005e;
+}
+
+#main-content #enter .flex-container-guide h4 {
+    font-family: "Avenir LT STD";
+    letter-spacing: normal;
+    color: black;
+    font-size: 18px;
+}
+
+#main-content #enter #enter-member {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+#main-content #enter #enter-member .member-column {
+    width: 250px;
+}
+
+#main-content #enter #enter-member .member-column p {
+    font-size: 16px;
+}
+
+#main-content #enter #enter-member .member-column p span {
+    font-size: 14px;
+}
+
+
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
