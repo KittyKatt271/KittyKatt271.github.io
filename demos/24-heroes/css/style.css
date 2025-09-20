@@ -12,4 +12,30 @@ body {
     background-size: cover;
     background-position: center center;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#centered-hero .hero-content {
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 100px;
+}
+
+.hero-content h3 {
+    font-size: 36px;
+}
+
+#side-hero {
+    background-image: url(../images/lonely-ocean.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
