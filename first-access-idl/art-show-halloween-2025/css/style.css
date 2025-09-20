@@ -817,4 +817,233 @@ a {
     #main-content #view-date {
         padding: 15px 15px 50px;
     }
+
+    #main-content h1 {
+        padding: 50px 0 0;
+        font-size: 45px;
+    }
+    
+    #main-content #entrants {
+        margin: 50px 25px 0;
+        font-size: 40px;
+    }
+
+    #main-content #enter h2,
+    #main-content #content-restrict h2,
+    #main-content #file-req h2,
+    #main-content #asset-accred h2 {
+        margin: 50px 0 15px;
+        font-size: 30px;
+    }
+
+    #main-content #enter p {
+        font-size: 15px;
+        padding: 0 15px;
+        margin-bottom: 15px;
+    }
+
+    #main-content #enter .flex-container-guide {
+        flex-direction: column;
+        gap: 0;
+        margin-top: 0;
+    }
+
+    #main-content #enter .flex-container-guide #enter-online,
+    #main-content #enter .flex-container-guide #enter-direct,
+    #main-content #enter .flex-container-guide #enter-online .column-guide,
+    #main-content #enter .flex-container-guide #enter-direct .column-guide {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    #main-content #enter .flex-container-guide #enter-online p,
+    #main-content #enter .flex-container-guide #enter-direct p {
+        font-size: 15px;
+        max-width: 100%;
+    }
+
+    #main-content #enter .flex-container-guide #enter-online #note {
+        font-size: 14px;
+    }
+
+    #main-content #enter .flex-container-guide #enter-direct #enter-member {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #main-content #enter #enter-member .member-column {
+        width: 100%;
+    }
+
+    #enter .flex-container-guide #enter-direct p {
+        max-width: 100%;
+        font-size: 14px;
+        padding: 0 25px;
+        text-align: center;
+    }
+
+    #enter .flex-container-guide #enter-direct p br {
+        display: none;
+    }
+
+    #enter .flex-container-guide #enter-direct h4 {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #main-content #enter .flex-container-guide h3, 
+    #main-content #enter #remember h3 {
+        font-size: 22px;
+    }
+
+    #main-content #enter #remember p,
+    #main-content #asset-accred p {
+        font-size: 15px;
+    }
+
+    #main-content hr {
+        max-width: 90%;
+        margin: 50px auto;
+    }
+
+    #main-content #content-restrict h3,
+    #main-content #asset-accred h3,
+    #main-content #prompts #img-prompts h3,
+    #main-content #prompts #aud-prompts h3,
+    #main-content #prompts #vid-prompts h3  {
+        font-size: 20px;
+    }
+
+    #main-content #content-restrict .flex-container-guide {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #main-content #content-restrict .flex-container-guide #cr-l {
+        order: 2;
+        max-width: 100%;
+        padding: 15px 15px 0;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #main-content #content-restrict .flex-container-guide #cr-m {
+        order: 1;
+        max-width: 100%;
+        padding: 0px 15px;        
+        text-align: center;
+    }
+    
+    #main-content #content-restrict .flex-container-guide #cr-m li {
+        font-size: 16px;
+    }
+
+    #main-content #content-restrict .flex-container-guide #cr-m p {
+        font-size: 17px;
+    }
+
+    #main-content #content-restrict .flex-container-guide #cr-r {
+        order:3;
+        max-width: 100%;
+        padding: 15px 15px 0;        
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #main-content #content-restrict #cr-list.flex-container-guide {
+        gap: 75px;
+        margin: 0;
+        flex-direction: row;
+    }
+
+    #main-content #content-restrict #cr-list.flex-container-guide ul {
+        margin: 0;
+        text-align: start;
+    }
+
+    #main-content #content-restrict .flex-container-guide #cr-m p {
+        margin-bottom: 10px;
+    }
+
+    #main-content #file-req .flex-container-guide {
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        
+    }
+
+    #main-content #file-req .flex-container-guide .column-guide {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    #main-content #file-req .flex-container-guide .column-guide ul {
+        padding: 0 0 0 18px;
+        font-size: 15px;
+    }
+
+    #main-content #file-req .flex-container-guide .column-guide ul ul {
+        max-width: 35%;
+        margin: 0 auto;
+    }
+
+    #main-content #asset-accred p {
+        padding: 0 15px;
+    }
+
+    #main-content #prompts #inspire {
+        margin: 50px 0 0;
+        font-size: 25px;
+    }
+
+    #main-content #prompts h2 {
+        font-size: 30px;
+        margin: 5px 0 15px;
+    }
+    
+    #main-content #prompts #img-prompts h3 {
+    margin: 0 0 10px;
+    }
+
+    #main-content #prompts #aud-prompts h3,
+    #main-content #prompts #vid-prompts h3 {
+        margin: 20px 0 10px;
+    }
+
+    #main-content #prompts #img-prompts p,
+    #main-content #prompts #aud-prompts p,
+    #main-content #prompts #vid-prompts p  {
+        font-size: 16px;
+        padding: 0 20px;
+        margin: 0;
+    }
+
+    #main-content #prompts #img-prompts h4,
+    #main-content #prompts #aud-prompts h4,
+    #main-content #prompts #vid-prompts h4  {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    #main-content #prompts .flex-container-guide {
+        flex-direction: column;
+    }
+
+    #main-content #prompts .flex-container-guide .column-guide {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    #main-content #prompts #img-prompts .column-guide p,
+    #main-content #prompts #aud-prompts .column-guide p,
+    #main-content #prompts #vid-prompts .column-guide p {
+        font-size: 14px;
+        margin: 10px 0 0;
+    }
+
+    #main-content #prompts #img-prompts p#for-your,
+    #main-content #prompts #aud-prompts p#for-your,
+    #main-content #prompts #vid-prompts p#for-your {
+        padding-top: 5px;
+    }
 }
