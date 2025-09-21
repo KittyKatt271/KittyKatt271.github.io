@@ -649,6 +649,7 @@ a {
     color: #7e005e;
     font-weight: normal;
     font-size: 55px;
+    margin-top: 25px;
 }
 
 #main-content #join-us {
@@ -657,6 +658,84 @@ a {
     letter-spacing: 2px;
     text-align: center;
     font-weight: normal;
+}
+
+
+#main-content #sub-open {
+    font-family: "Bebas Neue";
+    font-Size: 50px;
+    color: #7e005e;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    padding: 0px 0 15px;
+}
+
+#main-content #sub-deadline {
+    text-align: center;
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+#main-content .flex-container-home {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 75px;
+    gap: 150px;
+}
+
+#main-content .column-home {
+    text-align: center;
+}
+
+#main-content .column-home h4 {
+    font-size: 25px;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+#main-content #view-guide.column-home h4 {
+    margin-bottom: 7px;
+}
+
+#sub-ready .styled-submitbutton,
+#view-guide .styled-guidebutton {
+    border: 0;
+    line-height: 1.75;
+    letter-spacing: 2px;
+    padding: 0px 25px;
+    padding-top: 2px;
+    font-size: 2em;
+    font-family: "Bebas Neue";
+    text-align: center;
+    color: white;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    margin: 0;
+}
+
+#view-guide .styled-guidebutton {
+    padding: 7px 25px;
+}
+
+#sub-ready .styled-submitbutton:hover,
+#view-guide .styled-guidebutton:hover  {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+#sub-ready .styled-submitbutton:active,
+.styled-guidebutton:active  {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
 }
 
 @media (max-width: 780px) {
