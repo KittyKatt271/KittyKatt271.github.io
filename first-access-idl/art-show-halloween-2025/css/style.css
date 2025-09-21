@@ -58,9 +58,14 @@ body #main-content {
 
 #hero {
     width: 100%;
-    height: 450px;
+    height: 500px;
     z-index: 50;
-    background-color: black;
+    background-color: #141619;
+    text-align: center;
+    background-image: url(../images/hero-placeholder.gif);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 #header-logo {
@@ -146,7 +151,8 @@ a {
 
 #showbutton,
 .styled-submitbutton,
-.styled-footer {
+.styled-footer,
+#showbutton-hero {
     border: 0;
     line-height: 1.75;
     letter-spacing: 2px;
@@ -205,6 +211,45 @@ a {
     line-height: 1.5;
     letter-spacing: 2px;
     background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+}
+
+#herocountdown-timer {
+    font-family: "Bebas Neue";
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+    padding: 200px 0 0;
+    color: #14161a;
+}
+
+#herocountdown-timer {
+    opacity: 0;
+    animation: fadeIn 5s ease forwards;
+    animation-delay: 5s;
+}
+
+@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+#herocountdown-timer span {
+    display: inline-block;
+    padding: 0 10px;
+    padding-top: 2px;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    background-color: #e17415d4;
     background-image: linear-gradient(
         to top,
         rgb(0 0 0 / 20%),
@@ -738,6 +783,34 @@ a {
         inset 2px 2px 3px rgb(0 0 0 / 30%);
 }
 
+#developers {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#developers p {
+    width: 350px;
+    text-align: center;
+    margin: 10px 0 0px;
+}
+
+#developers p span {
+    font-weight: bold;
+}
+
+#developers p#web-cred {
+    order: 2;
+}
+
+#developers p#hero-cred {
+    order: 1;
+}
+
+#developers p#access-cred {
+    order: 3;
+}
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
@@ -879,6 +952,25 @@ a {
         display: block;
         order: 4;
         text-align: center;
+    }
+
+    #developers {
+        flex-direction: column;
+        margin-top: 235px;
+    }
+
+    #developers p {
+        margin-bottom: 5px;
+        font-size: 8px;
+        width: 310px;
+    }
+
+    #developers #web-cred {
+        order: 1;
+    }
+
+    #developers #hero-cred {
+        order: 2;
     }
 
     .column-logo .flex-container-info,
@@ -1173,4 +1265,13 @@ a {
     #main-content .flex-container-home .column-guide {
         padding: 0;
     }
+
+    #main-content #hero {
+        height: 272px;
+    }
+
+    #herocountdown-timer {
+    font-size: 1.5em;
+    padding: 115px 0 0;
+}
 }
