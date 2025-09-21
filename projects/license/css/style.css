@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap');
+
+/*
+    NOTE TO STUDENTS: 
+
+    This is the file you should be writing your CSS in 
+    for the Generic License assignment.
+
+    Good luck, and have fun!
+*/
+
+#license {
+    width: 700px;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 24px;
+    background: linear-gradient(to top left, #ed8f50, #fdca72);
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.413);
+}
+
+#content h1 {
+    color: #01007f;
+    font-size: 60px;
+    margin: 0;
+    padding-top: 5px;
+}
+
+#left-side {
+    display: inline-block; 
+    width: 65%;
+    margin-top: 15px;
+}
+
+#left-side h4 {
+    background-color: #01007f;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    font-size: 25px;
+    margin: 0px 0 0;
+    font-family: sans-serif;
+}
+
+#right-side {
+    display: inline-block; 
+    width: 34%;
+}
+
+#id-and-expiration div,
+#data-left div,
+#data-right div {
+    display: inline-block;
+    margin: 5px 25px 0 10px;
+    color: #01007f;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#id-and-expiration div span,
+#data-left div span,
+#data-right div span {
+    color: red;
+    font-weight: bold;
+}
+
+#data-left div,
+#data-right div {
+    margin: 0 25px 0 10px;
+    display: block;
+    line-height: 1.25;;
+}
+
+#address {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 15px 0 10px 10px;
+    line-height: 1.25;
+}
+
+#small-pic-container,
+#data-fields {
+    display: inline-block;
+    vertical-align: middle;
+    height: 125px;
+}
+
+#data-fields {
+    margin-top: 20px;
+}
+
+#small-pic-container img {
+    height: 100%;
+    opacity: .5;
+}
+
+#data-left,
+#data-right {
+    display: inline-block;
+    margin: 0 0 15px;
+}
+
+#signature {
+    text-align: center;
+    font-family: "Herr Von Muellerhoff";
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 0;
+    margin-top: 15px;
+}
+#right-side {
+    text-align: center;
+}
+
+#right-side img {
+    width: 100%;
+}
+
+#donor,
+#real-id {
+    display: inline-block;
+}
+
+#donor-and-real-id {
+    margin: 10px 0 0;
+}
+
+#donor {
+    color: red;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+#real-id {
+    color: white;
+    background-color: rgb(255, 187, 60);
+    border-radius: 50%;
+    font-size: 25px;
+    padding: 3px;
+}
+
+#left-side,
+#right-side {
+    vertical-align: top;
+}
