@@ -1,8 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&family=Oswald:wght@200..700&family=Vast+Shadow&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Oswald";
 }
+
+#single-column-layout {
+    background-color: rgb(160, 105, 161);
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#single-column-layout h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 50px 0 5px;
+    font-family: "Vast Shadow";
+    font-weight: normal;
+}
+
+#single-column-layout h1 {
+    font-family: "Bowlby One SC";
+    font-size: 70px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px white,
+        5px 5px black;
+}
+
+#single-column-layout h3 {
+    letter-spacing: 5px;
+    font-size: 55px;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        1px 1px #a169a1,
+        2px 2px black;
+}
+
+#sports-teams {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 0 0;
+}
+
+#sports-teams .team-column {
+    max-width: 300px;
+}
+
+#sports-teams .team-column .img-container img {
+    width: 100%;
+}
+
