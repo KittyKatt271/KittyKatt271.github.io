@@ -36,7 +36,8 @@ body {
     text-transform: uppercase;
     text-shadow: 
         2px 2px white,
-        5px 5px black;
+        5px 5px black
+    ;
 }
 
 #single-column-layout h3 {
@@ -46,10 +47,11 @@ body {
     text-transform: uppercase;
     text-shadow: 
         1px 1px #a169a1,
-        2px 2px black;
+        2px 2px black
+    ;
 }
 
-#sports-teams {
+.sports-teams {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,11 +59,97 @@ body {
     padding: 50px 0 0;
 }
 
-#sports-teams .team-column {
+.sports-teams .team-column {
     max-width: 300px;
 }
 
-#sports-teams .team-column .img-container img {
+.sports-teams .team-column .img-container img {
     width: 100%;
 }
 
+.sports-teams.names {
+    padding: 0;
+    justify-content: center;
+    gap: 110px;
+    margin-left: 25px;
+}
+.sports-teams .team-name-column {
+    max-width: 375px;
+    padding: 10px 0 5px;
+}
+
+.sports-teams .team-name-column .team {
+    font-family: "Vast Shadow";
+    font-weight: normal;
+    font-size: 25px;
+    margin: 0;
+}
+
+.sports-teams .team-name-column .mascot {
+    font-family: "Bowlby One SC";
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    line-height: 1;
+    margin: 0;
+    text-transform: uppercase;
+    text-shadow: 
+        2px 2px white,
+        5px 5px black
+    ;
+}
+
+#single-column-layout #date {
+    padding: 50px 0 15px;
+    font-size: 50px;
+}
+
+#single-column-layout p.exclaim {
+    font-size: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+#single-column-layout p {
+    font-size: 20px;
+    margin: 0;
+    padding: 15px 0;
+}
+
+#single-column-layout #button-columns {
+    display: flex;
+    gap: 75px;
+    justify-content: center;
+    padding: 15px;
+}
+
+#single-column-layout #button-columns a.button {
+    padding: 0px 25px 5px;
+    font-size: 28px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: #7e005e;
+    background-image: linear-gradient(
+        to top,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        transparent
+    );
+    text-shadow: 
+        1px 1px #a169a1,
+        2px 2px black
+    ;
+    display: block;
+}
+
+#single-column-layout #button-columns a.button:hover {
+    background-color: #4aaad0;
+    transition: .45s;
+}
+
+#single-column-layout #button-columns a.button:active {
+    box-shadow:
+        inset -2px -2px 3px #9de9ec53,
+        inset 2px 2px 3px rgb(0 0 0 / 30%);
+}
