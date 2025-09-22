@@ -36,8 +36,7 @@ body {
     text-transform: uppercase;
     text-shadow: 
         2px 2px white,
-        5px 5px black
-    ;
+        5px 5px black;
 }
 
 #single-column-layout h3 {
@@ -47,8 +46,7 @@ body {
     text-transform: uppercase;
     text-shadow: 
         1px 1px #a169a1,
-        2px 2px black
-    ;
+        2px 2px black;
 }
 
 .sports-teams {
@@ -95,8 +93,7 @@ body {
     text-transform: uppercase;
     text-shadow: 
         2px 2px white,
-        5px 5px black
-    ;
+        5px 5px black;
 }
 
 #single-column-layout #date {
@@ -138,8 +135,7 @@ body {
     );
     text-shadow: 
         1px 1px #a169a1,
-        2px 2px black
-    ;
+        2px 2px black;
     display: block;
 }
 
