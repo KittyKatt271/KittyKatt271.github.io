@@ -817,6 +817,11 @@ a {
     order: 3;
 }
 
+#welcome span {
+    font-size: 80px;
+    line-height: 1.75;
+}
+
 @media (max-width: 780px) {
     .flex-container-header {
         flex-wrap: wrap;  
@@ -1244,10 +1249,6 @@ a {
         padding: 25px 25px 0;
     }
 
-    #main-content br {
-        display: none;
-    }
-
     #main-content #join-us {
         font-size: 24px;
         padding: 15px 15px 0;
@@ -1279,5 +1280,10 @@ a {
     #herocountdown-timer {
     font-size: 1.5em;
     padding: 185px 0 0;
-}
+    }
+
+    #main-content #welcome span {
+        font-size: 50px;
+        line-height: 1.25;
+    }
 }
