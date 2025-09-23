@@ -7,6 +7,9 @@
 body {
     margin: 0px;
     font-family: "Oswald";
+    background-image: url(../images/field4.jpg);
+    background-repeat: none;
+    background-size: cover;
 }
 
 #outer {
@@ -14,6 +17,7 @@ body {
     padding: 25px;
     border: 15px groove #fec671;
     margin: 50px auto;
+    background-color: white;
 }
 
 #single-column-layout {
