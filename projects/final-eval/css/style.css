@@ -9,12 +9,20 @@ body {
     font-family: "Oswald";
 }
 
+#outer {
+    max-width: 1050px;
+    padding: 25px;
+    border: 15px groove #fec671;
+    margin: 50px auto;
+}
+
 #single-column-layout {
     background-color: rgb(160, 105, 161);
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
+    border: 15px groove #fec671;
 }
 
 #single-column-layout h4 {
