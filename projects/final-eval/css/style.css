@@ -17,7 +17,7 @@ body {
 }
 
 #single-column-layout {
-    background-color: rgb(160, 105, 161);
+    background-color: #153e10;
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -32,10 +32,12 @@ body {
     padding: 50px 0 5px;
     font-family: "Vast Shadow";
     font-weight: normal;
+    color: #62cfff;
 }
 
 #single-column-layout h1 {
     font-family: "Bowlby One SC";
+    color: #7e005e;
     font-size: 70px;
     font-weight: normal;
     letter-spacing: 2px;
@@ -43,18 +45,19 @@ body {
     margin: 0;
     text-transform: uppercase;
     text-shadow: 
-        2px 2px white,
+        2px 2px #62cfff,
         5px 5px black;
 }
 
 #single-column-layout h3 {
     letter-spacing: 5px;
+    color: #62cfff;
     font-size: 55px;
     margin: 0;
     text-transform: uppercase;
     text-shadow: 
-        1px 1px #a169a1,
-        2px 2px black;
+        1px 1px #153e10,
+        2px 2px #1681a8;
 }
 
 .sports-teams {
@@ -89,6 +92,7 @@ body {
     font-weight: normal;
     font-size: 25px;
     margin: 0;
+    color: #62cfff;
 }
 
 .sports-teams .team-name-column .mascot {
@@ -98,10 +102,11 @@ body {
     letter-spacing: 2px;
     line-height: 1;
     margin: 0;
+    color: #7e005e;
     text-transform: uppercase;
     text-shadow: 
-        2px 2px white,
-        5px 5px black;
+        2px 2px #62cfff,
+        5px 5px black;    
 }
 
 #single-column-layout #date {
@@ -113,12 +118,14 @@ body {
     font-size: 25px;
     margin: 0;
     padding: 0;
+    color: #9deaec; 
 }
 
 #single-column-layout p {
     font-size: 20px;
     margin: 0;
     padding: 15px 0;
+    color: #ff4463;    
 }
 
 #single-column-layout #button-columns {
@@ -142,9 +149,10 @@ body {
         transparent
     );
     text-shadow: 
-        1px 1px #a169a1,
+        1px 1px #153e10,
         2px 2px black;
     display: block;
+    border: 5px groove #fec671;
 }
 
 #single-column-layout #button-columns a.button:hover {
