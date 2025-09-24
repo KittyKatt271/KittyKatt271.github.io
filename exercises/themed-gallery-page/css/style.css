@@ -36,19 +36,34 @@ body {
     column-gap: 24px;
 }
 
+.vertical-masonry-gallery div {
+    box-shadow: 
+        0px 0px 10px 0px rgb(255, 35, 145),
+        inset 0px 0px 10px 0px rgb(255, 35, 145);
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    border: 4px solid white;
+}
+
 .vertical-masonry-gallery img {
     width: 100%;
-    margin-bottom: 24px;
-    border: 4px solid white;
-    border-radius: 24px;
-    box-shadow: 0px 0px 10px 0px rgb(255, 35, 145);
+    height: 100%;
+    position: relative;   
+    z-index: -1;
+    display: block;
+    border-radius: 20px;
 }
 
-.vertical-masonry-gallery img:nth-child(2n),
-.vertical-masonry-gallery img:nth-child(5n) {
-    box-shadow: 0px 0px 10px 0px cyan;
+.vertical-masonry-gallery div:nth-child(2n),
+.vertical-masonry-gallery div:nth-child(5n) {
+    box-shadow: 
+        0px 0px 10px 0px cyan,
+        inset 0px 0px 10px 0px cyan;
 }
 
-.vertical-masonry-gallery img:nth-child(3n) {
-    box-shadow: 0px 0px 10px 0px #b4ff04;
+.vertical-masonry-gallery div:nth-child(3n) {
+    box-shadow: 
+        0px 0px 10px 0px #b4ff04,
+        inset 0px 0px 10px 0px #b4ff04;
 }
