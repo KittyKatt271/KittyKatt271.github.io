@@ -6,3 +6,70 @@ body {
     margin: 0px;
     font-family: sans-serif;
 }
+
+#nav {
+    background-color: #222222;
+    display: flex;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+    /*flex-direction: column;*/
+
+}
+
+#nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 20px;
+}
+
+#single-column-layout {
+    max-width: 800px;
+    margin: 48px auto;
+}
+
+#single-column-layout h1 {
+    font-size: 64px;
+    text-align: center;
+}
+
+#basic-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+#basic-grid-gallery img {
+    width: 100%;
+}
+
+/*Tablet Breakpoint*/
+@media screen and (max-width: 640px) {
+    /*body {
+        background-color: skyblue;
+    }*/
+
+    #single-column-layout h1 {
+        font-size: 44px;
+    }
+
+    #basic-grid-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*mobile breakpoint*/
+@media screen and (max-width: 450px) {
+    /*body {
+            background-color: pink;
+        }*/
+
+    #nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #single-column-layout h1 {
+        font-size: 32px;
+    }
+}
