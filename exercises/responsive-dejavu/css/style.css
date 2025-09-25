@@ -31,7 +31,8 @@ body {
     transition: .5s;
 }
 
-#navbar a#home:hover {
+#navbar a#home:hover,
+#navbar a#gallery:hover {
     text-shadow: 0 0 10px #b4ff04;
 }
 
@@ -41,10 +42,6 @@ body {
 
 #navbar a#blog:hover {
     text-shadow: 0 0 10px cyan;
-}
-
-#navbar a#gallery:hover {
-    text-shadow: 0 0 10px #b4ff04;
 }
 
 #hero {
@@ -258,11 +255,19 @@ body {
     .vertical-masonry-gallery {
         columns: 2 auto;
     }
+
+    #hero {
+      height: 75vh;
+    }
 }
 
 @media screen and (max-width: 525px) {
     #navbar a {
         font-size: 16px;
+    }
+
+    #hero {
+      height: 60vh;
     }
 }
 
@@ -270,10 +275,18 @@ body {
     #navbar a {
         font-size: 12px;
     }
+
+    #hero {
+      height: 50vh;
+    }
 }
 
 @media screen and (max-width: 375px) {
     .vertical-masonry-gallery {
         columns: 1 auto;
+    }
+
+    #hero {
+      height: 40vh;
     }
 }
