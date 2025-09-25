@@ -11,252 +11,252 @@ body {
 }
 
 #navbar {
-  display: flex;
-  justify-content: center;
-  background-color: #2c2b2a;
-  border-bottom: 1px solid #7dc0a6;
-  box-shadow: 0 0 25px 0px #7dc0a6;
-  animation: pulse-nav 1.5s infinite;
-  gap: 15%;
-  padding: 0 5%
+    display: flex;
+    justify-content: center;
+    background-color: #2c2b2a;
+    border-bottom: 1px solid #7dc0a6;
+    box-shadow: 0 0 25px 0px #7dc0a6;
+    animation: pulse-nav 1.5s infinite;
+    gap: 15%;
+    padding: 0 5%;
 }
 
 #navbar a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  font-family: "Mogra";
-  display: block;
-  padding: 12px 0;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: "Mogra";
+    display: block;
+    padding: 12px 0;
 }
 
 #hero {
-  background-image: 
-    linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #2c2b2a),
-    url("../images/glow-stick.jpg");
-  background-size: cover;
-  background-position: center center;
-  height: 100vh;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 0 5% 12%;
-  color: white;
-  text-shadow: 0px 0px 5px #b4ff04;
-  font-family: "Mogra";
-  font-size: 1.75vw;
-  animation: pulse-hero 1.5s infinite;
-  position: relative;
-  z-index: -1;
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #2c2b2a),
+        url("../images/glow-stick.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 5% 12%;
+    color: white;
+    text-shadow: 0px 0px 5px #b4ff04;
+    font-family: "Mogra";
+    font-size: 1.75vw;
+    animation: pulse-hero 1.5s infinite;
+    position: relative;
+    z-index: -1;
 }
 
 #layout {
-  max-width: 1000px;
-  margin: 35px auto;
-  text-align: center;
+    max-width: 1000px;
+    margin: 35px auto;
+    text-align: center;
 }
 
 .vertical-masonry-gallery {
-  columns: 3 auto;
-  column-gap: 24px;
-  padding: 0 5%;
+    columns: 3 auto;
+    column-gap: 24px;
+    padding: 0 5%;
 }
 
 .vertical-masonry-gallery div {
-  box-shadow: 
-    0px 0px 10px 0px rgb(255, 35, 145),
-    inset 0px 0px 10px 0px rgb(255, 35, 145);
-  position: relative;
-  margin-bottom: 24px;
-  border-radius: 24px;
-  border: 4px solid white;
-  animation: pulse-pink 1.5s infinite;
+    box-shadow: 
+        0px 0px 10px 0px rgb(255, 35, 145),
+        inset 0px 0px 10px 0px rgb(255, 35, 145);
+    position: relative;
+    margin-bottom: 24px;
+    border-radius: 24px;
+    border: 4px solid white;
+    animation: pulse-pink 1.5s infinite;
 }
 
 .vertical-masonry-gallery img {
-  width: 100%;
-  height: 100%;
-  position: relative;   
-  z-index: -1;
-  display: block;
-  border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    position: relative;   
+    z-index: -1;
+    display: block;
+    border-radius: 20px;
 }
 
 .vertical-masonry-gallery div:nth-child(2n),
 .vertical-masonry-gallery div:nth-child(5n) {
-  box-shadow: 
-    0px 0px 10px 0px cyan,
-    inset 0px 0px 10px 0px cyan;
-  animation: pulse-blue 1.5s infinite;
+    box-shadow: 
+        0px 0px 10px 0px cyan,
+        inset 0px 0px 10px 0px cyan;
+    animation: pulse-blue 1.5s infinite;
 }
 
 .vertical-masonry-gallery div:nth-child(3n) {
-  box-shadow: 
-    0px 0px 10px 0px #b4ff04,
-    inset 0px 0px 10px 0px #b4ff04;
-  animation: pulse-green 1.5s infinite;
+    box-shadow: 
+        0px 0px 10px 0px #b4ff04,
+        inset 0px 0px 10px 0px #b4ff04;
+    animation: pulse-green 1.5s infinite;
 }
 
 @keyframes pulse-nav {
-  0% {
-    box-shadow: 0 0 25px 0px #7dc0a6;
-  }
-  
-  25% {
-    box-shadow: 0 0 28px 0px #7dc0a6;
-  }
+    0% {
+        box-shadow: 0 0 25px 0px #7dc0a6;
+    }
+    
+    25% {
+        box-shadow: 0 0 28px 0px #7dc0a6;
+    }
 
-  50% {
-    box-shadow: 0 0 30px 0px #7dc0a6;
-  }
+    50% {
+        box-shadow: 0 0 30px 0px #7dc0a6;
+    }
 
-  75% {
-    box-shadow:  0 0 28px 0px #7dc0a6;
-  }
-  
-  100% {
-    box-shadow: 0 0 25px 0px #7dc0a6;
-  }
+    75% {
+        box-shadow:  0 0 28px 0px #7dc0a6;
+    }
+    
+    100% {
+        box-shadow: 0 0 25px 0px #7dc0a6;
+    }
 }
 
 @keyframes pulse-hero {
-  0% {
-    text-shadow: 0px 0px 7px #b4ff04;
-  }
-  
-  25% {
-    text-shadow: 0px 0px 6px #b4ff04;
-  }
+    0% {
+        text-shadow: 0px 0px 7px #b4ff04;
+    }
+    
+    25% {
+        text-shadow: 0px 0px 6px #b4ff04;
+    }
 
-  50% {
-    text-shadow: 0px 0px 5px #b4ff04;
-  }
+    50% {
+        text-shadow: 0px 0px 5px #b4ff04;
+    }
 
-  75% {
-    text-shadow: 0px 0px 6px #b4ff04;
-  }
-  
-  100% {
-    text-shadow: 0px 0px 7px #b4ff04;
-  }
+    75% {
+        text-shadow: 0px 0px 6px #b4ff04;
+    }
+    
+    100% {
+        text-shadow: 0px 0px 7px #b4ff04;
+    }
 }
 
 @keyframes pulse-green {
-  0% {
-    box-shadow: 
-      0px 0px 10px 0px #b4ff04,
-      inset 0px 0px 10px 0px #b4ff04;
-  }
-  
-  25% {
-    box-shadow: 
-      0px 0px 9px 0px #b4ff04,
-      inset 0px 0px 9px 0px #b4ff04;
-  }
+    0% {
+        box-shadow: 
+            0px 0px 10px 0px #b4ff04,
+            inset 0px 0px 10px 0px #b4ff04;
+    }
+    
+    25% {
+        box-shadow: 
+            0px 0px 9px 0px #b4ff04,
+            inset 0px 0px 9px 0px #b4ff04;
+    }
 
-  50% {
-    box-shadow: 
-      0px 0px 8px 0px #b4ff04,
-      inset 0px 0px 8px 0px #b4ff04;
-  }
+    50% {
+        box-shadow: 
+            0px 0px 8px 0px #b4ff04,
+            inset 0px 0px 8px 0px #b4ff04;
+    }
 
-  75% {
-    box-shadow: 
-      0px 0px 9px 0px #b4ff04,
-      inset 0px 0px 9px 0px #b4ff04;
-  }
-  
-  100% {
-    box-shadow: 
-      0px 0px 10px 0px #b4ff04,
-      inset 0px 0px 10px 0px #b4ff04;
-  }
+    75% {
+        box-shadow: 
+            0px 0px 9px 0px #b4ff04,
+            inset 0px 0px 9px 0px #b4ff04;
+    }
+    
+    100% {
+        box-shadow: 
+            0px 0px 10px 0px #b4ff04,
+            inset 0px 0px 10px 0px #b4ff04;
+    }
 }
 
 @keyframes pulse-blue {
-  0% {
-    box-shadow: 
-      0px 0px 10px 0px cyan,
-      inset 0px 0px 10px 0px cyan;
-  }
+    0% {
+        box-shadow: 
+            0px 0px 10px 0px cyan,
+            inset 0px 0px 10px 0px cyan;
+    }
 
-  25% {
-    box-shadow: 
-      0px 0px 9px 0px cyan,
-      inset 0px 0px 9px 0px cyan;
-  }
+    25% {
+        box-shadow: 
+            0px 0px 9px 0px cyan,
+            inset 0px 0px 9px 0px cyan;
+    }
 
-  50% {
-    box-shadow: 
-      0px 0px 8px 0px cyan,
-      inset 0px 0px 8px 0px cyan;
-  }
+    50% {
+        box-shadow: 
+            0px 0px 8px 0px cyan,
+            inset 0px 0px 8px 0px cyan;
+    }
 
-  75% {
-    box-shadow: 
-      0px 0px 9px 0px cyan,
-      inset 0px 0px 9px 0px cyan;
-  }
+    75% {
+        box-shadow: 
+            0px 0px 9px 0px cyan,
+            inset 0px 0px 9px 0px cyan;
+    }
 
-  100% {
-    box-shadow: 
-      0px 0px 10px 0px cyan,
-      inset 0px 0px 10px 0px cyan;
-  }
+    100% {
+        box-shadow: 
+            0px 0px 10px 0px cyan,
+            inset 0px 0px 10px 0px cyan;
+    }
 }
 
 @keyframes pulse-pink {
-  0% {
-    box-shadow: 
-      0px 0px 10px 0px rgb(255, 35, 145),
-      inset 0px 0px 10px 0px rgb(255, 35, 145);
-  }
+    0% {
+        box-shadow: 
+            0px 0px 10px 0px rgb(255, 35, 145),
+            inset 0px 0px 10px 0px rgb(255, 35, 145);
+    }
 
-  25% {
-    box-shadow: 
-      0px 0px 9px 0px rgb(255, 35, 145),
-      inset 0px 0px 9px 0px rgb(255, 35, 145);
-  }
+    25% {
+        box-shadow: 
+            0px 0px 9px 0px rgb(255, 35, 145),
+            inset 0px 0px 9px 0px rgb(255, 35, 145);
+    }
 
-  50% {
-    box-shadow: 
-      0px 0px 8px 0px rgb(255, 35, 145),
-      inset 0px 0px 8px 0px rgb(255, 35, 145);
-  }
+    50% {
+        box-shadow: 
+            0px 0px 8px 0px rgb(255, 35, 145),
+            inset 0px 0px 8px 0px rgb(255, 35, 145);
+    }
 
-  75% {
-    box-shadow: 
-      0px 0px 9px 0px rgb(255, 35, 145),
-      inset 0px 0px 9px 0px rgb(255, 35, 145);
-  }
+    75% {
+        box-shadow: 
+            0px 0px 9px 0px rgb(255, 35, 145),
+            inset 0px 0px 9px 0px rgb(255, 35, 145);
+    }
 
-  100% {
-    box-shadow: 
-      0px 0px 10px 0px rgb(255, 35, 145),
-      inset 0px 0px 10px 0px rgb(255, 35, 145);
+    100% {
+        box-shadow: 
+            0px 0px 10px 0px rgb(255, 35, 145),
+            inset 0px 0px 10px 0px rgb(255, 35, 145);
     }
 }
 
 @media screen and (max-width: 650px) {
-  .vertical-masonry-gallery {
-    columns: 2 auto;
-  }
+    .vertical-masonry-gallery {
+        columns: 2 auto;
+    }
 }
 
 @media screen and (max-width: 525px) {
-  #navbar a {
-    font-size: 16px;
-  }
+    #navbar a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 425px) {
-  #navbar a {
-    font-size: 12px;
-  }
+    #navbar a {
+        font-size: 12px;
+    }
 }
 
 @media screen and (max-width: 375px) {
-  .vertical-masonry-gallery {
-    columns: 1 auto;
-  }
+    .vertical-masonry-gallery {
+        columns: 1 auto;
+    }
 }
