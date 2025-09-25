@@ -28,6 +28,23 @@ body {
     font-family: "Mogra";
     display: block;
     padding: 12px 0;
+    transition: .5s;
+}
+
+#navbar a#home:hover {
+    text-shadow: 0 0 10px #b4ff04;
+}
+
+#navbar a#about:hover {
+    text-shadow: 0 0 10px rgb(255, 35, 145);
+}
+
+#navbar a#blog:hover {
+    text-shadow: 0 0 10px cyan;
+}
+
+#navbar a#gallery:hover {
+    text-shadow: 0 0 10px #b4ff04;
 }
 
 #hero {
