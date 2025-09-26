@@ -160,6 +160,16 @@ body {
     }
 }
 
+@media screen and (max-width: 650px) {
+    #hero #hero-content h1 {
+        font-size: 30px;
+    }
+
+    #hero #hero-content a {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 525px) {
     #gallery-layout {
         grid-template-columns: 1fr;
