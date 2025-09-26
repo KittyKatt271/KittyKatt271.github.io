@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&family=Yuji+Syuku&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "Yuji Syuku";
     background-color: #1f1a15;
 }
 
@@ -18,7 +20,14 @@ body {
     display: block;
     text-decoration: none;
     color: #d6c1a9;
-    padding: 24px;
+    padding: 1.75% 5% 0px;
+    font-size: 1.75vw;
+    font-weight: bold;
+}
+
+#navbar a#logo {
+    font-family: "Rock Salt";
+    padding: 1% 24px;
 }
 
 #hero {
@@ -32,7 +41,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    padding: 0 10%;
+    padding: 0 7%;
 }
 
 #hero #hero-content {
@@ -41,11 +50,13 @@ body {
 
 #hero #hero-content h1 {
     color: #d6c1a9;
-    font-size: 50px;
+    font-size: 4.25vw;
+    font-family: "Rock Salt";
+    margin-bottom: 10px;
 }
 
 #hero #hero-content a {
-    font-size: 24px;
+    font-size: 2.25vw;
     width: 60%;
     margin: 0 auto;
 }
@@ -55,8 +66,9 @@ body {
     text-decoration: none;
     background-color: #d6c1a9;
     color: #1f1a15;
-    padding: 12px 24px;
+    padding: 4% 5% 5%;
     border-radius: 10px;
+    font-weight: bold;
 }
 
 #gallery-layout {
@@ -94,18 +106,44 @@ body {
 #card-layout {
     display: flex;
     justify-content: center;
-    gap: 100px;
-    margin: 30px;
+    gap: 7%;
+    margin: 30px auto;
+    width: 75%
 }
 
 #card-layout .card {
     border: 5px solid #ad8a67d2;
     background-color: #26231ca2;
     color: #d6c1a9;
-    padding: 24px;
+    padding: 3%;
     text-align: center;
+    flex: 1;
 }
 
 #card-layout .card h2 {
     margin: 0 0 10px;
+    font-size: 2vw;
+}
+
+#card-layout a.btn {
+    font-size: 1.5vw;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+@media screen and (max-width: 750px) {
+    #gallery-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #card-layout a.btn {
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #gallery-layout {
+        grid-template-columns: 1fr;
+    }
 }
