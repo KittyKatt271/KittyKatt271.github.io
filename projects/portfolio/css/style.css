@@ -149,6 +149,8 @@ body {
 @media screen and (max-width: 750px) {
     #gallery-layout {
         grid-template-columns: 1fr 1fr;
+        padding: 30px;
+        gap: 25px
     }
 
     #card-layout a.btn {
@@ -173,6 +175,7 @@ body {
 @media screen and (max-width: 525px) {
     #gallery-layout {
         grid-template-columns: 1fr;
+        padding: 25px;
     }
 
     #navbar {
@@ -186,10 +189,5 @@ body {
 
     #navbar #links a {
         padding: 0 0 3.5%;
-    }
-}
-
-@media screen and (max-width: 440px) {
-    #navbar a {
     }
 }
