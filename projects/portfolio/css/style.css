@@ -153,8 +153,27 @@ body {
         gap: 25px
     }
 
+    #card-layout {
+        flex-direction: column;
+        width: 95%;
+        padding: 3% 0;
+    }
+
+    #card-layout .card {
+        padding: 7%;
+        margin: 5%;
+    }
+
     #card-layout a.btn {
         border-radius: 5px;
+    }
+
+    #card-layout .card h2 {
+        font-size: 18px;
+    }
+
+    #card-layout a.btn {
+        font-size: 16px;
     }
 
     #navbar a {
