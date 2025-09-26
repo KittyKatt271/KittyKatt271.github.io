@@ -21,9 +21,10 @@ body {
     display: block;
     text-decoration: none;
     color: #d6c1a9;
-    padding: 1.75% 0 0;
+    padding: 2.5% 0 0;
     font-size: 1.75vw;
     font-weight: bold;
+    transition: .5s;
 }
 
 #navbar a#logo {
@@ -32,8 +33,16 @@ body {
     flex: 1;
 }
 
+#navbar a#logo:hover {
+    color: #ad8a67d2;
+}
+
 #navbar #links {
     flex: 3;
+}
+
+#navbar #links a:hover {
+    border-bottom: 2px solid #d6c1a9;
 }
 
 #hero {
