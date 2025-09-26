@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #1f1a15;
+}
+
+#navbar {
+    display: flex;
+    background-color: #1f1a15;
+    justify-content: center;
+}
+
+#navbar a {
+    display: block;
+    text-decoration: none;
+    color: #d6c1a9;
+    padding: 24px;
+}
+
+#hero {
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #1f1a15),
+        url("../images/hero-3.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10%;
+}
+
+#hero #hero-content {
+    text-align: center;
+}
+
+#hero #hero-content h1 {
+    color: #d6c1a9;
+    font-size: 50px;
+}
+
+#hero #hero-content a {
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.btn {
+    display: block;
+    text-decoration: none;
+    background-color: #d6c1a9;
+    color: #1f1a15;
+    padding: 12px 24px;
+    border-radius: 10px;
+}
+
+#gallery-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 10px solid #ad8a67d2;
+    background-color: #26231ca2;
+    padding: 40px;
+    gap: 30px;
+    max-width: 85%;
+    margin: 40px auto;
+    box-shadow: 
+        0 0 15px 0px rgba(0, 0, 0, 0.716),
+        inset 0 0 15px 0px rgba(0, 0, 0, 0.716);
+    position: relative;
+    z-index: -1;
+}
+
+#gallery-layout .img-container {
+    width: 100%;
+    border-radius: 15px;
+    position: relative;
+    box-shadow: inset 0 0 15px 0px rgba(0, 0, 0, 0.716);
+    background-color: transparent;
+}
+
+#gallery-layout img {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    position: relative;
+    z-index: -1;
+}
+
+#card-layout {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: 30px;
+}
+
+#card-layout .card {
+    border: 5px solid #ad8a67d2;
+    background-color: #26231ca2;
+    color: #d6c1a9;
+    padding: 24px;
+    text-align: center;
+}
+
+#card-layout .card h2 {
+    margin: 0 0 10px;
+}
