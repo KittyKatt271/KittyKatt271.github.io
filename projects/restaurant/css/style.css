@@ -21,11 +21,13 @@ body {
 
 #site-nav #header #img-logo {
     width: 200px;
-    margin: 1.5%
+    margin: 1.5%;
 }
 
 #site-nav #header #img-logo img {
     width: 100%;
+    box-shadow: 5px 5px 5px 5px #150e09be;
+    padding: 5%;
 }
 
 #site-nav #header #header-content {
@@ -35,29 +37,34 @@ body {
 }
 
 #site-nav #header #header-content #text-logo h1 {
-   font-family: "liebegerda";
-   background: #281B11;
+    font-family: "liebegerda";
+    background: #281B11;
     background: linear-gradient(to top, #281B11 15%, #DDB368 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-   font-size: 85px;
-   margin: 0;
-   padding: 35px 25px;
-   letter-spacing: 10px;
-   line-height: .25;
-   font-style: italic;
+    font-size: 85px;
+    margin: 0;
+    padding: 35px 25px;
+    letter-spacing: 10px;
+    line-height: .25;
+    font-style: italic;
+    filter: drop-shadow(5px 5px 5px#150e09be);
+    position: relative;
+    z-index: 0;
 }
 
 #site-nav #header #header-content #navbar {
     display: flex;
     justify-content: space-between;
+    position: relative;
+    z-index: 1;
 }
 
 #site-nav #header #header-content #navbar a {
     color: #D1C5A6;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    padding: 10px 0 15px;
+    padding: 10px 20px 15px;
     font-family: "aviano-royale";
     font-size: 24px;
     transition: .5s;
@@ -66,4 +73,5 @@ body {
 #site-nav #header #header-content #navbar a:hover {
     color: #DDB368;
     border-bottom: 2px solid #DDB368;
+    box-shadow: 5px 5px 5px 5px #150e09be;
 }
