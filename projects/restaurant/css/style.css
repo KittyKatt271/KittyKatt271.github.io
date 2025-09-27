@@ -5,4 +5,17 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: #281B11;
+}
+
+#site-nav #header {
+    background: linear-gradient(to bottom, #281B11, #4E683E 150%);
+}
+
+#site-nav #header #logo {
+    width: 200px;
+}
+
+#site-nav #header #logo img {
+    width: 100%;
 }
