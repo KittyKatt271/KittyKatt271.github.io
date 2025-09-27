@@ -1,21 +1,69 @@
+@import url("https://use.typekit.net/xcr0lev.css");
+
 * {
     box-sizing: border-box;
 }
 
 body {
     margin: 0px;
-    font-family: sans-serif;
+    font-family: "filosofia";
     background-color: #281B11;
 }
 
 #site-nav #header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 0% 10% 0 0;
     background: linear-gradient(to bottom, #281B11, #4E683E 150%);
 }
 
-#site-nav #header #logo {
+#site-nav #header #img-logo {
     width: 200px;
+    margin: 1.5%
 }
 
-#site-nav #header #logo img {
+#site-nav #header #img-logo img {
     width: 100%;
+}
+
+#site-nav #header #header-content {
+    width: 700px;
+    text-align: center;
+    padding: 2.5% 0 0;
+}
+
+#site-nav #header #header-content #text-logo h1 {
+   font-family: "liebegerda";
+   background: #281B11;
+    background: linear-gradient(to top, #281B11 15%, #DDB368 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   font-size: 85px;
+   margin: 0;
+   padding: 35px 25px;
+   letter-spacing: 10px;
+   line-height: .25;
+   font-style: italic;
+}
+
+#site-nav #header #header-content #navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#site-nav #header #header-content #navbar a {
+    color: #D1C5A6;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0 15px;
+    font-family: "aviano-royale";
+    font-size: 24px;
+    transition: .5s;
+}
+
+#site-nav #header #header-content #navbar a:hover {
+    color: #DDB368;
+    border-bottom: 2px solid #DDB368;
 }
