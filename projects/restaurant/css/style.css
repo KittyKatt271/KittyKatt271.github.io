@@ -10,6 +10,7 @@ body {
     background-color: #281B11;
 }
 
+/*Start Header/Navbar*/
 #site-nav #header {
     display: flex;
     align-items: center;
@@ -17,23 +18,25 @@ body {
     gap: 5%;
     padding: 0% 10% 0 0;
     background: linear-gradient(to bottom, #281B11, #4E683E 150%);
+    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
+    height: 25vh;
 }
 
 #site-nav #header #img-logo {
-    width: 200px;
-    margin: 1.5%;
+    height: 80%;
+    margin: 1.25%;
 }
 
 #site-nav #header #img-logo img {
-    width: 100%;
-    box-shadow: 5px 5px 5px 5px #150e09be;
+    height: 100%;
+    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
     padding: 5%;
 }
 
 #site-nav #header #header-content {
-    width: 700px;
+    width: 100%;
     text-align: center;
-    padding: 2.5% 0 0;
+    padding: .5% 0 0;
 }
 
 #site-nav #header #header-content #text-logo h1 {
@@ -42,13 +45,13 @@ body {
     background: linear-gradient(to top, #281B11 15%, #DDB368 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 85px;
+    font-size: 5vw;
     margin: 0;
-    padding: 35px 25px;
+    padding: 3.5% 1%;
     letter-spacing: 10px;
     line-height: .25;
     font-style: italic;
-    filter: drop-shadow(5px 5px 5px#150e09be);
+    filter: drop-shadow(.4vw .4vw .4vw #150e09be);
     position: relative;
     z-index: 0;
 }
@@ -64,14 +67,251 @@ body {
     color: #D1C5A6;
     text-decoration: none;
     border-bottom: 2px solid transparent;
-    padding: 10px 20px 15px;
+    padding: 1% 2.5%;
     font-family: "aviano-royale";
-    font-size: 24px;
-    transition: .5s;
+    font-size: 1.5vw;
+    font-weight: bold;
+    transition: box-shadow .5s ease-in-out, border-bottom .5s ease-in-out;
 }
 
 #site-nav #header #header-content #navbar a:hover {
     color: #DDB368;
     border-bottom: 2px solid #DDB368;
-    box-shadow: 5px 5px 5px 5px #150e09be;
+    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
 }
+/*End Header/Navbar*/
+
+/*Start Carousel*/
+.hero-carousel {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 100%;
+  
+  display: none; /* Hide by default, show active with JS */
+}
+
+.carousel-item.active {
+  display: block;
+}
+
+.carousel-item video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the entire area */
+  object-position: bottom center;
+  position: relative;
+  z-index: -1;
+}
+
+.carousel-item#golden video {
+    object-position: center center;
+}
+
+.carousel-item#macarons video {
+    object-position: 50% 75%;
+}
+
+.carousel-item#cream video {
+    object-position: 50% 25%;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "aviano-royale";
+  font-weight: bold;
+  color: #DDB368;
+  text-align: center;
+  background-color: #281b11b3;
+  border-radius: 75px 0 75px 0;
+  width: 52.5%;
+}
+
+.carousel-caption h1 {
+    font-size: 4.5vw;
+    padding: 5% 7.5%;
+    margin: 0;
+}
+
+.carousel-caption h2 {
+    font-size: 3vw;
+    padding: 5% 7.5% 0;
+    margin: 0;
+}
+
+.carousel-caption p,
+.carousel-caption h3  {
+    font-size: 2vw;
+    padding: 2% 7.5% 5%;
+    margin: 0;
+    font-weight: normal;
+}
+
+.carousel-caption h3 {
+    padding-bottom: 3.5%;
+}
+
+
+#cream .carousel-caption h2 {
+    padding: 5% 5% 0; 
+    font-size: 2.75vw;
+    letter-spacing: 1.5px;;
+}
+
+.carousel-caption a {
+    font-size: 2.5vw;
+    padding: 2.5% 0%;
+    margin: 0;
+    text-decoration: none;
+    color: #664528;
+    background-color: #ddb268c3;
+    display: block;
+    margin: 0 auto 5%;
+    width: 75%;
+    border-radius: 35%;
+    transition: background-color .5s ease-in-out;
+}
+
+.carousel-caption a:hover {
+    background-color: #DDB368;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #281b11b3;
+  color: #D1C5A6;
+  border: none;
+  padding: 0px 25px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 50px;
+  transition: 
+    color .5s ease-in-out, 
+    background-color .5s ease-in-out;
+}
+
+.carousel-control:hover {
+    background-color: #664528;
+    color: #DDB368;
+}
+
+.carousel-control.prev {
+  left: 10px;
+}
+
+.carousel-control.next {
+  right: 10px;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background: #281b11b3;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.indicator:hover {
+    box-shadow: 0 0 7px 3px #D1C5A6;
+}
+
+.indicator.active {
+  background: #DDB368;
+  box-shadow: none;
+}
+/*End Carousel*/
+
+/*Begin Menu*/
+#menu {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#menu h2 {
+    font-family: "liebegerda";
+    color: #DDB368;
+    text-align: center;
+    font-size: 4vw;
+    letter-spacing: 5px;
+    line-height: 1;
+    margin: 10% 0 3%;
+}
+
+#menu h3 {
+    margin: 0 0 2%;
+    font-family: "aviano-royale";
+    font-size: 1.75vw;
+}
+
+#menu p {
+    margin: 0 0 5%;
+    font-size: 1.4vw;
+}
+
+#menu .menu-content {
+    color: #D1C5A6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10%;
+}
+
+#menu .menu-content .menu-item .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sides {
+    background-color: #4E683E;
+    margin: 10% 0;
+    text-align: center;
+    color: #A8D385;
+    padding: 2% 5%;
+    border-radius: 25%;
+}
+
+.sides .side-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5%;
+}
+
+#menu .sides h3 {
+    margin: 0;
+    padding: 0 0 2%;
+    font-size: 2.5vw;
+}
+
+#menu .sides h4 {
+    margin: 0 0 2%;
+    font-size: 1.75vw;
+
+}
+/*End Menu*/

@@ -23,17 +23,103 @@
                     </div>
 
                     <div id="navbar">
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="#">About Us</a>
-                        <a href="#">Menu</a>
+                        <a href="menu.html">Menu</a>
                         <a href="#">Reservations</a>
                     </div>
                 </div>
             </div>
         </div>        
 
-        <div id="hero">
+        
+        <div class="hero-carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <video autoplay muted loop src="videos/hero-1.mov">
+                    </video>
+
+                    <div class="carousel-caption">
+                        <h1>Reconnect with the Magic of the Natural World</h1>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <video autoplay muted loop src="videos/hero-2.mov">
+                    </video>
+
+                    <div class="carousel-caption">
+                        <h2>
+                            Nestled in a serene, natural setting — our event 
+                            hall offers a warm, earthy space for:
+                        </h2>
+
+                        <p>
+                            Weddings • Birthdays • Retreats • Special 
+                            Gatherings
+                        </p>
+                    </div>
+                </div>
+
+                
+                <div id="golden" class="carousel-item active">
+                    <video autoplay muted loop src="videos/hero-3.mov">
+                    </video>
+
+                    <div class="carousel-caption">
+                        <h2>Earthy. Elegant. Golden.</h2>
+                        <h3>Explore Our New Signature Menu</h3>
+                        <a href="menu.html#golden-palette">View the Golden Palette</a>
+                    </div>
+                </div>
+
+                <div id="macarons" class="carousel-item active">
+                    <video autoplay muted loop src="videos/hero-4.mov">
+                    </video>
+
+                    <div class="carousel-caption">
+                        <h2>
+                            Endulge Your Senses With One of Our Magical Macarons!
+                        </h2>
+                        
+                        <p>
+                           Delicately crafted with earthy flavors, floral notes, and a touch of enchantment.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="cream" class="carousel-item active">
+                    <video autoplay muted loop src="videos/hero-5.mov">
+                    </video>
+
+                    <div class="carousel-caption">
+                        <h2>
+                            A warm pour. A cool swirl.<br>
+                            A sweet moment of wonder.
+                        </h2>
+
+                        <p>
+                            Witness A Dessert That<br>
+                            Transforms Before Your Eyes
+                        </p>
+                    </div>
+                </div> 
+                <!-- Add more carousel-item divs for additional videos -->
+            </div>
+
+            <button class="carousel-control prev">‹</button>
+            <button class="carousel-control next">›</button>
+            
+            <div class="carousel-indicators">
+                <span class="indicator active" data-slide-to="0"></span>
+                <span class="indicator" data-slide-to="1"></span>
+                <span class="indicator" data-slide-to="2"></span>
+                <span class="indicator" data-slide-to="3"></span>
+                <span class="indicator" data-slide-to="4"></span>
+                <!-- Add more indicators for additional videos -->
+            </div>
         </div>
         
+        <script src="javascript/carousel"></script>
     </body>
 </html>
