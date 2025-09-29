@@ -99,7 +99,8 @@ body {
 .carousel-item {
     min-width: 100%;
     height: 100%;  
-    display: none; /* Hide by default, show active with JS */
+    display: none; 
+    /* Hide by default, show active with JS */
 }
 
 .carousel-item.active {
@@ -109,7 +110,8 @@ body {
 .carousel-item video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the entire area */
+    object-fit: cover; 
+    /* Ensures video covers the entire area */
     object-position: bottom center;
     position: relative;
     z-index: -1;
@@ -165,11 +167,10 @@ body {
     padding-bottom: 3.5%;
 }
 
-
 #cream .carousel-caption h2 {
     padding: 5% 5% 0; 
     font-size: 2.75vw;
-    letter-spacing: 1.5px;;
+    letter-spacing: 1.5px;
 }
 
 .carousel-caption a {
@@ -295,7 +296,8 @@ body {
 .menu-carousel .carousel-item {
     min-width: 100%;
     height: 100%;
-    display: none; /* Hide by default, show active with JS */
+    display: none; 
+    /* Hide by default, show active with JS */
 }
 
 .menu-carousel .carousel-item.active {
@@ -305,7 +307,8 @@ body {
 .menu-carousel .carousel-item img {
     width: 50%;
     height: 100%;
-    object-fit: cover; /* Ensures video covers the entire area */
+    object-fit: cover; 
+    /* Ensures video covers the entire area */
     object-position: bottom center;
     position: relative;
 }
@@ -334,7 +337,6 @@ body {
     margin: 0;
     padding: 0% 6% 5%;
 }
-
 
 .menu-carousel .carousel-caption h3  {
     font-size: 1.5vw;
@@ -633,3 +635,22 @@ body {
     margin: 0;
 }
 /*End Menu*/
+
+@media screen and (max-width: 950px) {
+    #site-nav #header { 
+        padding-right: 5%;
+    }
+
+    #site-nav #header #header-content {
+        padding-left: 0;
+    }
+
+    #site-nav #header #header-content #navbar a {
+        font-size: 16px;
+        margin: 3% 1%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    
+}
