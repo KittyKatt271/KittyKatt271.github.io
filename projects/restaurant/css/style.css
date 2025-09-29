@@ -626,4 +626,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 5% 0 17.5%;
 }
+
+#menu #macarons h3#macaron-price {
+    text-align: center;
+    color: #A8D385;
+    padding: 5% 0 0;
+    margin: 0;
+}
 /*End Menu*/
