@@ -249,6 +249,184 @@ body {
 }
 /*End Carousel*/
 
+/*Begin Menu Nav Items*/
+    #menu-nav {
+        background-color: #D1C5A6;
+        height: 5vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        box-shadow: inset 0vw .4vw .75vw 0vw #150e09be;
+        padding: 3%;
+    }
+
+    #menu-nav a {
+        text-decoration: 0;
+        color: #281B11;
+        font-size: 1.5vw;
+        border-bottom: 2px solid transparent;
+        padding: 1% 2.5%;
+        transition: box-shadow .5s ease-in-out, border-bottom .5s ease-in-out;
+
+    }
+
+    #menu-nav a:hover {
+    color: #587A49;
+    border-bottom: 2px solid #587A49;
+    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
+}
+/*End Menu Nav Items*/
+
+/*Start Menu Carousel*/
+.menu-carousel {
+  position: relative;
+  width: 100%;
+  height: 62.5vh;
+  overflow: hidden;
+  background-color: #2f3f26a2;
+}
+
+.menu-carousel .carousel-inner {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.menu-carousel .carousel-item {
+  min-width: 100%;
+  height: 100%;
+  display: none; /* Hide by default, show active with JS */
+}
+
+.menu-carousel .carousel-item.active {
+  display: flex;
+}
+
+.menu-carousel .carousel-item img {
+  width: 50%;
+  height: 100%;
+  object-fit: cover; /* Ensures video covers the entire area */
+  object-position: bottom center;
+  position: relative;
+}
+
+.menu-carousel .carousel-caption {
+  position: absolute;
+  top: 15%;
+  left: 75%;
+  font-family: "aviano-royale";
+  font-weight: bold;
+  color: #DDB368;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 75px 0 75px 0;
+  width: 50%;
+  padding: 0 3% 0 1%;
+}
+
+.menu-carousel .carousel-caption .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-carousel .carousel-caption h2 {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0% 6% 5%;
+}
+
+
+.menu-carousel .carousel-caption h3  {
+    font-size: 1.5vw;
+    margin: 0;
+    font-weight: normal;
+    padding: 0 7.5% 2.5%;
+}
+
+.menu-carousel .carousel-caption p {
+    font-family: "filosofia";
+    text-align: start;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0 7.5% 7.5%;
+}
+
+.menu-carousel .carousel-caption a {
+    font-size: 2vw;
+    padding: 2.5% 0%;
+    text-decoration: none;
+    color: #664528;
+    background-color: #ddb268c3;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 35%;
+    transition: background-color .5s ease-in-out;
+}
+
+.menu-carousel .carousel-caption a:hover {
+    background-color: #DDB368;
+}
+
+.menu-carousel .carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #281b11b3;
+  color: #D1C5A6;
+  border: none;
+  padding: 0px 15px 7px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 25px;
+  transition: 
+    color .5s ease-in-out, 
+    background-color .5s ease-in-out;
+}
+
+.menu-carousel .carousel-control:hover {
+    background-color: #664528;
+    color: #DDB368;
+}
+
+.menu-carousel .carousel-control.prev {
+  left: 10px;
+}
+
+.menu-carousel .carousel-control.next {
+  right: 10px;
+}
+
+.menu-carousel .carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.menu-carousel .indicator {
+  width: 10px;
+  height: 10px;
+  background: #d1c5a686;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: box-shadow .5s ease-in-out;
+}
+
+.menu-carousel .indicator:hover {
+    box-shadow: 0 0 7px 3px #a8d3855d;
+}
+
+.menu-carousel .indicator.active {
+  background: #DDB368;
+  box-shadow: none;
+}
+/*End Menu Carousel*/
+
 /*Begin Menu*/
 #menu {
     max-width: 85%;
@@ -277,6 +455,10 @@ body {
     margin: 33% 30% 5%;
 }
 
+#menu #classic-dinner .entrees h2 {
+    margin: 15% 30% 5%;
+}
+
 #menu h3 {
     margin: 0% 0 2%;
     font-family: "aviano-royale";
@@ -302,11 +484,16 @@ body {
 
 .sides {
     background-color: #4E683E;
-    margin: 10% 0;
+    margin: 10% 0 0;
     text-align: center;
     color: #A8D385;
     padding: 2% 5%;
     border-radius: 25%;
+    transform: translateY(55%);
+}
+
+#menu #classic-dinner .sides {
+    transform: translateY(35%);
 }
 
 .sides .side-content {
@@ -318,17 +505,36 @@ body {
 #menu .sides h3 {
     margin: 0;
     padding: 0 0 2%;
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 
 #menu .sides h4 {
     margin: 0 0 2%;
-    font-size: 1.75vw;
+    font-size: 1.5vw;
 }
 
-#menu #golden-palette {
+#menu .sides p {
+    font-size: 1.25vw;
+    margin: 0 0 7.5%;
+}
+
+#menu #classic-brunch .desserts {
+    transform: translateY(-7.5%);
+    padding: 0 0 5%;
+}
+
+#menu #classic-dinner .desserts {
+    transform: translateY(-25%);
+    padding: 0;
+}
+
+#menu #golden-palette,
+#menu #classic-brunch,
+#menu #classic-dinner,
+#menu #int-desserts,
+#menu #macarons {
     border: 10px groove #DDB368;
-    padding: 5%;
+    padding: 0 5% 5%;
     box-shadow: 
         0 0 0 10px #281B11,
         0 0 0 15px #DDB368,
@@ -338,14 +544,22 @@ body {
     margin: 10% auto;
 }
 
-#menu #golden-palette h2.menu-title {
+#menu #classic-dinner {
+    padding: 0 5% 0;
+}
+
+#menu #golden-palette h2.menu-title,
+#menu #classic-brunch h2.menu-title,
+#menu #classic-dinner h2.menu-title,
+#menu #int-desserts h2.menu-title,
+#menu #macarons h2.menu-title {
     margin: 0;
     font-size: 6vw;
     border-top: 2px solid #DDB368;
     border-bottom: 2px solid #DDB368;
     padding: 4%;
     color: #DDB368;
-    background-color: #ddb2685a;
+    background-color: #ddb2682a;
     border-radius: 24px 0 24px 0;
 }
 
@@ -359,5 +573,57 @@ body {
 
 #menu #golden-palette .interactive-desserts {
     margin-bottom: 2%;
+}
+
+.horizontal-masonry-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    margin: 0 2%;
+    justify-content: center;
+}
+
+#golden-palette .horizontal-masonry-gallery .item-header,
+#menu #classic-brunch .horizontal-masonry-gallery .item-header,
+#menu #classic-dinner .horizontal-masonry-gallery .item-header,
+#menu #int-desserts .horizontal-masonry-gallery .item-header,
+#menu #macarons .horizontal-masonry-gallery .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#golden-palette .horizontal-masonry-gallery h3,
+#menu #classic-brunch .horizontal-masonry-gallery h3,
+#menu #classic-dinner .horizontal-masonry-gallery h3,
+#menu #int-desserts .horizontal-masonry-gallery h3,
+#menu #macarons .horizontal-masonry-gallery h3 {
+    font-size: 1vw;
+    color: #D1C5A6;
+    transform: translateY(185px);
+    text-shadow: 
+        0 0 5px #281B11, 
+        0 0 5px #281B11, 
+        0 0 5px #281B11;
+    padding: 5%;
+}
+
+.horizontal-masonry-gallery img {
+    height: 175px;
+    flex: 1;
+    object-fit: cover;
+    display: block;
+}
+
+#menu #int-desserts .menu-content {
+    padding: 5% 0;
+}
+
+#menu #int-desserts .horizontal-masonry-gallery h3 {
+    letter-spacing: -.5px;
+}
+
+#menu #macarons .menu-content {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5% 0 17.5%;
 }
 /*End Menu*/
