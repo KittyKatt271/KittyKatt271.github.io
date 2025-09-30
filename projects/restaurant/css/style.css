@@ -445,6 +445,10 @@ body {
     background: #DDB368;
     box-shadow: none;
 }
+
+.menu-carousel .carousel-caption .price-resp {
+    display: none;
+}
 /*End Menu Carousel*/
 
 /*Begin Menu*/
@@ -680,6 +684,49 @@ body {
     #menu-nav a {
         font-size: 16px;
     }
+
+    .menu-carousel {
+        height: 67vh;
+    }
+
+    .menu-carousel .carousel-caption h2 {
+        font-size: 28px;
+        padding: 0% 6% 7.5%;
+    }
+
+    .menu-carousel .carousel-caption h3  {
+        font-size: 20px;
+        margin: 0;
+        font-weight: normal;
+        padding: 0 7.5% 2.5%;
+    }
+
+    .menu-carousel .carousel-caption p {
+        font-size: 16px;
+        margin: 0;
+        padding: 0 0% 2.5% 7.5%;
+    }
+
+    .menu-carousel .carousel-caption a {
+        font-size: 18px;
+        padding: 2.5% 2.5%;
+    }
+
+    .menu-carousel .carousel-caption .item-header {
+        display: block;
+    }
+
+    .menu-carousel .carousel-caption .price-resp {
+        display: block;
+    }
+
+    .menu-carousel .carousel-caption .price-resp {
+        padding-bottom: 7.5%;
+    }
+
+    .menu-carousel .carousel-caption .price-desk {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -718,6 +765,10 @@ body {
     #menu-nav a {
         font-size: 14px;
     }
+
+    .menu-carousel {
+        height: 68vh;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -740,12 +791,20 @@ body {
     #site-nav #header #header-content #navbar a {
         margin: .5% 5%;
     }
+
+    .menu-carousel {
+        height: 69vh;
+    }
 }
 
 @media screen and (max-width: 621px) {
     #menu-nav{
         flex-wrap: wrap;
         height: 15vh;
+    }
+
+    .menu-carousel {
+        height: 60vh;
     }
 }
 
