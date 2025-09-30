@@ -637,6 +637,10 @@ body {
 /*End Menu*/
 
 @media screen and (max-width: 950px) {
+    #site-nav #header {
+        padding-left: 1%;
+    }
+
     #site-nav #header { 
         padding-right: 5%;
     }
@@ -652,5 +656,30 @@ body {
 }
 
 @media screen and (max-width: 660px) {
-    
+    #site-nav #header {
+        padding-left: 1.25%;
+    }
+    #site-nav #header #header-content {
+        padding: 2.5% 0 0;
+    }
+
+    #site-nav #header #header-content #text-logo h1 {
+        font-size: 30px;
+    }
+
+    #site-nav #header #header-content #navbar {
+        flex-wrap: wrap;
+        margin: 1.5% 0;
+    }
+
+    #site-nav #header #header-content #navbar a {
+        margin: .5% 1%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    #site-nav #header #header-content #text-logo h1 {
+        letter-spacing: 5px;
+        padding: 5% 1%;
+    }
 }
