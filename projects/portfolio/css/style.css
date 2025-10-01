@@ -159,7 +159,7 @@ body {
     #gallery-layout {
         grid-template-columns: 1fr 1fr;
         padding: 30px;
-        gap: 25px
+        gap: 25px;
     }
 
     #card-layout {
