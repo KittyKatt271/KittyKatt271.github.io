@@ -771,7 +771,7 @@ body {
 
     .menu-carousel .carousel-caption p {
         padding-left: 4%;
-        padding-bottom: 1%
+        padding-bottom: 1%;
     }
 
     .menu-carousel .carousel-caption .price-resp {
@@ -827,7 +827,7 @@ body {
     }
 
     #menu .sides h4 {
-        font-size: 12px
+        font-size: 12px;
     }
 
     #menu .sides h3 {
@@ -981,7 +981,7 @@ body {
 }
 
 @media screen and (max-width: 621px) {
-    #menu-nav{
+    #menu-nav {
         flex-wrap: wrap;
         height: 15vh;
     }
@@ -1014,7 +1014,7 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-    .horizontal-masonry-gallery{
+    .horizontal-masonry-gallery {
         display: none;
     }
 
@@ -1110,7 +1110,7 @@ body {
     }
 
     #site-nav #header-outer {
-        padding-top: 5%
+        padding-top: 5%;
     }
     
     #site-nav #header-outer h1 {
