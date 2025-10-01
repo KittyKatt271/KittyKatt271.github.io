@@ -739,16 +739,22 @@ body {
         top: 10%;
         left: 50%;
         width: 80%;
-        height: 75%;
+        height: fit-content;
+        padding: 5% 3%;
         background-color: #2f3f26a2;
     }
 
     .menu-carousel .carousel-caption h2 {
-        padding: 5% 0 3%;
+        padding: 0% 0 3%;
+    }
+
+    .menu-carousel .carousel-caption h3 {
+        padding-bottom: 1%;
     }
 
     .menu-carousel .carousel-caption p {
         padding-left: 4%;
+        padding-bottom: 1%
     }
 
     .menu-carousel .carousel-caption .price-resp {
@@ -929,25 +935,6 @@ body {
     }
 }
 
-@media screen and (max-width: 425px) {
-    #site-nav #header #img-logo {
-        height: 70%;
-        margin: 1.25%;
-    }
-
-    .menu-carousel .carousel-caption h2 {
-        font-size: 22px;
-        padding-top: 12%;
-    }
-
-    .menu-carousel .carousel-caption h3 {
-        font-size: 16px;
-    }
-
-    .menu-carousel .carousel-caption p {
-        font-size: 12px;
-    }
-}
 
 @media screen and (max-width: 412px) {
     #site-nav #header-outer {
@@ -1012,24 +999,5 @@ body {
         font-size: 15px;
         padding: 3% 5%;
         line-height: 1;
-    }
-}
-
-@media screen and (max-width: 375px) {
-    .menu-carousel .carousel-caption {
-        border-radius: 25px 0 25px 0;
-    }
-
-    .menu-carousel .carousel-caption h2 {
-        font-size: 20px;
-        padding-top: 15%;
-    }
-
-    .menu-carousel .carousel-caption h3 {
-        font-size: 14px;
-    }
-
-    .menu-carousel .carousel-caption p {
-        font-size: 12px;
     }
 }
