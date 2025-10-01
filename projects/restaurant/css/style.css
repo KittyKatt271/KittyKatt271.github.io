@@ -729,6 +729,38 @@ body {
     }
 }
 
+@media screen and (max-width: 850px) {
+    .menu-carousel .carousel-item img {
+        width: 100%;
+        object-position: center center;
+    }
+
+    .menu-carousel .carousel-caption {
+        top: 10%;
+        left: 50%;
+        width: 80%;
+        height: 75%;
+        background-color: #2f3f26a2;
+    }
+
+    .menu-carousel .carousel-caption h2 {
+        padding: 5% 0 3%;
+    }
+
+    .menu-carousel .carousel-caption p {
+        padding-left: 4%;
+    }
+
+    .menu-carousel .carousel-caption .price-resp {
+        padding-bottom: 3%;
+    }
+
+    .menu-carousel .carousel-caption a {
+        font-size: 18px;
+        padding: 2.5% 2.5%;
+    }
+}
+
 @media screen and (max-width: 750px) {
     .carousel-caption h1 {
         font-size: 30px;
@@ -769,6 +801,11 @@ body {
     .menu-carousel {
         height: 68vh;
     }
+
+    
+    .menu-carousel .carousel-caption a {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -806,6 +843,10 @@ body {
     .menu-carousel {
         height: 60vh;
     }
+
+    .menu-carousel .carousel-caption a {
+        width: 80%;
+    }
 }
 
 @media screen and (max-width: 525px) {
@@ -814,6 +855,21 @@ body {
         padding: 5% 1%;
     }
 
+    .menu-carousel .carousel-caption {
+        border-radius: 25px 0 25px 0;
+    }
+
+    .menu-carousel .carousel-caption h2 {
+        font-size: 25px;
+    }
+
+    .menu-carousel .carousel-caption h3 {
+        font-size: 18px;
+    }
+
+    .menu-carousel .carousel-caption p {
+        font-size: 15px;
+    }
 }
 
 @media screen and (max-width: 475px) {
@@ -877,6 +933,19 @@ body {
     #site-nav #header #img-logo {
         height: 70%;
         margin: 1.25%;
+    }
+
+    .menu-carousel .carousel-caption h2 {
+        font-size: 22px;
+        padding-top: 12%;
+    }
+
+    .menu-carousel .carousel-caption h3 {
+        font-size: 16px;
+    }
+
+    .menu-carousel .carousel-caption p {
+        font-size: 12px;
     }
 }
 
@@ -943,5 +1012,24 @@ body {
         font-size: 15px;
         padding: 3% 5%;
         line-height: 1;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .menu-carousel .carousel-caption {
+        border-radius: 25px 0 25px 0;
+    }
+
+    .menu-carousel .carousel-caption h2 {
+        font-size: 20px;
+        padding-top: 15%;
+    }
+
+    .menu-carousel .carousel-caption h3 {
+        font-size: 14px;
+    }
+
+    .menu-carousel .carousel-caption p {
+        font-size: 12px;
     }
 }
