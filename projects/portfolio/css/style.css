@@ -218,4 +218,8 @@ body {
     #navbar #links a {
         padding: 0 0 3.5%;
     }
+
+    #hero {
+        align-items: center;
+    }
 }
