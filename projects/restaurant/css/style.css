@@ -565,7 +565,12 @@ body {
         inset 0 0 0 10px #281B11,
         inset 0 0 0 15px #DDB368,
         0 0 15px 25px rgba(0, 0, 0, 0.687);
-    margin: 10% auto;
+    margin: 10% auto 25%;
+}
+
+#menu #macarons {
+    margin-bottom: 10%;
+    padding-bottom: 7.5%;
 }
 
 #menu #classic-dinner {
@@ -832,6 +837,11 @@ body {
     #menu #classic-dinner .desserts h2 {
         margin: 37% 30% 5%;
     }
+
+    #menu #macarons {
+        margin-bottom: 10%;
+        padding-bottom: 10%;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -897,13 +907,19 @@ body {
         margin: 5% 30% 5%;
     }
 
-    #menu .sides{
+    #menu .sides {
         transform: translateY(0);
         margin-top: 0;
+        padding-bottom: 6.5%;
     }
 
     #menu .sides .side-content {
         grid-template-columns: 1fr 1fr;
+    }
+
+    #menu .sides .side-content .side-item p {
+        margin-bottom: 0;
+        padding-bottom: 2.5%;
     }
 
     #menu #classic-brunch .desserts {
@@ -928,8 +944,14 @@ body {
     }
 
     #menu #macarons .menu-content {
-    grid-template-columns: 1fr 1fr;
-    padding: 5% 5% 2.5%;
+        grid-template-columns: 1fr 1fr;
+        padding: 5% 5% 2.5%;
+    }
+
+    #menu #macarons {
+        margin-bottom: 10%;
+        padding-bottom: 5%;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -971,6 +993,24 @@ body {
     .menu-carousel .carousel-caption a {
         width: 80%;
     }
+
+    #menu .sides {
+        height: fit-content;
+        border-radius: 20%;
+        padding: 3.5% 5% 0%;
+        margin: 2% 5%;
+        
+    }
+
+    #menu .sides .side-content {
+        display: block;
+        padding: 0 5% 0;
+    }
+
+    #menu .sides .side-content .side-item p {
+        padding-bottom: 5%;
+    }
+
 }
 
 @media screen and (max-width: 550px) {
@@ -984,6 +1024,11 @@ body {
     #menu #int-desserts, 
     #menu #macarons  {
         padding: 10% 10%;
+    }
+
+    #menu #macarons .menu-content {
+        grid-template-columns: 1fr;
+        padding: 5% 5% 2.5%;
     }
 }
 
