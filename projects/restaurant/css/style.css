@@ -1,4 +1,4 @@
-@import url("https://use.typekit.net/xcr0lev.css");
+@import url(https://use.typekit.net/xcr0lev.css);
 
 * {
     box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    font-family: "filosofia";
+    font-family: "new-spirirt";
     background-color: #281B11;
 }
 
@@ -45,7 +45,7 @@ body {
 
 #site-nav #header #header-content #text-logo h1,
 #site-nav h1 {
-    font-family: "liebegerda";
+    font-family: "alana";
     background: #281B11;
     background: linear-gradient(to top, #281B11 15%, #DDB368 100%);
     -webkit-background-clip: text;
@@ -365,7 +365,7 @@ body {
 }
 
 .menu-carousel .carousel-caption p {
-    font-family: "filosofia";
+    font-family: "new-spirit";
     text-align: start;
     font-size: 1.5vw;
     margin: 0;
