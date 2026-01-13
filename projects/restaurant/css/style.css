@@ -6,7 +6,7 @@
 
 body {
     margin: 0px;
-    font-family: "new-spirirt";
+    font-family: "new-spirit";
     background-color: #1a2e20;
 }
 
@@ -729,7 +729,7 @@ body {
     }
 
     #site-nav #header #header-content #navbar a {
-        font-size: 16px;
+        
         margin: 3% 1%;
     }
 
