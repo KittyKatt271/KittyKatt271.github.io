@@ -790,6 +790,15 @@ body {
     #menu #int-desserts .horizontal-masonry-gallery h3, 
     #menu #macarons .horizontal-masonry-gallery h3 {
         transform: translateY(1vh);
+    }
+
+    #menu #golden-palette .full-menu-wo-gal , 
+    #menu #classic-brunch .full-menu-wo-gal, 
+    #menu #classic-dinner .full-menu-wo-gal, 
+    #menu #int-desserts .full-menu-wo-gal, 
+    #menu #macarons .full-menu-wo-gal{
+        transform: translateY(1vh)
+    }
 }
 
 @media screen and (max-width: 850px) {
