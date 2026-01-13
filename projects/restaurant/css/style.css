@@ -783,6 +783,13 @@ body {
     .menu-carousel .carousel-caption .price-desk {
         display: none;
     }
+
+    #menu #golden-palette .horizontal-masonry-gallery h3, 
+    #menu #classic-brunch .horizontal-masonry-gallery h3, 
+    #menu #classic-dinner .horizontal-masonry-gallery h3, 
+    #menu #int-desserts .horizontal-masonry-gallery h3, 
+    #menu #macarons .horizontal-masonry-gallery h3 {
+        transform: translateY(1vh);
 }
 
 @media screen and (max-width: 850px) {
@@ -820,6 +827,15 @@ body {
     .menu-carousel .carousel-caption a {
         font-size: 18px;
         padding: 2.5% 2.5%;
+    }
+
+    #menu #golden-palette .horizontal-masonry-gallery h3, 
+    #menu #classic-brunch .horizontal-masonry-gallery h3, 
+    #menu #classic-dinner .horizontal-masonry-gallery h3, 
+    #menu #int-desserts .horizontal-masonry-gallery h3, 
+    #menu #macarons .horizontal-masonry-gallery h3 {
+        transform: translateY(2vh);
+        font-size: 8px;
     }
 }
 
