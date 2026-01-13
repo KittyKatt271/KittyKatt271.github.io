@@ -12,7 +12,7 @@ body {
 
 /*Start Header/Navbar*/
 #site-nav #header-outer {
-    background: linear-gradient(to bottom, #1a2e20, #1a2e20 150%);
+    background: linear-gradient(to bottom, #1a2e20, #6d893a9e 150%);
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
     height: 25vh;
 }
@@ -33,8 +33,8 @@ body {
 
 #site-nav #header #img-logo img {
     height: 100%;
-    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
-    padding: 5%;
+    box-shadow: .25vw .25vw .75vw .25vw #150e0988;
+    padding: 7.5%;
 }
 
 #site-nav #header #header-content {
@@ -56,7 +56,7 @@ body {
     letter-spacing: 10px;
     line-height: .25;
     font-style: italic;
-    filter: drop-shadow(.4vw .4vw .4vw #150e09be);
+    filter: drop-shadow(.4vw .4vw .4vw #150e09b8);
     position: relative;
     z-index: 0;
 }
@@ -90,7 +90,7 @@ body {
 #site-nav #header #header-content #navbar a:hover {
     color: #d3b354;
     border-bottom: 2px solid #d3b354;
-    box-shadow: .4vw .4vw .75vw .25vw #150e09be;
+    box-shadow: .4vw .4vw .75vw .25vw #150e0988;
 }
 /*End Header/Navbar*/
 
@@ -274,7 +274,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    box-shadow: inset 0vw .4vw .75vw 0vw #150e09be;
+    box-shadow: inset 0vw .4vw .75vw 0vw #150e0988;
     padding: 3%;
 }
 
@@ -455,7 +455,6 @@ body {
 
 /*Begin Menu*/
 #menu {
-    max-width: 85%;
     margin: 0 auto;
 }
 
@@ -466,7 +465,7 @@ body {
     font-size: 4vw;
     letter-spacing: 5px;
     line-height: 1;
-    margin: 20% 30% 5%;
+    margin: 15% 30% 5%;
     border-top: 2px solid #d3b354;
     border-bottom: 2px solid #d3b354;
     padding: 2.5%;
@@ -478,17 +477,18 @@ body {
 }
 
 #menu .desserts h2 {
-    margin: 33% 30% 5%;
+    margin: 22.5% 30% 5%;
 }
 
 #menu #classic-dinner .entrees h2 {
-    margin: 15% 30% 5%;
+    margin: 12% 30% 5%;
 }
 
 #menu h3 {
     margin: 0% 0 2%;
     font-family: "aviano-royale";
     font-size: 1.65vw;
+    color: #f7dc8bc8;
 }
 
 #menu p {
@@ -501,6 +501,8 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 7.5% 5%;
+    max-width: 85%;
+    margin: 0 auto;
 }
 
 #menu .menu-content .menu-item .item-header {
@@ -509,11 +511,15 @@ body {
 }
 
 .sides {
-    margin: 10% 0 0;
+    margin: 10% auto 0;
     text-align: center;
     color: #dee2c7;
-    padding: 2% 5%;
-    transform: translateY(55%);
+    padding: 2.5% 5%;
+    transform: translateY(35%);
+    border-top: 2px solid #d3b354;
+    border-bottom: 2px solid #d3b354;
+    border-radius: 24px 0 24px 0;
+    max-width: 85%;
 }
 
 #menu #classic-dinner .sides {
@@ -544,12 +550,16 @@ body {
 
 #menu #classic-brunch .desserts {
     transform: translateY(-7.5%);
-    padding: 0 0 5%;
+    padding-bottom: 5%;
 }
 
 #menu #classic-dinner .desserts {
-    transform: translateY(-25%);
-    padding: 0;
+    transform: translateY(-5%);
+    padding-bottom: 2.5%;
+}
+
+#menu #golden-palette .desserts {
+    margin-top: 25%;
 }
 
 #menu #golden-palette,
@@ -557,24 +567,14 @@ body {
 #menu #classic-dinner,
 #menu #int-desserts,
 #menu #macarons {
-    border: 10px groove #d3b354;
-    padding: 0 5% 5%;
-    box-shadow: 
-        0 0 0 10px #1a2e20,
-        0 0 0 15px #d3b354,
-        inset 0 0 0 10px #1a2e20,
-        inset 0 0 0 15px #d3b354,
-        0 0 15px 25px rgba(0, 0, 0, 0.687);
-    margin: 10% auto 25%;
+    margin: 0%;
+    border-bottom: 7px ridge #d3b354;
+    padding-bottom: 5%;
 }
 
 #menu #macarons {
-    margin-bottom: 10%;
-    padding-bottom: 7.5%;
-}
-
-#menu #classic-dinner {
-    padding: 0 5% 0;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 #menu #golden-palette h2.menu-title,
@@ -584,12 +584,13 @@ body {
 #menu #macarons h2.menu-title {
     margin: 0;
     font-size: 6vw;
-    border-top: 2px solid #d3b354;
-    border-bottom: 2px solid #d3b354;
+    border-top: 7px groove #d3b354;
+    border-bottom: 7px ridge #d3b354;
     padding: 4%;
     color: #d3b354;
-    background-color: #ddb2682a;
-    border-radius: 24px 0 24px 0;
+    background-color: #6d893a9e;
+    transform: translateY(-4vh);
+    border-radius: 0;
 }
 
 #menu #golden-palette .interactive-desserts h2 {
@@ -607,9 +608,10 @@ body {
 .horizontal-masonry-gallery {
     display: flex;
     flex-wrap: wrap;
-    gap: 2%;
-    margin: 0 2%;
     justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 
 #golden-palette .horizontal-masonry-gallery .item-header,
@@ -619,6 +621,7 @@ body {
 #menu #macarons .horizontal-masonry-gallery .item-header {
     display: flex;
     justify-content: space-between;
+    transform: translateY(-4.5vh);
 }
 
 #golden-palette .horizontal-masonry-gallery h3,
@@ -628,16 +631,15 @@ body {
 #menu #macarons .horizontal-masonry-gallery h3 {
     font-size: 1vw;
     color: #dee2c7;
-    transform: translateY(185px);
     text-shadow: 
         0 0 5px #1a2e20, 
         0 0 5px #1a2e20, 
         0 0 5px #1a2e20;
-    padding: 5%;
+    padding: 0 5%;
 }
 
 .horizontal-masonry-gallery img {
-    height: 175px;
+    width: 32.9vw;
     flex: 1;
     object-fit: cover;
     display: block;
