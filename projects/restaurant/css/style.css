@@ -799,6 +799,14 @@ body {
     #menu #macarons .full-menu-wo-gal{
         transform: translateY(1vh)
     }
+
+     #menu #macarons h3#macaron-price {
+        padding-top: 2%;
+    }
+
+    #menu #macarons .menu-content {
+        padding-top: 3%;
+    }
 }
 
 @media screen and (max-width: 850px) {
@@ -808,7 +816,7 @@ body {
     }
 
     .menu-carousel .carousel-caption {
-        top: 10%;
+        top: 20%;
         left: 50%;
         width: 80%;
         height: fit-content;
@@ -866,6 +874,14 @@ body {
 
     #menu .sides h3 {
         font-size: 16px;
+    }
+
+    #menu #classic-brunch .sides {
+            margin-top: 15%;
+    }
+
+    #menu #macarons {
+        padding-bottom: 5%;
     }
 }
 
@@ -933,6 +949,20 @@ body {
         margin-bottom: 10%;
         padding-bottom: 5%;
     }
+    
+    #menu .entrees h2,
+    #menu #classic-dinner .entrees h2 {
+        margin-top: 7.5%;
+    }
+    
+     #menu .sides {
+        transform: translateY(-7.5vh);
+        padding-bottom: 3.5%
+     }
+
+     #menu #classic-dinner .sides {
+        transform: translateY(-5vh);
+     }
 }
 
 @media screen and (max-width: 660px) {
