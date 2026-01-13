@@ -47,7 +47,7 @@ body {
 #site-nav h1 {
     font-family: "alana";
     background: #1a2e20;
-    background: linear-gradient(to top, #1a2e20 15%, #e4c56c 100%);
+    background: linear-gradient(to top, #1a2e20 15%, #d3b354 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5vw;
@@ -88,8 +88,8 @@ body {
 }
 
 #site-nav #header #header-content #navbar a:hover {
-    color: #e4c56c;
-    border-bottom: 2px solid #e4c56c;
+    color: #d3b354;
+    border-bottom: 2px solid #d3b354;
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
 }
 /*End Header/Navbar*/
@@ -149,7 +149,7 @@ body {
     transform: translateX(-50%);
     font-family: "aviano-royale";
     font-weight: bold;
-    color: #e4c56c;
+    color: #d3b354;
     text-align: center;
     background-color: #1a2e20b3;
     border-radius: 75px 0 75px 0;
@@ -196,8 +196,8 @@ body {
     padding: 2.5% 0%;
     margin: 0;
     text-decoration: none;
-    color: #664528;
-    background-color: #ddb268c3;
+    color: #483e2a;
+    background-color: #d3b354c3;
     display: block;
     margin: 0 auto 5%;
     width: 75%;
@@ -206,7 +206,7 @@ body {
 }
 
 .carousel-caption a:hover {
-    background-color: #e4c56c;
+    background-color: #d3b354;
 }
 
 .carousel-control {
@@ -214,7 +214,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background-color: #1a2e20b3;
-    color: #D1C5A6;
+    color: #d3b354;
     border: none;
     padding: 0px 25px 7px;
     border-radius: 50%;
@@ -227,8 +227,8 @@ body {
 }
 
 .carousel-control:hover {
-    background-color: #664528;
-    color: #e4c56c;
+    background-color: #d3b354;
+    color: #483e2a;
 }
 
 .carousel-control.prev {
@@ -258,18 +258,18 @@ body {
 }
 
 .indicator:hover {
-    box-shadow: 0 0 7px 3px #D1C5A6;
+    box-shadow: 0 0 7px 3px #fff0c1;
 }
 
 .indicator.active {
-    background: #e4c56c;
+    background: #d3b354;
     box-shadow: none;
 }
 /*End Carousel*/
 
 /*Begin Menu Nav Items*/
 #menu-nav {
-    background-color: #D1C5A6;
+    background-color: #dee2c7;
     height: 5vh;
     display: flex;
     justify-content: space-evenly;
@@ -290,8 +290,8 @@ body {
 }
 
 #menu-nav a:hover {
-    color: #587A49;
-    border-bottom: 2px solid #587A49;
+    color: #6d893a;
+    border-bottom: 2px solid #6d893a;
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
 }
 /*End Menu Nav Items*/
@@ -302,7 +302,9 @@ body {
     width: 100%;
     height: 62.5vh;
     overflow: hidden;
-    background-color: #2f3f26a2;
+    background-color: #2e261b;
+    border-bottom: 7px ridge #d3b354;
+    border-top: 7px groove #d3b354;
 }
 
 .menu-carousel .carousel-inner {
@@ -338,7 +340,7 @@ body {
     left: 75%;
     font-family: "aviano-royale";
     font-weight: bold;
-    color: #e4c56c;
+    color: #d3b354;
     text-align: center;
     background-color: transparent;
     border-radius: 75px 0 75px 0;
@@ -376,8 +378,8 @@ body {
     font-size: 2vw;
     padding: 2.5% 0%;
     text-decoration: none;
-    color: #664528;
-    background-color: #ddb268c3;
+    color: #483e2a;
+    background-color: #d3b354c3;
     display: block;
     margin: 0 auto;
     width: 50%;
@@ -386,7 +388,7 @@ body {
 }
 
 .menu-carousel .carousel-caption a:hover {
-    background-color: #e4c56c;
+    background-color: #d3b354;
 }
 
 .menu-carousel .carousel-control {
@@ -394,7 +396,7 @@ body {
     top: 50%;
     transform: translateY(-50%);
     background-color: #1a2e20b3;
-    color: #D1C5A6;
+    color: #d3b354;
     border: none;
     padding: 0px 15px 7px;
     border-radius: 50%;
@@ -407,8 +409,8 @@ body {
 }
 
 .menu-carousel .carousel-control:hover {
-    background-color: #664528;
-    color: #e4c56c;
+    background-color: #d3b354;
+    color: #483e2a;
 }
 
 .menu-carousel .carousel-control.prev {
@@ -431,18 +433,18 @@ body {
 .menu-carousel .indicator {
     width: 10px;
     height: 10px;
-    background: #d1c5a686;
+    background: #dee2c786;
     border-radius: 50%;
     cursor: pointer;
     transition: box-shadow .5s ease-in-out;
 }
 
 .menu-carousel .indicator:hover {
-    box-shadow: 0 0 7px 3px #a8d3855d;
+    box-shadow: 0 0 7px 3px #fff0c15d;
 }
 
 .menu-carousel .indicator.active {
-    background: #e4c56c;
+    background: #d3b354;
     box-shadow: none;
 }
 
@@ -459,14 +461,14 @@ body {
 
 #menu h2 {
     font-family: "alana";
-    color: #e4c56c;
+    color: #d3b354;
     text-align: center;
     font-size: 4vw;
     letter-spacing: 5px;
     line-height: 1;
     margin: 20% 30% 5%;
-    border-top: 2px solid #e4c56c;
-    border-bottom: 2px solid #e4c56c;
+    border-top: 2px solid #d3b354;
+    border-bottom: 2px solid #d3b354;
     padding: 2.5%;
     border-radius: 24px 0 24px 0;
 }
@@ -495,7 +497,7 @@ body {
 }
 
 #menu .menu-content {
-    color: #D1C5A6;
+    color: #dee2c7;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 7.5% 5%;
@@ -507,12 +509,10 @@ body {
 }
 
 .sides {
-    background-color: #dee2c7;
     margin: 10% 0 0;
     text-align: center;
-    color: #1a2e20;
+    color: #dee2c7;
     padding: 2% 5%;
-    border-radius: 25%;
     transform: translateY(55%);
 }
 
@@ -557,13 +557,13 @@ body {
 #menu #classic-dinner,
 #menu #int-desserts,
 #menu #macarons {
-    border: 10px groove #e4c56c;
+    border: 10px groove #d3b354;
     padding: 0 5% 5%;
     box-shadow: 
         0 0 0 10px #1a2e20,
-        0 0 0 15px #e4c56c,
+        0 0 0 15px #d3b354,
         inset 0 0 0 10px #1a2e20,
-        inset 0 0 0 15px #e4c56c,
+        inset 0 0 0 15px #d3b354,
         0 0 15px 25px rgba(0, 0, 0, 0.687);
     margin: 10% auto 25%;
 }
@@ -584,10 +584,10 @@ body {
 #menu #macarons h2.menu-title {
     margin: 0;
     font-size: 6vw;
-    border-top: 2px solid #e4c56c;
-    border-bottom: 2px solid #e4c56c;
+    border-top: 2px solid #d3b354;
+    border-bottom: 2px solid #d3b354;
     padding: 4%;
-    color: #e4c56c;
+    color: #d3b354;
     background-color: #ddb2682a;
     border-radius: 24px 0 24px 0;
 }
@@ -627,7 +627,7 @@ body {
 #menu #int-desserts .horizontal-masonry-gallery h3,
 #menu #macarons .horizontal-masonry-gallery h3 {
     font-size: 1vw;
-    color: #D1C5A6;
+    color: #dee2c7;
     transform: translateY(185px);
     text-shadow: 
         0 0 5px #1a2e20, 
@@ -658,7 +658,7 @@ body {
 
 #menu #macarons h3#macaron-price {
     text-align: center;
-    color: #A8D385;
+    color: #d3b354;
     padding: 5% 0 0;
     margin: 0;
 }
