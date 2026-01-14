@@ -1161,6 +1161,16 @@ body {
     #menu .sides {
         padding-bottom: 6%;
     }
+
+    #menu #classic-brunch .desserts {
+        transform: translateY(-13vh);
+    }
+
+    #menu #classic-dinner .desserts,
+    #menu #golden-palette .desserts,
+    #menu #golden-palette .interactive-desserts {
+        transform: translateY(-8vh);
+    }
 }
 
 @media screen and (max-width: 450px) {    
@@ -1240,7 +1250,4 @@ body {
         padding-bottom: 7%;
     }
 
-    .horizontal-masonry-gallery img {
-        width: 32.15vw;
-    }
 }
