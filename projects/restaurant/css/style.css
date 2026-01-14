@@ -608,7 +608,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0;
     padding: 0;
     width: 100%;
 }
@@ -936,7 +935,7 @@ body {
         padding: 0 5%;
     }
 
-     #menu .sides .side-content {
+    #menu .sides .side-content {
         grid-template-columns: 1fr 1fr;
     }
 
@@ -955,14 +954,34 @@ body {
         margin-top: 7.5%;
     }
     
-     #menu .sides {
+    #menu .sides {
         transform: translateY(-7.5vh);
         padding-bottom: 3.5%
-     }
+    }
 
-     #menu #classic-dinner .sides {
+    #menu #classic-dinner .sides {
         transform: translateY(-5vh);
-     }
+    }
+
+    #menu #classic-brunch .desserts{
+        transform: translateY(-22vh);
+        margin-bottom: 0;
+        padding-bottom: 0;
+        padding-top: 5%;
+    }
+
+    #menu #classic-dinner .desserts,
+    #menu #golden-palette .desserts,
+    #menu #golden-palette .interactive-desserts  {
+        transform: translateY(-15vh);
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    #menu #classic-brunch,
+    #menu #classic-dinner {
+        padding-bottom: 0;
+    }
 }
 
 @media screen and (max-width: 660px) {
@@ -989,6 +1008,10 @@ body {
     .menu-carousel {
         height: 69vh;
     }
+
+    #menu .sides {
+        padding-bottom: 4%;
+    }
 }
 
 @media screen and (max-width: 621px) {
@@ -1009,9 +1032,27 @@ body {
         grid-template-columns: 1fr;
         padding: 5% 5% 2.5%;
     }
+
+    #menu #classic-brunch .desserts {
+        transform: translateY(-18vh);
+    }
+
+    #menu #classic-dinner .desserts,
+    #menu #golden-palette .desserts,
+    #menu #golden-palette .interactive-desserts  {
+        transform: translateY(-13vh);
+    }
+
+    #menu #classic-brunch .sides {
+        transform: translateY(-5vh);
+    }
+
+    #menu #classic-dinner .sides {
+        transform: translateY(-2.5vh);
+    }
 }
 
-@media screen and (max-width: 525px) {
+@media screen and (max-width: 550px) {
 #site-nav #header #header-content #text-logo h1 {
         letter-spacing: 5px;
         padding: 5% 1%;
@@ -1031,6 +1072,45 @@ body {
 
     .menu-carousel .carousel-caption p {
         font-size: 15px;
+    }
+
+    #menu #classic-brunch .desserts {
+        transform: translateY(-16vh);
+    }
+
+    #menu #classic-dinner .desserts,
+    #menu #golden-palette .desserts,
+    #menu #golden-palette .interactive-desserts {
+        transform: translateY(-11vh);
+    }
+
+    #menu .sides {
+        padding-bottom: 5%;
+    }
+
+    #menu #classic-brunch .horizontal-masonry-gallery img,
+    #menu #classic-dinner .horizontal-masonry-gallery img,
+    #menu #golden-palette .horizontal-masonry-gallery img,
+    #menu #int-desserts .horizontal-masonry-gallery img,
+    #menu #macarons .horizontal-masonry-gallery img {
+        width: 50vw;
+    }
+
+    #menu #classic-brunch .horizontal-masonry-gallery h3,
+    #menu #classic-dinner .horizontal-masonry-gallery h3,
+    #menu #golden-palette .horizontal-masonry-gallery h3,
+    #menu #int-desserts .horizontal-masonry-gallery h3,
+    #menu #macarons .horizontal-masonry-gallery h3 {
+        transform: translateY(1vh);
+        font-size: 8pt;
+    }
+
+    #menu #classic-brunch .horizontal-masonry-gallery #bene,
+    #menu #classic-dinner .horizontal-masonry-gallery #quail,
+    #menu #golden-palette .horizontal-masonry-gallery #eggs,
+    #menu #int-desserts .horizontal-masonry-gallery #hourglass,
+    #menu #macarons .horizontal-masonry-gallery #matcha {
+        display: none;
     }
 }
 
@@ -1076,6 +1156,10 @@ body {
     .carousel-control {
         padding: 0px 13px 5px;
         font-size: 25px;
+    }
+
+    #menu .sides {
+        padding-bottom: 6%;
     }
 }
 
@@ -1150,5 +1234,13 @@ body {
         font-size: 15px;
         padding: 3% 5%;
         line-height: 1;
+    }
+
+    #menu .sides {
+        padding-bottom: 7%;
+    }
+
+    .horizontal-masonry-gallery img {
+        width: 32.15vw;
     }
 }
