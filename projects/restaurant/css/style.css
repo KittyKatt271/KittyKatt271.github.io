@@ -15,7 +15,7 @@ body {
     background: linear-gradient(to bottom, #1a2e20, #6d893a9e 150%);
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
     height: 25vh;
-    border-bottom: 7px groove #d3b354;
+    border-bottom: 7px ridge #d3b354;
 }
 
 #site-nav #header {
