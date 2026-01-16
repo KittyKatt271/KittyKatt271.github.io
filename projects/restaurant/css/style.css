@@ -913,7 +913,6 @@ body {
 
     #site-nav #header-outer h1 {
         display: block;
-        letter-spacing: 4px;
         font-size: 30px;
         text-align: center;
     }
@@ -1217,7 +1216,10 @@ body {
     }
 }
 
-@media screen and (max-width: 450px) {    
+@media screen and (max-width: 450px) {  
+    #site-nav #header #header-content #navbar a {
+        font-size: 11pt;
+    }  
     .carousel-caption h1 {
         font-size: 25px;
     }
