@@ -1218,7 +1218,7 @@ body {
 
 @media screen and (max-width: 450px) {  
     #site-nav #header #header-content #navbar a {
-        font-size: 11pt;
+        font-size: 12pt;
     }  
     .carousel-caption h1 {
         font-size: 25px;
