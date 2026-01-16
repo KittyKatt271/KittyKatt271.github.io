@@ -825,6 +825,11 @@ body {
 }
 
 @media screen and (max-width: 850px) {
+    #site-nav #header #header-content #text-logo h1,
+    #site-nav h1 {
+        display: none;
+    }
+
     .menu-carousel .carousel-item img {
         width: 100%;
         object-position: center center;
