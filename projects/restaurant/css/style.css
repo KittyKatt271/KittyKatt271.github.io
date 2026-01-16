@@ -15,6 +15,7 @@ body {
     background: linear-gradient(to bottom, #1a2e20, #6d893a9e 150%);
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
     height: 25vh;
+    border-bottom: 7px groove #d3b354;
 }
 
 #site-nav #header {
@@ -27,8 +28,8 @@ body {
 }
 
 #site-nav #header #img-logo {
-    height: 80%;
-    margin: 1.25%;
+    height: 70%;
+    margin: 2%;
 }
 
 #site-nav #header #img-logo img {
@@ -50,9 +51,9 @@ body {
     background: linear-gradient(to top, #1a2e20 15%, #d3b354 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 5vw;
+    font-size: 4vw;
     margin: 0;
-    padding: 3.5% 1%;
+    padding: 3.5% 1% 2.5%;
     line-height: .5;
     font-style: italic;
     filter: drop-shadow(.4vw .4vw .4vw #150e09b8);
@@ -280,7 +281,7 @@ body {
 #menu-nav a {
     text-decoration: 0;
     color: #1a2e20;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     display: block;
     border-bottom: 2px solid transparent;
     padding: 1% 2.5%;
@@ -716,19 +717,27 @@ body {
 
 @media screen and (max-width: 950px) {
     #site-nav #header {
-        padding-left: 1%;
+        padding-left: 2%;
+        padding-right: 5%;
+        gap: 2.5%;
     }
 
-    #site-nav #header { 
-        padding-right: 5%;
+    #site-nav #header #img-logo {
+        margin-right: 0%;
     }
 
     #site-nav #header #header-content {
         padding-left: 0;
+        padding-top: 4%;
+    }
+
+    #site-nav #header #header-content #text-logo h1,
+    #site-nav h1 {
+        font-size: 32pt;
     }
 
     #site-nav #header #header-content #navbar a {
-        
+        font-size: 14pt;
         margin: 3% 1%;
     }
 
@@ -737,7 +746,7 @@ body {
     }
 
     #menu-nav a {
-        font-size: 16px;
+        font-size: 12px;
     }
 
     .menu-carousel {
@@ -805,6 +814,13 @@ body {
 
     #menu #macarons .menu-content {
         padding-top: 3%;
+    }
+}
+
+@media screen and (max-width: 875px) {
+    #site-nav #header #header-content #navbar {
+        flex-wrap: wrap;
+        margin: 1.5% 0;
     }
 }
 
@@ -994,11 +1010,6 @@ body {
 
     #site-nav #header #header-content #text-logo h1 {
         font-size: 30px;
-    }
-
-    #site-nav #header #header-content #navbar {
-        flex-wrap: wrap;
-        margin: 1.5% 0;
     }
 
     #site-nav #header #header-content #navbar a {
