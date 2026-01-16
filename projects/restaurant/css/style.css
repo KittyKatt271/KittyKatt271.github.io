@@ -827,7 +827,7 @@ body {
 @media screen and (max-width: 850px) {
     #site-nav #header #header-content #text-logo h1,
     #site-nav h1 {
-        display: none;
+        font-size: 28pt;
     }
 
     .menu-carousel .carousel-item img {
