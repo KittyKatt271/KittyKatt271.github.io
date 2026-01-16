@@ -906,7 +906,45 @@ body {
 }
 
 @media screen and (max-width: 750px) {
-.carousel-caption h1 {
+    #site-nav #header #header-content #text-logo h1,
+    #site-nav h1 {
+        font-size: 24pt;
+    }
+
+    #site-nav #header-outer h1 {
+        display: block;
+        letter-spacing: 4px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #site-nav #header #header-content #text-logo h1 {
+        display: none;
+    }
+
+     #menu-nav {
+        flex-wrap: wrap;
+        height: 15vh;
+    }
+
+    #site-nav #header-outer {
+        padding-top: 5%;
+    }
+    
+    #site-nav #header {
+        height: 15vh;
+    }
+    
+    #site-nav #header #img-logo {
+        height: 70%;
+        margin: 1.25%;
+    }
+    
+    #site-nav #header #header-content #navbar a {
+        margin: .5% 2.25%; 
+    }
+
+    .carousel-caption h1 {
         font-size: 30px;
     }
 
@@ -1031,11 +1069,6 @@ body {
 }
 
 @media screen and (max-width: 621px) {
-     #menu-nav {
-        flex-wrap: wrap;
-        height: 15vh;
-    }
-
     .menu-carousel {
         height: 60vh;
     }
@@ -1069,11 +1102,6 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-#site-nav #header #header-content #text-logo h1 {
-        letter-spacing: 5px;
-        padding: 5% 1%;
-    }
-
     .menu-carousel .carousel-caption {
         border-radius: 25px 0 25px 0;
     }
@@ -1192,38 +1220,6 @@ body {
 @media screen and (max-width: 450px) {    
     .carousel-caption h1 {
         font-size: 25px;
-    }
-
-    #site-nav #header #header-content #text-logo h1 {
-        letter-spacing: 4px;
-    }
-
-    #site-nav #header-outer {
-        padding-top: 5%;
-    }
-    
-    #site-nav #header-outer h1 {
-        display: block;
-        letter-spacing: 4px;
-        font-size: 30px;
-        text-align: center;
-    }
-
-    #site-nav #header #header-content #text-logo h1 {
-        display: none;
-    }
-
-    #site-nav #header {
-        height: 15vh;
-    }
-    
-    #site-nav #header #img-logo {
-        height: 70%;
-        margin: 1.25%;
-    }
-    
-    #site-nav #header #header-content #navbar a {
-        margin: .5% 2.25%; 
     }
 
     .carousel-caption h1 {
