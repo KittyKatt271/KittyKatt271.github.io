@@ -815,6 +815,20 @@ body {
     #menu #macarons .menu-content {
         padding-top: 3%;
     }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-content img {
+        width: 100vh;
+    }
+
+    .about-content .content {
+        margin: 5% auto;
+        padding: 0;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 875px) {
