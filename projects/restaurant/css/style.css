@@ -829,6 +829,14 @@ body {
         padding: 0;
         width: 90%;
     }
+
+    .about-content .content h2 {
+        font-size: 32pt;
+    }
+
+    .about-content .content p {
+        font-size: 16pt;
+    }
 }
 
 @media screen and (max-width: 875px) {
