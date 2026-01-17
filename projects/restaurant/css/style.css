@@ -818,6 +818,7 @@ body {
 
     .about-content {
         flex-direction: column;
+        overflow: scroll;
     }
 
     .about-content img {
@@ -827,15 +828,15 @@ body {
     .about-content .content {
         margin: 5% auto;
         padding: 0;
-        width: 90%;
+        width: 95%;
     }
 
     .about-content .content h2 {
-        font-size: 20pt;
+        font-size: 32pt;
     }
 
     .about-content .content p {
-        font-size: 10pt;
+        font-size: 16pt;
     }
 }
 
@@ -1086,6 +1087,14 @@ body {
 
     #menu .sides {
         padding-bottom: 4%;
+    }
+
+    .about-content .content h2 {
+        font-size: 20pt;
+    }
+
+    .about-content .content p {
+        font-size: 10pt;
     }
 }
 
