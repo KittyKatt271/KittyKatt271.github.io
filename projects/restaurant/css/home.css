@@ -60,8 +60,9 @@ body {
 
 .carousel-caption {
     position: absolute;
-    top: 20%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "aviano-royale";
     font-weight: bold;
     color: #d3b354;
@@ -70,18 +71,6 @@ body {
     border-radius: 75px 0 75px 0;
     width: 52.5%;
     padding: .5%;
-}
-
-#nestled .carousel-caption {
-    top: 12.5%;
-}
-
-#macarons .carousel-caption {
-    top: 15%;
-}
-
-#cream .carousel-caption {
-    top: 25%;
 }
 
 .carousel-caption h1 {
