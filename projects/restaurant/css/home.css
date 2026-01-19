@@ -60,17 +60,32 @@ body {
 
 .carousel-caption {
     position: absolute;
-    bottom: 17%;
-    left: 50%;
-    transform: translateX(-50%);
+    top: 15vh;
+    left: 25%;
     font-family: "aviano-royale";
     font-weight: bold;
     color: #d3b354;
     text-align: center;
-    background-color: #1a2e20b3;
+    background-color: #1a2e20c9;
     border-radius: 75px 0 75px 0;
     width: 52.5%;
     padding: .5%;
+}
+
+#nestled .carousel-caption {
+    top: 10vh;
+}
+
+#golden .carousel-caption {
+    top: 16vh;
+}
+
+#macarons .carousel-caption {
+    top: 12vh;
+}
+
+#cream .carousel-caption {
+    top: 18vh;
 }
 
 .carousel-caption h1 {
@@ -95,18 +110,6 @@ body {
 
 .carousel-caption h3 {
     padding-bottom: 3.5%;
-}
-
-#reconnect .carousel-caption {
-    bottom: 20%;
-}
-
-#golden .carousel-caption {
-    bottom: 22.5%;
-}
-
-#cream .carousel-caption {
-    bottom: 25%;
 }
 
 #cream .carousel-caption h2 {
@@ -141,7 +144,7 @@ body {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #1a2e20b3;
+    background-color: #1a2e20c9;
     color: #d3b354;
     border: none;
     padding: 0px 25px 7px;
@@ -179,7 +182,7 @@ body {
 .indicator {
     width: 10px;
     height: 10px;
-    background: #1a2e20b3;
+    background: #1a2e20c9;
     border-radius: 50%;
     cursor: pointer;
     transition: box-shadow .5s ease-in-out;
