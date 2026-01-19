@@ -202,6 +202,22 @@ body {
     .carousel-caption {
         border-radius: 50px 0 50px 0;
     }
+
+    #nestled .carousel-caption {
+        top: 25vh;
+    }
+
+    #golden .carousel-caption {
+        top: 17.5vh;
+    }
+
+    #macarons .carousel-caption {
+        top: 15vh;
+    }
+
+    #cream .carousel-caption {
+        top: 20vh;
+    }
 }
 
 @media screen and (max-width: 750px) {
