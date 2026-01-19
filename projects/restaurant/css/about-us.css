@@ -1,0 +1,95 @@
+@import url(https://use.typekit.net/xcr0lev.css);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: "new-spirit";
+    background-color: #1a2e20;
+}
+
+/*Begin About Us*/
+.about-content {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    background-color: #1a2e20;
+    border-bottom: 7px ridge #d3b354;
+    border-top: 7px groove #d3b354;
+    display: flex;
+}
+
+.about-content img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover; 
+    /* Ensures video covers the entire area */
+    object-position: bottom center;
+    position: relative;
+}
+
+.about-content .content {
+    font-family: "aviano-royale";
+    font-weight: bold;
+    color: #dee2c7;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 75px 0 75px 0;
+    width: 50%;
+    padding: 4% 0%;
+}
+
+.about-content .content h2 {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0% 6% 2.5%;
+    color: #d3b354;
+}
+
+.about-content .content p {
+    font-family: "new-spirit";
+    font-weight: normal;
+    text-align: start;
+    font-size: 1.5vw;
+    margin: 0;
+    padding: 0 7.5% 2.5%;
+}
+/*End About Us*/
+
+@media screen and (max-width: 950px) {
+    .about-content {
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .about-content img {
+        width: 100vw;
+    }
+
+    .about-content .content {
+        margin: 5% auto;
+        padding: 0;
+        width: 95%;
+    }
+
+    .about-content .content h2 {
+        font-size: 32pt;
+    }
+
+    .about-content .content p {
+        font-size: 16pt;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .about-content .content h2 {
+        font-size: 20pt;
+    }
+
+    .about-content .content p {
+        font-size: 10pt;
+    }
+}
