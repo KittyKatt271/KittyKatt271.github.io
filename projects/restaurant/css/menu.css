@@ -658,6 +658,14 @@ body {
     #menu #classic-dinner {
         padding-bottom: 0;
     }
+
+    #menu #golden-palette .interactive-desserts h2 {
+        border-top: none;
+        font-size: 18px;
+        font-family: "aviano-royale";
+        margin: 7% 20% 3%;
+        padding: 1%;
+    }
 }
 
 @media screen and (max-width: 660px) {
