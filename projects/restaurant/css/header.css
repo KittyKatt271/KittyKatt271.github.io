@@ -12,7 +12,7 @@ body {
 
 /*Start Header/Navbar*/
 #site-nav #header-outer {
-    background: linear-gradient(to bottom, #1a2e20, #6d893a9e 150%);
+    background: linear-gradient(to bottom, #1a2e20, #6d893a9e 175%);
     box-shadow: .4vw .4vw .75vw .25vw #150e09be;
     height: 25vh;
     border-bottom: 7px ridge #d3b354;
@@ -48,7 +48,7 @@ body {
 #site-nav h1 {
     font-family: "alana";
     background: #1a2e20;
-    background: linear-gradient(to top, #1a2e20 15%, #d3b354 100%);
+    background: linear-gradient(to top, #1a2e20 5%, #d3b354 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 4vw;
