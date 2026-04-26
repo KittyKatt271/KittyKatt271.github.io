@@ -138,7 +138,7 @@ body {
 }
 
 .carousel .carousel-caption h4.tagline {
-    padding: 0 7.5% 4% 5%;
+    padding: 0 7.5% 3% 5%;
     margin: 0;
     justify-self: left;
     text-align: left;
@@ -150,13 +150,46 @@ body {
     font-style: italic;
 }
 
+.carousel .carousel-caption .flex-box {
+    padding: 2% 7.5% 3% 5%;
+    display: flex;
+    gap: 25%;
+}
+
+.carousel .carousel-caption h4.class-title,
+.carousel .carousel-caption h4.campaign-title {
+    margin: 0;
+    padding-bottom: 1.5%;
+    justify-self: left;
+    text-align: left;
+    font-family: "newshound";
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.carousel .carousel-caption h4.class-content,
+.carousel .carousel-caption h4.campaign-content {
+    margin: 0;
+    justify-self: left;
+    text-align: left;
+    font-family: "newshound";
+    font-weight: normal;
+    font-size: 1.1vw;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
 .carousel .carousel-caption p {
     font-family: "maku";
     font-weight: normal;
     text-align: start;
     font-size: 1.35vw;
     margin: 0;
-    padding: 0 7.5% 5% 5%;
+    padding: 0 7.5% 4% 5%;
     letter-spacing: .75px;
     line-height: 1.25;
 }
@@ -168,31 +201,33 @@ body {
     padding: 1% 0%;
     text-decoration: none;
     color: rgb(43, 43, 43);
-    background: linear-gradient(to top, rgba(152, 149, 137, 0.84), rgba(255, 248, 220, 0.715) 100%);
+    background: linear-gradient(to bottom, peru, rgba(205, 134, 63, 0.475) 100%);
     display: block;
     margin: 0 auto;
-    width: 35%;
+    width: 60%;
     border-radius: 10px;
-    border-top: ridge rgb(43, 43, 43) 3px;
-    border-left: ridge rgb(43, 43, 43) 3px;
-    border-right: groove rgb(43, 43, 43) 3px;
-    border-bottom: groove rgb(43, 43, 43) 3px;
-    transition: background-color .5s ease-in-out;
+    border-top: ridge peru 3px;
+    border-left: ridge peru 3px;
+    border-right: groove peru 3px;
+    border-bottom: groove peru 3px;
+    transition: .5s ease-in-out;
 }
 
 .carousel .carousel-caption a:hover {
-    background-color: cornsilk;
+    background-color: peru;
+    color: rgba(255, 248, 220, 0.805);
 }
 
 .carousel .carousel-caption a:active {
-    background: linear-gradient(to bottom, rgba(152, 149, 137, 0.506), rgba(255, 248, 220, 0.503) 100%);
+    background: linear-gradient(to top, peru, rgba(205, 134, 63, 0.475) 100%);
+    color: rgba(255, 248, 220, 0.362);
 }
 
 .carousel .carousel-control {
     position: absolute;
     background-color: rgba(69, 26, 26, 0.688);
     align-items: center;
-    color: peru;
+    color: rgba(205, 134, 63, 0.779);
     border: none;
     padding: 0px 15px 7px;
     height: 100%;
