@@ -307,6 +307,11 @@ body {
     color: rgb(100, 99, 94);
     text-decoration: none;
     font-family: "waverly-cf";
+    transition: .5s ease-in-out;
+}
+
+.footer .site-map a:hover {
+    color: cornsilk;
 }
 
 .footer .site-map h5 {

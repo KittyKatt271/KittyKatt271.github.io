@@ -1,0 +1,66 @@
+@import url("https://use.typekit.net/drm0rll.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: maku;
+    background-color: rgb(43, 43, 43);
+}
+
+.content .hero {
+    display: flex;
+    background-image: 
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #1f1a15),
+        url("../images/moonshae13.webp"); 
+    background-size: cover;
+    background-position: center;
+    gap: 0;
+}
+
+.content .hero img {
+    width: 35%;
+    object-fit: cover;
+    border-top: ridge lightcyan 7px;
+    border-left: ridge lightcyan 7px;
+    border-right: groove lightcyan 7px;
+    border-bottom: groove lightcyan 7px;
+    border-radius: 50px;
+    corner-shape: scoop;
+    margin: 5% 0 5% 7.5%;
+    box-shadow: rgba(55, 55, 55, 0.575) 1px 1px 50px 0;
+}
+
+.content .hero .hero-content {
+    margin: 0 auto;
+    align-self: center;
+}
+.content .hero .hero-content h1 {
+    font-family: "regrets-major";
+    color: lightcyan;
+    font-weight: normal;
+    text-align: center;
+    font-size: 6vw;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    line-height: 1.15;
+}
+
+.content .hero .hero-content span#nickname {
+    font-family: "envelove";
+    font-size: 10vw;
+    line-height: .9;
+}
+
+.content .hero .hero-content p {
+    color: lightcyan;
+    line-height: 1.25;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: 0 0 2%;
+    padding: 0 7.5%;
+    font-size: 1.25vw;
+}
