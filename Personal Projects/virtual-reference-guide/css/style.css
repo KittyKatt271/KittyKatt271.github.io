@@ -93,6 +93,7 @@ body {
     /* Ensures video covers the entire area */
     object-position: bottom center;
     position: relative;
+    border-right: groove 7px peru;
 }
 
 .carousel .carousel-item img#character-img {
@@ -101,7 +102,7 @@ body {
 
 .carousel .carousel-caption {
     position: absolute;
-    top: 8%;
+    align-self: center;
     left: 75%;
     transform: translate(-50%, 0%);
     color: rgb(181, 177, 161);
@@ -120,7 +121,7 @@ body {
 .carousel .carousel-caption h2 {
     font-size: 3vw;
     margin: 0;
-    padding: 0% 6% 5%;
+    padding: 0% 7.5% 5% 5%;
     font-family: "p22-morris-troy";
     font-weight: normal;
     color: peru;
@@ -130,14 +131,14 @@ body {
     font-size: 3.5vw;
     margin: 0;
     font-weight: normal;
-    padding: 0 7.5% .5%;
+    padding: 0 7.5% .5% 5%;
     font-family: "envelove";
     justify-self: left;
     line-height: .75;
 }
 
 .carousel .carousel-caption h4.tagline {
-    padding: 0 7.5% 4%;
+    padding: 0 7.5% 4% 5%;
     margin: 0;
     justify-self: left;
     text-align: left;
@@ -155,56 +156,65 @@ body {
     text-align: start;
     font-size: 1.35vw;
     margin: 0;
-    padding: 0 7.5% 7.5%;
+    padding: 0 7.5% 5% 5%;
     letter-spacing: .75px;
     line-height: 1.25;
 }
 
 .carousel .carousel-caption a {
     font-size: 2vw;
-    padding: 2.5% 0%;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    padding: 1% 0%;
     text-decoration: none;
-    color: #483e2a;
-    background-color: #d3b354c3;
+    color: rgb(43, 43, 43);
+    background: linear-gradient(to top, rgba(152, 149, 137, 0.84), rgba(255, 248, 220, 0.715) 100%);
     display: block;
     margin: 0 auto;
-    width: 50%;
-    border-radius: 35%;
+    width: 35%;
+    border-radius: 10px;
+    border-top: ridge rgb(43, 43, 43) 3px;
+    border-left: ridge rgb(43, 43, 43) 3px;
+    border-right: groove rgb(43, 43, 43) 3px;
+    border-bottom: groove rgb(43, 43, 43) 3px;
     transition: background-color .5s ease-in-out;
 }
 
 .carousel .carousel-caption a:hover {
-    background-color: #d3b354;
+    background-color: cornsilk;
+}
+
+.carousel .carousel-caption a:active {
+    background: linear-gradient(to bottom, rgba(152, 149, 137, 0.506), rgba(255, 248, 220, 0.503) 100%);
 }
 
 .carousel .carousel-control {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #1a2e20b3;
-    color: #d3b354;
+    background-color: rgba(69, 26, 26, 0.688);
+    align-items: center;
+    color: peru;
     border: none;
     padding: 0px 15px 7px;
-    border-radius: 50%;
+    height: 100%;
     cursor: pointer;
     z-index: 10;
-    font-size: 25px;
+    font-size: 5vw;
     transition: 
         color .5s ease-in-out, 
         background-color .5s ease-in-out;
 }
 
 .carousel .carousel-control:hover {
-    background-color: #d3b354;
-    color: #483e2a;
+    background-color: rgba(205, 134, 63, 0.837);
+    color: rgb(43, 43, 43);
 }
 
 .carousel .carousel-control.prev {
-    left: 10px;
+    left: 0px;
 }
 
 .carousel .carousel-control.next {
-    right: 10px;
+    right: 0px;
 }
 
 .carousel .carousel-indicators {
@@ -219,22 +229,20 @@ body {
 .carousel .indicator {
     width: 10px;
     height: 10px;
-    background: #dee2c786;
+    background-color: rgba(255, 248, 220, 0.658);
     border-radius: 50%;
     cursor: pointer;
-    transition: box-shadow .5s ease-in-out;
+    transition: .5s ease-in-out;
+    
 }
 
 .carousel .indicator:hover {
-    box-shadow: 0 0 7px 3px #fff0c15d;
+    box-shadow: 0 0 7px 3px rgba(205, 134, 63, 0.487);
+    background-color: cornsilk;
 }
 
 .carousel .indicator.active {
-    background: #d3b354;
+    background: cornsilk;
     box-shadow: none;
-}
-
-.carousel .carousel-caption .price-resp {
-    display: none;
 }
 /*End Menu Carousel*/
