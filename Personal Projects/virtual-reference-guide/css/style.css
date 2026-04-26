@@ -1,0 +1,59 @@
+@import url("https://use.typekit.net/drm0rll.css");
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: rgb(43, 43, 43);
+}
+
+#header {
+    background-color: darkred;
+}
+
+#header h1 {
+    color: cornsilk;
+    font-family: "waverly-cf";
+    font-weight: 900;
+    font-size: 4vw;
+    justify-self: center;
+    margin: 0;
+    text-align: center;
+    padding: 2.5%;
+    line-height: 0.65;
+}
+
+#personal {
+    font-family: "envelove";
+    font-weight: normal;
+    font-size: 7vw;
+}
+
+#virtual {
+    font-family: "bd-geminis";
+    font-weight: normal;
+}
+
+#dnd {
+    font-family: "p22-morris-troy";
+}
+
+#navbar {
+    background-color: cornsilk;
+    border-top: ridge cornsilk 7px;
+    border-bottom: groove cornsilk 7px;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar a {
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    padding: 1% 3%;
+    font-size: 1.75vw;
+    font-family: "waverly-cf";
+    font-weight: 750;
+}
