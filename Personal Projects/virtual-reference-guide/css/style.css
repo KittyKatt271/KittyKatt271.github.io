@@ -10,8 +10,9 @@ body {
     background-color: rgb(43, 43, 43);
 }
 
+/*Begin Header*/
 #header {
-    background-color: darkred;
+    background: linear-gradient(to bottom, rgb(125, 0, 0), rgb(254, 123, 1) 185%);
 }
 
 #header h1 {
@@ -57,3 +58,183 @@ body {
     font-family: "waverly-cf";
     font-weight: 750;
 }
+/*End Header*/
+
+/*Start Menu Carousel*/
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 63.5vh;
+    overflow: hidden;
+}
+
+.carousel .carousel-inner {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel .carousel-item {
+    min-width: 100%;
+    height: 100%;
+    display: none; 
+    /* Hide by default, show active with JS */
+}
+
+.carousel .carousel-item.active {
+    display: flex;
+}
+
+.carousel .carousel-item img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover; 
+    /* Ensures video covers the entire area */
+    object-position: bottom center;
+    position: relative;
+}
+
+.carousel .carousel-item img#character-img {
+    object-position: top center;
+} 
+
+.carousel .carousel-caption {
+    position: absolute;
+    top: 8%;
+    left: 75%;
+    transform: translate(-50%, 0%);
+    color: rgb(181, 177, 161);
+    text-align: center;
+    background-color: transparent;
+    border-radius: 75px 0 75px 0;
+    width: 50%;
+    padding: 0 3% 0 1%;
+}
+
+.carousel .carousel-caption .item-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.carousel .carousel-caption h2 {
+    font-size: 3vw;
+    margin: 0;
+    padding: 0% 6% 5%;
+    font-family: "p22-morris-troy";
+    font-weight: normal;
+    color: peru;
+}
+
+.carousel .carousel-caption h3  {
+    font-size: 3.5vw;
+    margin: 0;
+    font-weight: normal;
+    padding: 0 7.5% .5%;
+    font-family: "envelove";
+    justify-self: left;
+    line-height: .75;
+}
+
+.carousel .carousel-caption h4.tagline {
+    padding: 0 7.5% 4%;
+    margin: 0;
+    justify-self: left;
+    text-align: left;
+    font-family: "newshound";
+    font-weight: bold;
+    font-size: 1.25vw;
+    line-height: 1.25;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+.carousel .carousel-caption p {
+    font-family: "maku";
+    font-weight: normal;
+    text-align: start;
+    font-size: 1.35vw;
+    margin: 0;
+    padding: 0 7.5% 7.5%;
+    letter-spacing: .75px;
+    line-height: 1.25;
+}
+
+.carousel .carousel-caption a {
+    font-size: 2vw;
+    padding: 2.5% 0%;
+    text-decoration: none;
+    color: #483e2a;
+    background-color: #d3b354c3;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    border-radius: 35%;
+    transition: background-color .5s ease-in-out;
+}
+
+.carousel .carousel-caption a:hover {
+    background-color: #d3b354;
+}
+
+.carousel .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #1a2e20b3;
+    color: #d3b354;
+    border: none;
+    padding: 0px 15px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 25px;
+    transition: 
+        color .5s ease-in-out, 
+        background-color .5s ease-in-out;
+}
+
+.carousel .carousel-control:hover {
+    background-color: #d3b354;
+    color: #483e2a;
+}
+
+.carousel .carousel-control.prev {
+    left: 10px;
+}
+
+.carousel .carousel-control.next {
+    right: 10px;
+}
+
+.carousel .carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.carousel .indicator {
+    width: 10px;
+    height: 10px;
+    background: #dee2c786;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: box-shadow .5s ease-in-out;
+}
+
+.carousel .indicator:hover {
+    box-shadow: 0 0 7px 3px #fff0c15d;
+}
+
+.carousel .indicator.active {
+    background: #d3b354;
+    box-shadow: none;
+}
+
+.carousel .carousel-caption .price-resp {
+    display: none;
+}
+/*End Menu Carousel*/
