@@ -10,14 +10,17 @@ body {
     background-color: rgb(43, 43, 43);
 }
 
+
+/*Begin Hero*/
 .content .hero {
     display: flex;
     background-image: 
-        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, #1f1a15),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 60%, rgb(43, 43, 43)),
         url("../images/moonshae13.webp"); 
     background-size: cover;
     background-position: center;
     gap: 0;
+    border-bottom: ridge rgb(43, 43, 43) 6.5px;
 }
 
 .content .hero img {
@@ -63,4 +66,34 @@ body {
     margin: 0 0 2%;
     padding: 0 7.5%;
     font-size: 1.25vw;
+}
+/*End Hero*/
+
+.content .flex-box {
+    display: flex;
+}
+/*Begin sidebar*/
+.sidebar {
+    font-family: "waverly-cf";
+    width: 20%;
+    padding: 1% 3.5%;
+    background-color: #8099a9;
+}
+
+.sidebar h2 {
+    font-size: 2vw;
+    border-bottom: solid rgb(43, 43, 43) 2.25px;
+    width: fit-content;
+    color: rgb(43, 43, 43);
+}
+
+.sidebar h3 a {
+    font-size: 1.75vw;
+    text-decoration: none;
+    color: rgb(43, 43, 43);
+    transition: .5s ease-in-out;
+}
+
+.sidebar h3 a:hover {
+    color: azure;
 }
