@@ -116,7 +116,7 @@ body {
     margin-bottom: 10%;
 }
 
-h2 {
+.content-column h2 {
     font-family: "waverly-cf";
     color: #8099a9;
     font-size: 3vw;
@@ -125,9 +125,38 @@ h2 {
     padding: 0 0 15px;
 }
 
-p {
+.content-column p {
     color: #7e848c;
     line-height: 1.25;
     letter-spacing: 1px;
     margin: 0 auto 15px;
+}
+
+.content-column h3 {
+    font-family: "waverly-cf";
+    color: #8099a9;
+    font-size: 1.9vw;
+    font-weight: bold;
+    margin: 0 0 1%;
+}
+
+.content-column h3 span.fill {
+    color: #7e848c;
+    font-weight: normal;
+}
+
+.content-column #character-details .flex-box {
+    justify-content: space-between;
+}
+
+.content-column h3 .subclass span.fill {
+    margin-left: 6px;
+}
+
+.new-section {
+    padding-top: 8%;
+}
+
+.new-section.diety {
+    padding-top: 7.25%;
 }
