@@ -385,4 +385,36 @@ label[for="success-1 success-2 success-3"] {
     gap: 10px;
 }
 
+.init-sp-size-pp fieldset {
+    border-radius: 10px 10px 15px 15px;
+    height: fit-content;
+    width: 150px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: scoop scoop bevel bevel;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+    margin-top: 25px;
+}
+
+.init-sp-size-pp fieldset label {
+    font-size: 16px;
+    font-family: "waverly-cf";
+    color: #7e848c;
+}
+
+.init-sp-size-pp fieldset input {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+}
 /*End Character Stats accent-color: #8099a9;*/
