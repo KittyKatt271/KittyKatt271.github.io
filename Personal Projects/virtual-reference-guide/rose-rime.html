@@ -72,6 +72,8 @@
                     <h3><a href="#backstory">Backstory</a></h3>
 
                     <h3><a href="#character-details">Character Details</a></h3>
+
+                    <h3><a href="#character-stats">Character Stats</a></h3>
                 </div>
 
                 <div class="content-column">
@@ -220,6 +222,202 @@
                             Background:
                             <span class="fill">Moonshae Pilgrim</span>
                         </h3>
+                    </div>
+
+                    <div id="character-stats" class="content-section">
+                        <h2>Character Stats</h2>
+
+                        <div class="flex-box">
+                            <fieldset id="level-xp">
+                                <input
+                                    type="text"
+                                    id="level"
+                                    name="level"
+                                    required
+                                    minlength="1"
+                                    maxlength="2"
+                                    size="2" 
+                                    value="3"
+                                />
+
+                                <label for="level" id="level-id">Level</label>
+
+                                <input
+                                    type="text"
+                                    id="xp"
+                                    name="xp"
+                                    required
+                                    minlength="1"
+                                    maxlength="8"
+                                    size="5" 
+                                    value="900"
+                                />
+
+                                <label for="xp">XP</label>
+                            </fieldset>
+
+                            <fieldset id="armor-class">
+                                <legend for="ac">Armor <br> Class</legend>
+
+                                <input
+                                    type="text"
+                                    id="ac"
+                                    name="ac"
+                                    required
+                                    minlength="1"
+                                    maxlength="3"
+                                    size="2" 
+                                    value="15"
+                                />  
+                                
+                                <label for="shield">Shield</label>
+
+                                <input 
+                                    type="checkbox" 
+                                    id="shield" 
+                                    name="shield" 
+                                />
+                            </fieldset>
+
+                            <fieldset id="hp-hd-ds" class="flex-box">
+                                <div id="hp">
+                                    <label for="hp">Hit Points</label>
+
+                                    <div class="flex-box">
+                                        <div id="current-div" class="flex-item">
+                                            <input
+                                                type="text"
+                                                id="current"
+                                                name="current"
+                                                required
+                                                minlength="1"
+                                                maxlength="8"
+                                                size="2" 
+                                                value="22"
+                                            />  
+                                    
+                                            <label for="current">Current</label>
+                                        </div>
+
+                                        <div id="temp-max-div" class="flex-item">
+                                            <input
+                                                type="text"
+                                                id="temp"
+                                                name="temp"
+                                                required
+                                                minlength="1"
+                                                maxlength="8"
+                                                size="3" 
+                                                value=""
+                                            />  
+                                    
+                                            <label for="temp">Temp</label>
+
+                                            <input
+                                                type="text"
+                                                id="max-hp"
+                                                name="max-hp"
+                                                required
+                                                minlength="1"
+                                                maxlength="8"
+                                                size="3" 
+                                                value="22"
+                                            />  
+                                    
+                                            <label for="max-hp">Max</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="hd">
+                                    <label for="hd">Hit Dice</label>
+                                    
+                                    <input
+                                        type="text"
+                                        id="spent"
+                                        name="spent"
+                                        required
+                                        minlength="1"
+                                        maxlength="8"
+                                        size="3" 
+                                        value=""
+                                    />  
+                            
+                                    <label for="spent">Spent</label>
+
+                                    <input
+                                        type="text"
+                                        id="max-hd"
+                                        name="max-hd"
+                                        required
+                                        minlength="1"
+                                        maxlength="8"
+                                        size="3" 
+                                        value="3D8"
+                                    />  
+                            
+                                    <label for="max-hd">Max</label>
+                                </div>
+
+                                <div id="ds">
+                                    <label for="ds">Death Saves</label>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="success-1" 
+                                            name="success-1" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input 
+                                            type="checkbox" 
+                                            id="success-2" 
+                                            name="success-2" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input 
+                                            type="checkbox" 
+                                            id="success-3" 
+                                            name="success-3" 
+                                            class="checkboxes"
+                                        />
+                                    </div>
+
+                                    <label for="success-1 success-2 success-3">
+                                        Successes
+                                    </label>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="fail-1" 
+                                            name="fail-1" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input 
+                                            type="checkbox" 
+                                            id="fail-2" 
+                                            name="fail-2" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input 
+                                            type="checkbox" 
+                                            id="fail-3" 
+                                            name="fail-3" 
+                                            class="checkboxes"
+                                        />
+                                    </div>
+
+                                    <label for="fail-1 fail-2 fail-3">
+                                        Failures
+                                    </label>
+                                </div>
+                            </fieldset>
+                        </div>
                     </div>
                 </div>
             </div>

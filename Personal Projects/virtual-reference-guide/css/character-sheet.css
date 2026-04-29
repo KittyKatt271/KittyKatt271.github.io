@@ -140,6 +140,7 @@ body {
     margin: 0 0 1%;
 }
 
+/*Begin Character Details*/
 .content-column h3 span.fill {
     color: #7e848c;
     font-weight: normal;
@@ -160,3 +161,228 @@ body {
 .new-section.diety {
     padding-top: 7.25%;
 }
+/*End Character Details*/
+
+/*Begin Character Stats*/
+#character-stats {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#character-stats .flex-box {
+    justify-content: space-between;
+    align-items: center;
+}
+
+input {
+    display: block;
+}
+
+#level-xp {
+    border-radius: 60px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: bevel;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+}
+
+#level-xp input {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+}
+
+#level-xp input#level {
+    font-size: 24px;
+    margin: 40px 15px 0;
+}
+
+#level-xp input#xp {
+    font-size: 14px;
+    margin: 3px 15px 0;
+}
+
+label {
+    font-family: "waverly-cf";
+    color: #7e848c;
+    font-size: 14px;
+    display: block;
+    padding: 3px 0 8px;
+}
+
+label#level-id {
+    font-size: 18px;
+}
+
+label[for="xp"] {
+    padding-bottom: 15px;;
+}
+
+#armor-class {
+    border-radius: 55px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: square square scoop scoop;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    padding-bottom: 37px;
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+}
+
+legend {
+    font-size: 18px;
+    font-family: "waverly-cf";
+    color: #7e848c;
+    padding: 0px 10px;
+    line-height: 1.15;
+}
+
+#armor-class input#ac {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 24px;
+    margin: 5px auto 5px;
+}
+
+label[for="shield"] {
+    padding: 8px 0 3px;
+}
+
+#armor-class input[type=checkbox]#shield,
+#ds input[type=checkbox].checkboxes {   
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: rgb(43, 43, 43);
+    width: 12px;
+    height: 12px;
+    border: inset rgb(43, 43, 43) 1.5px;
+    border-radius: 1.75px;
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+}
+
+#armor-class input[type=checkbox]#shield::before,
+#ds input[type=checkbox].checkboxes::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    background-color: #8099a9;
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 14% 44%, 43% 62%, 80% 0%, 100% 16%, 50% 100%, 0% 65%, 14% 44%);
+}
+
+#armor-class input[type=checkbox]#shield:checked::before,
+#ds input[type=checkbox].checkboxes:checked::before {
+    transform: scale(1);
+}
+
+#hp-hd-ds {
+    border-radius: 20px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: squircle squircle squircle squircle;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+}
+
+#hp-hd-ds input {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#hp,
+#hd {
+    align-self: flex-start;
+    border-right: solid #8099a9 2px;
+}
+
+#hd,
+#ds {
+    padding: 0 15px;
+    justify-items: center;
+}
+
+#ds {
+    align-self: flex-start;
+    padding-right: 0;
+}
+
+#hp label,
+#hd label,
+#ds label {    
+    font-size: 14px;
+    font-family: "waverly-cf";
+    color: #7e848c;
+}
+
+#hp label[for=hp],
+#hd label[for=hd],
+#ds label[for=ds] {
+    font-size: 18px;
+}
+
+#hp input#current {    
+    font-size: 24px;
+}
+
+#hp .flex-box .flex-item {
+    padding: 0 15px 0 0;
+}
+
+#hp #current-div {
+    padding-top: 12px;
+}
+
+#hp #temp-max-div {
+    padding-left: 15px;
+    border-left: solid #7e848c 1.5px;
+    padding-top: 12px;
+}
+
+#hd input#spent {
+    margin-top: 12px;
+}
+
+label[for="ds"] {
+    padding-bottom: 25px;
+}
+
+label[for="success-1 success-2 success-3"] {
+    padding-bottom: 15px;
+}
+
+#ds .flex-box {
+    gap: 10px;
+}
+
+/*End Character Stats accent-color: #8099a9;*/
