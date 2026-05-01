@@ -265,8 +265,7 @@ label[for="shield"] {
     padding: 8px 0 3px;
 }
 
-#armor-class input[type=checkbox]#shield,
-#ds input[type=checkbox].checkboxes {   
+.checkboxes {   
     -webkit-appearance: none;
     appearance: none;
     background-color: rgb(43, 43, 43);
@@ -279,8 +278,7 @@ label[for="shield"] {
     margin: 0 auto;
 }
 
-#armor-class input[type=checkbox]#shield::before,
-#ds input[type=checkbox].checkboxes::before {
+.checkboxes::before {
     content: "";
     width: 0.65em;
     height: 0.65em;
@@ -291,8 +289,16 @@ label[for="shield"] {
     clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 14% 44%, 43% 62%, 80% 0%, 100% 16%, 50% 100%, 0% 65%, 14% 44%);
 }
 
-#armor-class input[type=checkbox]#shield:checked::before,
-#ds input[type=checkbox].checkboxes:checked::before {
+.fail.checkboxes::before {
+    clip-path: polygon(
+    /* Outer Frame */
+    0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 
+    /* The "Middle Ground" X Cutout */
+    20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 0% 20%, 20% 0%
+  );
+}
+
+.checkboxes:checked::before {
     transform: scale(1);
 }
 
@@ -416,5 +422,127 @@ label[for="success-1 success-2 success-3"] {
     font-weight: bold;
     font-size: 20px;
     margin: 0 auto;
+    border-radius: 50px;
 }
-/*End Character Stats accent-color: #8099a9;*/
+
+fieldset#prof-bonus,
+fieldset#strength,
+fieldset#dexterity,
+fieldset#constitution,
+fieldset#heroic-inspiration,
+fieldset#intelligence,
+fieldset#wisdom,
+fieldset#charisma {
+    border-radius: 10px 10px 15px 15px;
+    height: fit-content;
+    width: 205px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: scoop scoop bevel bevel;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+    margin-top: 25px;
+}
+
+fieldset#prof-bonus input,
+fieldset#strength input,
+fieldset#dexterity input,
+fieldset#constitution input,
+fieldset#intelligence input,
+fieldset#wisdom input,
+fieldset#charisma input {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 16px;
+    margin: 5px;
+}
+
+fieldset#prof-bonus input {
+    margin: 0 auto;
+}
+
+fieldset#strength input.checkboxes,
+fieldset#dexterity input.checkboxes,
+fieldset#constitution input.checkboxes,
+fieldset#intelligence input.checkboxes,
+fieldset#wisdom input.checkboxes,
+fieldset#charisma input.checkboxes {
+    border-radius: 50%;
+    margin: 5px;
+}
+
+fieldset#prof-bonus input.mod,
+fieldset#strength input.mod,
+fieldset#dexterity input.mod,
+fieldset#constitution input.mod,
+fieldset#intelligence input.mod,
+fieldset#wisdom input.mod,
+fieldset#charisma input.mod {
+    border-style: double;
+    border-width: 2.5px;
+    border-color: #8099a9;
+    box-shadow: inset #7e848c 0px 0px 4px 0px;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+fieldset#prof-bonus input.score,
+fieldset#strength input.score,
+fieldset#dexterity input.score,
+fieldset#constitution input.score,
+fieldset#intelligence input.score,
+fieldset#wisdom input.score,
+fieldset#charisma input.score {
+    font-size: 18px;
+}
+
+fieldset#prof-bonus label[for="pb"],
+fieldset#strength label[for="strength"],
+fieldset#dexterity label[for="dexterity"],
+fieldset#constitution label[for="constitution"],
+fieldset#intelligence label[for="intelligence"],
+fieldset#wisdom label[for="wisdom"],
+fieldset#charisma label[for="charisma"],
+fieldset#heroic-inspiration label[for="hi"]  {
+    font-size: 18px;
+}
+
+fieldset#prof-bonus input.checkboxes::before,
+fieldset#strength input.checkboxes::before,
+fieldset#dexterity input.checkboxes::before,
+fieldset#constitution input.checkboxes::before,
+fieldset#intelligence input.checkboxes::before,
+fieldset#wisdom input.checkboxes::before,
+fieldset#charisma input.checkboxes::before {
+   clip-path: circle(25%);
+}
+
+#character-stats .flex-box fieldset#strength .flex-box,
+#character-stats .flex-box fieldset#dexterity .flex-box,
+#character-stats .flex-box fieldset#constitution .flex-box,
+#character-stats .flex-box fieldset#intelligence .flex-box,
+#character-stats .flex-box fieldset#wisdom .flex-box,
+#character-stats .flex-box fieldset#charisma .flex-box{
+    justify-content: left;
+    text-align: left;
+    align-items: center;
+}
+
+#character-stats .flex-box fieldset#strength .flex-box label.fill-label,
+#character-stats .flex-box fieldset#dexterity .flex-box label.fill-label,
+#character-stats .flex-box fieldset#constitution .flex-box label.fill-label,
+#character-stats .flex-box fieldset#intelligence .flex-box label.fill-label,
+#character-stats .flex-box fieldset#wisdom .flex-box label.fill-label,
+#character-stats .flex-box fieldset#charisma .flex-box label.fill-label {
+    padding: 5px;
+}
+/*End Character Stats*/

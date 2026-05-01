@@ -276,6 +276,7 @@
                                     type="checkbox" 
                                     id="shield" 
                                     name="shield" 
+                                    class="checkboxes"
                                 />
                             </fieldset>
 
@@ -394,21 +395,21 @@
                                             type="checkbox" 
                                             id="fail-1" 
                                             name="fail-1" 
-                                            class="checkboxes"
+                                            class="checkboxes fail"
                                         />
 
                                         <input 
                                             type="checkbox" 
                                             id="fail-2" 
                                             name="fail-2" 
-                                            class="checkboxes"
+                                            class="checkboxes fail"
                                         />
 
                                         <input 
                                             type="checkbox" 
                                             id="fail-3" 
                                             name="fail-3" 
-                                            class="checkboxes"
+                                            class="checkboxes fail"
                                         />
                                     </div>
 
@@ -490,10 +491,11 @@
                                         type="text"
                                         id="pb"
                                         name="pb"
+                                        class="mod"
                                         required
                                         minlength="1"
                                         maxlength="3"
-                                        size="5" 
+                                        size="1" 
                                         value="+2"
                                     /> 
                                 </fieldset>
@@ -507,10 +509,11 @@
                                                 type="text"
                                                 id="str-mod"
                                                 name="str-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="+1"
                                             /> 
 
@@ -524,10 +527,11 @@
                                                 type="text"
                                                 id="str-score"
                                                 name="str-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="13"
                                             /> 
 
@@ -546,15 +550,15 @@
                                         <input
                                             type="text"
                                             id="str-save-fill"
-                                            name="str-save-fill"
+                                            name="str-save-fill"                                            
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+1"
                                         /> 
 
-                                        <label for="str-save-box str-save-fill">
+                                        <label for="str-save-box str-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
@@ -574,11 +578,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+1"
                                         /> 
 
-                                        <label for="athletics-box athletics-fill">
+                                        <label for="athletics-box athletics-fill" class="fill-label">
                                             Athletics
                                         </label>
                                     </div>
@@ -593,10 +597,11 @@
                                                 type="text"
                                                 id="dex-mod"
                                                 name="dex-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="+4"
                                             /> 
 
@@ -610,10 +615,11 @@
                                                 type="text"
                                                 id="dex-score"
                                                 name="dex-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="18"
                                             /> 
 
@@ -636,11 +642,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+4"
                                         /> 
 
-                                        <label for="dex-save-box dex-save-fill">
+                                        <label for="dex-save-box dex-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
@@ -661,11 +667,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+6"
                                         /> 
 
-                                        <label for="acrobatics-box acrobatics-fill">
+                                        <label for="acrobatics-box acrobatics-fill" class="fill-label">
                                             Acrobatics
                                         </label>
                                     </div>
@@ -685,11 +691,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+4"
                                         /> 
 
-                                        <label for="sleight-hand-box sleight-hand-fill">
+                                        <label for="sleight-hand-box sleight-hand-fill" class="fill-label">
                                             Sleight of Hand
                                         </label>
                                     </div>
@@ -709,11 +715,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+4"
                                         /> 
 
-                                        <label for="stealth-box stealth-fill">
+                                        <label for="stealth-box stealth-fill" class="fill-label">
                                             Stealth
                                         </label>
                                     </div>
@@ -730,10 +736,11 @@
                                                 type="text"
                                                 id="con-mod"
                                                 name="con-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="+2"
                                             /> 
 
@@ -747,10 +754,11 @@
                                                 type="text"
                                                 id="con-score"
                                                 name="con-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="14"
                                             /> 
 
@@ -773,17 +781,17 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+2"
                                         /> 
 
-                                        <label for="con-save-box con-save-fill">
+                                        <label for="con-save-box con-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
                                 </fieldset>
 
-                                <fieldset id="Heroic Inspiration">
+                                <fieldset id="heroic-inspiration">
                                     <label for="hi">Heroic Inspiration</label>
 
                                     <input 
@@ -805,10 +813,11 @@
                                                 type="text"
                                                 id="int-mod"
                                                 name="int-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="-1"
                                             /> 
 
@@ -822,10 +831,11 @@
                                                 type="text"
                                                 id="int-score"
                                                 name="int-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="9"
                                             /> 
 
@@ -849,11 +859,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+1"
                                         /> 
 
-                                        <label for="int-save-box int-save-fill">
+                                        <label for="int-save-box int-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
@@ -873,11 +883,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="-1"
                                         /> 
 
-                                        <label for="arcana-box arcana-fill">
+                                        <label for="arcana-box arcana-fill" class="fill-label">
                                             Arcana
                                         </label>
                                     </div>
@@ -897,11 +907,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="-1"
                                         /> 
 
-                                        <label for="history-box history-fill">
+                                        <label for="history-box history-fill" class="fill-label">
                                             History
                                         </label>
                                     </div>
@@ -921,11 +931,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="-1"
                                         /> 
 
-                                        <label for="investigation-box investigation-fill">
+                                        <label for="investigation-box investigation-fill" class="fill-label">
                                             Investigation
                                         </label>
                                     </div>
@@ -946,11 +956,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+1"
                                         /> 
 
-                                        <label for="nature-box nature-fill">
+                                        <label for="nature-box nature-fill" class="fill-label">
                                             Nature
                                         </label>
                                     </div>
@@ -970,11 +980,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="-1"
                                         /> 
 
-                                        <label for="religion-box religion-fill">
+                                        <label for="religion-box religion-fill" class="fill-label">
                                             Religion
                                         </label>
                                     </div>
@@ -989,10 +999,11 @@
                                                 type="text"
                                                 id="wis-mod"
                                                 name="wis-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="+3"
                                             /> 
 
@@ -1006,10 +1017,11 @@
                                                 type="text"
                                                 id="wis-score"
                                                 name="wis-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="16"
                                             /> 
 
@@ -1033,11 +1045,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+5"
                                         /> 
 
-                                        <label for="wis-save-box wis-save-fill">
+                                        <label for="wis-save-box wis-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
@@ -1058,11 +1070,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+5"
                                         /> 
 
-                                        <label for="animal-handling-box animal-handling-fill">
+                                        <label for="animal-handling-box animal-handling-fill" class="fill-label">
                                             Animal Handling
                                         </label>
                                     </div>
@@ -1082,11 +1094,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="insight-box insight-fill">
+                                        <label for="insight-box insight-fill" class="fill-label">
                                             Insight
                                         </label>
                                     </div>
@@ -1106,11 +1118,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="medicine-box medicine-fill">
+                                        <label for="medicine-box medicine-fill" class="fill-label">
                                             Medicine
                                         </label>
                                     </div>
@@ -1131,11 +1143,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+5"
                                         /> 
 
-                                        <label for="perception-box perception-fill">
+                                        <label for="perception-box perception-fill" class="fill-label">
                                             Perception
                                         </label>
                                     </div>
@@ -1155,11 +1167,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="survival-box survival-fill">
+                                        <label for="survival-box survival-fill" class="fill-label">
                                             Survival
                                         </label>
                                     </div>
@@ -1176,10 +1188,11 @@
                                                 type="text"
                                                 id="cha-mod"
                                                 name="cha-mod"
+                                                class="mod"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="1" 
                                                 value="+3"
                                             /> 
 
@@ -1193,10 +1206,11 @@
                                                 type="text"
                                                 id="cha-score"
                                                 name="cha-score"
+                                                class="score"
                                                 required
                                                 minlength="1"
                                                 maxlength="3"
-                                                size="5" 
+                                                size="2" 
                                                 value="16"
                                             /> 
 
@@ -1219,11 +1233,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="cha-save-box cha-save-fill">
+                                        <label for="cha-save-box cha-save-fill" class="fill-label">
                                             Saving Throw
                                         </label>
                                     </div>
@@ -1243,11 +1257,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="deception-box deception-fill">
+                                        <label for="deception-box deception-fill" class="fill-label">
                                             Deception
                                         </label>
                                     </div>
@@ -1267,11 +1281,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="intimidation-box intimidation-fill">
+                                        <label for="intimidation-box intimidation-fill" class="fill-label">
                                             Intimidation
                                         </label>
                                     </div>
@@ -1292,11 +1306,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+5"
                                         /> 
 
-                                        <label for="performance-box performance-fill">
+                                        <label for="performance-box performance-fill" class="fill-label">
                                             Performance
                                         </label>
                                     </div>
@@ -1316,11 +1330,11 @@
                                             required
                                             minlength="1"
                                             maxlength="3"
-                                            size="5" 
+                                            size="2" 
                                             value="+3"
                                         /> 
 
-                                        <label for="persuasion-box persuasion-fill">
+                                        <label for="persuasion-box persuasion-fill" class="fill-label">
                                             Persuasion
                                         </label>
                                     </div>
