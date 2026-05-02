@@ -482,7 +482,7 @@
                             </fieldset>
                         </div>
 
-                        <div class="flex-box">
+                        <div class="flex-box stats">
                             <div>
                                 <fieldset id="prof-bonus">
                                     <label for="pb">Proficiency Bonus</label>
@@ -500,10 +500,145 @@
                                     /> 
                                 </fieldset>
 
+                                <fieldset id="heroic-inspiration">
+                                    <label for="hi">Heroic Inspiration</label>
+
+                                    <input 
+                                            type="checkbox" 
+                                            id="hi" 
+                                            name="hi" 
+                                            class="checkboxes"
+                                        />
+                                </fieldset>
+
+                                <fieldset id="armor-prof">
+                                    <label for="armor-prof">
+                                        Equipment Training
+                                    </label>
+
+                                    <div>
+                                        <label for="armor-boxes">
+                                            Armor Training
+                                        </label>
+
+                                        <div class="list-outer">
+                                            <div class="flex-box list">
+                                                <input 
+                                                    type="checkbox" 
+                                                    id="light-armor" 
+                                                    name="light-armor" 
+                                                    class="checkboxes armor-boxes-1"
+                                                />
+
+                                                <label for="light-armor">
+                                                    Light
+                                                </label>
+
+                                                <input 
+                                                    type="checkbox" 
+                                                    id="med-armor" 
+                                                    name="med-armor" 
+                                                    class="checkboxes armor-boxes"
+                                                />
+
+                                                <label for="med-armor">
+                                                    Medium
+                                                </label>
+                                            </div>
+
+                                            <div class="flex-box list">
+                                                <input 
+                                                    type="checkbox" 
+                                                    id="heavy-armor" 
+                                                    name="heavy-armor" 
+                                                    class="checkboxes armor-boxes-1"
+                                                />
+
+                                                <label for="heavy-armor">
+                                                    Heavy
+                                                </label>
+
+                                                <input 
+                                                    type="checkbox" 
+                                                    id="shields-arnmor" 
+                                                    name="shields-arnmor" 
+                                                    class="checkboxes armor-boxes"
+                                                />
+
+                                                <label for="shields-arnmor">
+                                                    Shields
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <label for="weap-prof">
+                                            Weapons
+                                        </label>
+
+                                        <div 
+                                            contenteditable="true"
+                                            id="weap-prof"
+                                            name="weap-prof"
+                                            class="tex-field"
+                                            required
+                                        >
+                                            Simple<br>Martial
+                                    </div> 
+                                </fieldset>
+
+                                <fieldset id="tool-prof">
+                                    <label for="tool-prof">
+                                        Tool Proficiencies
+                                    </label>
+
+                                    <div 
+                                        contenteditable="true" 
+                                        id="tool-box" 
+                                        name="tool-box" 
+                                        class="tex-field" 
+                                        required
+                                    >
+                                        Herbalism Kit
+                                        <br>
+                                        Painter's Supplies
+                                        <br>
+                                        Flute
+                                </div>
+                                </fieldset>
+
+                                <fieldset id="languages">
+                                    <label for="languages">
+                                        Known Languages
+                                    </label>
+
+                                    <div 
+                                        contenteditable="true" 
+                                        id="lang-box" 
+                                        name="lang-box" 
+                                        class="tex-field" 
+                                        required
+                                    >
+                                        Common
+                                        <br>
+                                        Druidic
+                                        <br>
+                                        Illuskan: 
+                                        <span class="dialect">Moonshae</span>
+                                        <br>
+                                        Waelan: 
+                                        <span class="dialect">Proper</span>
+                                    </div>
+                                </fieldset>
+                            </div>
+
+                            
+                            <div>
                                 <fieldset id="strength">
                                     <label for="strength">Strength</label>
 
-                                    <div class="flex-box">
+                                    <div class="flex-box mod-score">
                                         <div>
                                             <input
                                                 type="text"
@@ -591,7 +726,7 @@
                                 <fieldset id="dexterity">
                                     <label for="dexterity">Dexterity</label>
 
-                                    <div class="flex-box">
+                                    <div class="flex-box mod-score">
                                         <div>
                                             <input
                                                 type="text"
@@ -725,89 +860,10 @@
                                     </div>
                                 </fieldset>
 
-                                <fieldset id="constitution">
-                                    <label for="constitution">
-                                        Constitution
-                                    </label>
-
-                                    <div class="flex-box">
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="con-mod"
-                                                name="con-mod"
-                                                class="mod"
-                                                required
-                                                minlength="1"
-                                                maxlength="3"
-                                                size="1" 
-                                                value="+2"
-                                            /> 
-
-                                            <label for="con-mod">
-                                                Modifier
-                                            </label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="con-score"
-                                                name="con-score"
-                                                class="score"
-                                                required
-                                                minlength="1"
-                                                maxlength="3"
-                                                size="2" 
-                                                value="14"
-                                            /> 
-
-                                            <label for="con-score">Score</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="con-save-box" 
-                                            name="con-save-box" 
-                                            class="checkboxes"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="con-save-fill"
-                                            name="con-save-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+2"
-                                        /> 
-
-                                        <label for="con-save-box con-save-fill" class="fill-label">
-                                            Saving Throw
-                                        </label>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset id="heroic-inspiration">
-                                    <label for="hi">Heroic Inspiration</label>
-
-                                    <input 
-                                            type="checkbox" 
-                                            id="hi" 
-                                            name="hi" 
-                                            class="checkboxes"
-                                        />
-                                </fieldset>
-                            </div>
-
-                            <div>
                                 <fieldset id="intelligence">
                                     <label for="intelligence">Intelligence</label>
 
-                                    <div class="flex-box">
+                                    <div class="flex-box mod-score">
                                         <div>
                                             <input
                                                 type="text"
@@ -989,11 +1045,243 @@
                                         </label>
                                     </div>
                                 </fieldset>
+                            </div>
+
+                            
+                            <div>
+                                <fieldset id="constitution">
+                                    <label for="constitution">
+                                        Constitution
+                                    </label>
+
+                                    <div class="flex-box mod-score">
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="con-mod"
+                                                name="con-mod"
+                                                class="mod"
+                                                required
+                                                minlength="1"
+                                                maxlength="3"
+                                                size="1" 
+                                                value="+2"
+                                            /> 
+
+                                            <label for="con-mod">
+                                                Modifier
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="con-score"
+                                                name="con-score"
+                                                class="score"
+                                                required
+                                                minlength="1"
+                                                maxlength="3"
+                                                size="2" 
+                                                value="14"
+                                            /> 
+
+                                            <label for="con-score">Score</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="con-save-box" 
+                                            name="con-save-box" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="con-save-fill"
+                                            name="con-save-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+2"
+                                        /> 
+
+                                        <label for="con-save-box con-save-fill" class="fill-label">
+                                            Saving Throw
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset id="charisma">
+                                    <label for="charisma">
+                                        Charisma
+                                    </label>
+
+                                    <div class="flex-box mod-score">
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="cha-mod"
+                                                name="cha-mod"
+                                                class="mod"
+                                                required
+                                                minlength="1"
+                                                maxlength="3"
+                                                size="1" 
+                                                value="+3"
+                                            /> 
+
+                                            <label for="cha-mod">
+                                                Modifier
+                                            </label>
+                                        </div>
+
+                                        <div>
+                                            <input
+                                                type="text"
+                                                id="cha-score"
+                                                name="cha-score"
+                                                class="score"
+                                                required
+                                                minlength="1"
+                                                maxlength="3"
+                                                size="2" 
+                                                value="16"
+                                            /> 
+
+                                            <label for="cha-score">Score</label>
+                                        </div>
+                                    </div>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="cha-save-box" 
+                                            name="cha-save-box" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="cha-save-fill"
+                                            name="cha-save-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+3"
+                                        /> 
+
+                                        <label for="cha-save-box cha-save-fill" class="fill-label">
+                                            Saving Throw
+                                        </label>
+                                    </div>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="deception-box" 
+                                            name="deception-box" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="deception-fill"
+                                            name="deception-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+3"
+                                        /> 
+
+                                        <label for="deception-box deception-fill" class="fill-label">
+                                            Deception
+                                        </label>
+                                    </div>
+
+                                     <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="intimidation-box" 
+                                            name="intimidation-box" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="intimidation-fill"
+                                            name="intimidation-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+3"
+                                        /> 
+
+                                        <label for="intimidation-box intimidation-fill" class="fill-label">
+                                            Intimidation
+                                        </label>
+                                    </div>
+
+                                     <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="performance-box" 
+                                            name="performance-box" 
+                                            class="checkboxes"
+                                            checked
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="performance-fill"
+                                            name="performance-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+5"
+                                        /> 
+
+                                        <label for="performance-box performance-fill" class="fill-label">
+                                            Performance
+                                        </label>
+                                    </div>
+
+                                    <div class="flex-box">
+                                        <input 
+                                            type="checkbox" 
+                                            id="persuasion-box" 
+                                            name="persuasion-box" 
+                                            class="checkboxes"
+                                        />
+
+                                        <input
+                                            type="text"
+                                            id="persuasion-fill"
+                                            name="persuasion-fill"
+                                            required
+                                            minlength="1"
+                                            maxlength="3"
+                                            size="2" 
+                                            value="+3"
+                                        /> 
+
+                                        <label for="persuasion-box persuasion-fill" class="fill-label">
+                                            Persuasion
+                                        </label>
+                                    </div>
+                                </fieldset>
 
                                 <fieldset id="wisdom">
                                     <label for="wisdom">Wisdom</label>
 
-                                    <div class="flex-box">
+                                    <div class="flex-box mod-score">
                                         <div>
                                             <input
                                                 type="text"
@@ -1173,169 +1461,6 @@
 
                                         <label for="survival-box survival-fill" class="fill-label">
                                             Survival
-                                        </label>
-                                    </div>
-                                </fieldset>
-
-                                <fieldset id="charisma">
-                                    <label for="charisma">
-                                        Charisma
-                                    </label>
-
-                                    <div class="flex-box">
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="cha-mod"
-                                                name="cha-mod"
-                                                class="mod"
-                                                required
-                                                minlength="1"
-                                                maxlength="3"
-                                                size="1" 
-                                                value="+3"
-                                            /> 
-
-                                            <label for="cha-mod">
-                                                Modifier
-                                            </label>
-                                        </div>
-
-                                        <div>
-                                            <input
-                                                type="text"
-                                                id="cha-score"
-                                                name="cha-score"
-                                                class="score"
-                                                required
-                                                minlength="1"
-                                                maxlength="3"
-                                                size="2" 
-                                                value="16"
-                                            /> 
-
-                                            <label for="cha-score">Score</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="cha-save-box" 
-                                            name="cha-save-box" 
-                                            class="checkboxes"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="cha-save-fill"
-                                            name="cha-save-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+3"
-                                        /> 
-
-                                        <label for="cha-save-box cha-save-fill" class="fill-label">
-                                            Saving Throw
-                                        </label>
-                                    </div>
-
-                                    <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="deception-box" 
-                                            name="deception-box" 
-                                            class="checkboxes"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="deception-fill"
-                                            name="deception-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+3"
-                                        /> 
-
-                                        <label for="deception-box deception-fill" class="fill-label">
-                                            Deception
-                                        </label>
-                                    </div>
-
-                                     <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="intimidation-box" 
-                                            name="intimidation-box" 
-                                            class="checkboxes"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="intimidation-fill"
-                                            name="intimidation-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+3"
-                                        /> 
-
-                                        <label for="intimidation-box intimidation-fill" class="fill-label">
-                                            Intimidation
-                                        </label>
-                                    </div>
-
-                                     <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="performance-box" 
-                                            name="performance-box" 
-                                            class="checkboxes"
-                                            checked
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="performance-fill"
-                                            name="performance-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+5"
-                                        /> 
-
-                                        <label for="performance-box performance-fill" class="fill-label">
-                                            Performance
-                                        </label>
-                                    </div>
-
-                                    <div class="flex-box">
-                                        <input 
-                                            type="checkbox" 
-                                            id="persuasion-box" 
-                                            name="persuasion-box" 
-                                            class="checkboxes"
-                                        />
-
-                                        <input
-                                            type="text"
-                                            id="persuasion-fill"
-                                            name="persuasion-fill"
-                                            required
-                                            minlength="1"
-                                            maxlength="3"
-                                            size="2" 
-                                            value="+3"
-                                        /> 
-
-                                        <label for="persuasion-box persuasion-fill" class="fill-label">
-                                            Persuasion
                                         </label>
                                     </div>
                                 </fieldset>

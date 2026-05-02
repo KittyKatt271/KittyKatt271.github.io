@@ -405,7 +405,7 @@ label[for="success-1 success-2 success-3"] {
     border-bottom: groove #8099a9 5px;
     background-color: rgba(36, 41, 48, 0.154);
     box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin-top: 25px;
+    margin-top: 30px;
 }
 
 .init-sp-size-pp fieldset label {
@@ -432,10 +432,13 @@ fieldset#constitution,
 fieldset#heroic-inspiration,
 fieldset#intelligence,
 fieldset#wisdom,
-fieldset#charisma {
+fieldset#charisma,
+fieldset#armor-prof,
+fieldset#tool-prof,
+fieldset#languages {
     border-radius: 10px 10px 15px 15px;
     height: fit-content;
-    width: 205px;
+    width: 210px;
     justify-content: center;
     text-align: center;
     align-content: center;
@@ -446,7 +449,7 @@ fieldset#charisma {
     border-bottom: groove #8099a9 5px;
     background-color: rgba(36, 41, 48, 0.154);
     box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin-top: 25px;
+    margin-top: 40px;
 }
 
 fieldset#prof-bonus input,
@@ -474,7 +477,8 @@ fieldset#dexterity input.checkboxes,
 fieldset#constitution input.checkboxes,
 fieldset#intelligence input.checkboxes,
 fieldset#wisdom input.checkboxes,
-fieldset#charisma input.checkboxes {
+fieldset#charisma input.checkboxes,
+fieldset#armor-prof input.checkboxes  {
     border-radius: 50%;
     margin: 5px;
 }
@@ -512,7 +516,10 @@ fieldset#constitution label[for="constitution"],
 fieldset#intelligence label[for="intelligence"],
 fieldset#wisdom label[for="wisdom"],
 fieldset#charisma label[for="charisma"],
-fieldset#heroic-inspiration label[for="hi"]  {
+fieldset#heroic-inspiration label[for="hi"],
+fieldset#armor-prof label[for="armor-prof"],
+fieldset#tool-prof label[for="tool-prof"],
+fieldset#languages label[for="languages"] {
     font-size: 18px;
 }
 
@@ -522,7 +529,8 @@ fieldset#dexterity input.checkboxes::before,
 fieldset#constitution input.checkboxes::before,
 fieldset#intelligence input.checkboxes::before,
 fieldset#wisdom input.checkboxes::before,
-fieldset#charisma input.checkboxes::before {
+fieldset#charisma input.checkboxes::before,
+fieldset#armor-prof input.checkboxes::before  {
    clip-path: circle(25%);
 }
 
@@ -544,5 +552,88 @@ fieldset#charisma input.checkboxes::before {
 #character-stats .flex-box fieldset#wisdom .flex-box label.fill-label,
 #character-stats .flex-box fieldset#charisma .flex-box label.fill-label {
     padding: 5px;
+}
+
+.score,
+.mod,
+.mod-score {
+    justify-self: center;
+}
+
+#character-stats .flex-box.stats {
+    align-items: flex-start;
+}
+
+fieldset#prof-bonus,
+fieldset#heroic-inspiration,
+fieldset#armor-prof,
+fieldset#tool-prof,
+fieldset#languages {
+    width: 160px;
+}
+
+fieldset#armor-prof div div.list-outer div.flex-box.list {
+    justify-content: left;
+}
+
+fieldset#armor-prof div div.list-outer {
+    justify-self: center;
+}
+
+fieldset#armor-prof div div.list-outer div.flex-box.list label{
+    padding: 3px;
+}
+
+fieldset#armor-prof label[for="armor-boxes"] {
+    padding: 0;
+    margin: 0;
+}
+
+fieldset#armor-prof label[for="weap-prof"] {
+    padding: 10px 0 0;
+    margin: 0;
+}
+
+fieldset#armor-prof div[contenteditable="true"],
+fieldset#tool-prof div[contenteditable="true"],
+fieldset#languages div[contenteditable="true"] {
+    background-color: rgb(43, 43, 43);
+    text-align: center;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 0 2.75px;
+    padding: 0;
+    overflow: hidden;
+    resize: none;
+    border-style: inset;
+    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-width: 2px;
+}
+
+span.dialect {
+    font-size: 12px;
+}
+
+fieldset#tool-prof label[for="tool-prof"],
+fieldset#languages label[for="languages"] {
+    padding: 0;
+}
+
+fieldset#armor-prof input.checkboxes.armor-boxes {
+    margin: 5px 2px 5px 10px;
+}
+fieldset#armor-prof input.checkboxes.armor-boxes-1 {
+    margin-left: 5px;
+}
+
+fieldset#armor-prof,
+fieldset#tool-prof,
+fieldset#languages,
+fieldset#heroic-inspiration {
+    corner-shape: scoop scoop round round;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 /*End Character Stats*/
