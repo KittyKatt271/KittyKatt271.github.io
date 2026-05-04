@@ -637,3 +637,64 @@ fieldset#heroic-inspiration {
     border-bottom-right-radius: 25px;
 }
 /*End Character Stats*/
+
+/*Begin Equipment & Spells*/
+
+#equip-spells {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+fieldset#weapons,
+fieldset#damage-cantrips,
+fieldset#damage-spells {
+    border-radius: 25px 25px 25px 25px;
+    height: fit-content;
+    width: 650px;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: scoop scoop round round;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+    margin: 0px auto 40px;
+    padding: 0 auto;
+}
+
+fieldset#weapons input,
+fieldset#damage-cantrips input,
+fieldset#damage-spells input {
+    background-color: rgb(43, 43, 43);
+    text-align: left;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 11px;
+    margin: 0 5px 10px;
+}
+
+fieldset#weapons label,
+fieldset#damage-cantrips label,
+fieldset#damage-spells label {
+    font-size: 9px;
+    font-family: "waverly-cf";
+    color: #7e848c;
+    text-align: left;
+    margin: 0 0 5px 5px;
+    padding: 0;
+}
+
+fieldset#weapons label[for="weapons"],
+fieldset#damage-cantrips label[for="damage-cantrips"],
+fieldset#damage-spells label[for="damage-spells"] {
+    font-size: 16px;
+    text-align: center;
+    padding: 7.5px;
+    color:#8099a9;
+    font-weight: bold;
+}
+/*End Equipment & Spells*/
