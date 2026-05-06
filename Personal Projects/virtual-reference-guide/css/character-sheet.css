@@ -697,4 +697,19 @@ fieldset#damage-spells label[for="damage-spells"] {
     color:#8099a9;
     font-weight: bold;
 }
+
+fieldset#equipment {
+    border-radius: 25px 25px 25px 25px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: scoop scoop round round;
+    border-top: ridge #8099a9 5px;
+    border-left: ridge #8099a9 5px;
+    border-right: groove #8099a9 5px;
+    border-bottom: groove #8099a9 5px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+}
 /*End Equipment & Spells*/
