@@ -712,4 +712,74 @@ fieldset#equipment {
     background-color: rgba(36, 41, 48, 0.154);
     box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
 }
+
+fieldset#equipment input { 
+    background-color: rgb(43, 43, 43);
+    text-align: left;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 11px;
+    margin: 5px 5px;
+}
+
+fieldset#equipment label {
+    font-size: 9px;
+    font-family: "waverly-cf";
+    color: #7e848c;
+    text-align: left;
+    margin: 0px 0 0px 5px;
+    padding: 0;
+    align-self: center;
+}
+
+fieldset#equipment label[for="equipment"] {
+    font-size: 16px;
+    text-align: center;
+    color:#8099a9;
+    font-weight: bold;
+}
+
+fieldset#equipment label[for="carry-cap"],
+fieldset#equipment label.total-weight {
+    font-style: italic;
+    font-size: 12px;
+}
+
+fieldset#equipment div.equip-title-box {
+    padding: 7.5px 7.5px 7.5px 0;
+    justify-content: space-between;
+}
+
+fieldset#equipped-gear,
+fieldset#backpack,
+fieldset#pouch,
+fieldset#coinpurse {
+    border-radius: 15px 15px 15px 15px;
+    height: fit-content;
+    justify-content: center;
+    text-align: center;
+    align-content: center;
+    corner-shape: notch notch notch notch;
+    border-top: groove #77818f 3px;
+    border-left: groove #77818f 3px;
+    border-right: ridge #77818f 3px;
+    border-bottom: ridge #77818f 3px;
+    background-color: rgba(36, 41, 48, 0.154);
+    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
+    margin-bottom: 25px;
+}
+
+fieldset#equipped-gear label[for="equipped-gear"] {
+    color: #8099a9;
+    font-size: 12px;
+    font-weight: bold;
+    justify-self: center;
+    padding: 5px 0 0;
+    margin: 0;
+}
+
+fieldset#equipment div.total-weight-box {
+    justify-content: center;
+}
 /*End Equipment & Spells*/
