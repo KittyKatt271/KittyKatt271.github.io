@@ -770,7 +770,8 @@ fieldset#coinpurse {
     margin-bottom: 25px;
 }
 
-fieldset#equipped-gear label[for="equipped-gear"] {
+fieldset#equipped-gear label[for="equipped-gear"],
+fieldset#backpack label[for="backpack"] {
     color: #8099a9;
     font-size: 12px;
     font-weight: bold;
@@ -781,5 +782,34 @@ fieldset#equipped-gear label[for="equipped-gear"] {
 
 fieldset#equipment div.total-weight-box {
     justify-content: center;
+}
+
+fieldset#backpack label[for="start-pack"] {
+    font-style: italic;
+    font-size: 10px;
+    justify-self: center;
+    padding: 0 35px 5px 0;
+    margin: 0;
+}
+
+fieldset#backpack label[for="bp-exterior"],
+fieldset#backpack label[for="bp-interior"] {
+    font-size: 12px;
+    font-weight: bold;
+    justify-self: center;
+    padding: 0 0 5px;
+    margin: 0;
+}
+
+fieldset#backpack label[for="bpi-max-weight"] {
+    font-size: 10px;
+    font-style: italic;
+    justify-self: center;
+    padding: 10px 0 0;
+}
+
+span#seperator-dot {
+    font-weight: bolder;
+    letter-spacing: 10px;
 }
 /*End Equipment & Spells*/
