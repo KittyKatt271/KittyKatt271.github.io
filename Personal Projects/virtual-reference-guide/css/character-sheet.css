@@ -640,14 +640,15 @@ fieldset#heroic-inspiration {
 
 /*Begin Equipment & Spells*/
 
-#equip-spells {
+#equip-spells, #weap-att-spells {
     padding-left: 5%;
     padding-right: 5%;
 }
 
 fieldset#weapons,
 fieldset#damage-cantrips,
-fieldset#damage-spells {
+fieldset#damage-spells,
+fieldset#healing-spells {
     border-radius: 25px 25px 25px 25px;
     height: fit-content;
     width: 650px;
@@ -667,7 +668,8 @@ fieldset#damage-spells {
 
 fieldset#weapons input,
 fieldset#damage-cantrips input,
-fieldset#damage-spells input {
+fieldset#damage-spells input,
+fieldset#healing-spells input {
     background-color: rgb(43, 43, 43);
     text-align: left;
     color: #8099a9;
@@ -679,7 +681,8 @@ fieldset#damage-spells input {
 
 fieldset#weapons label,
 fieldset#damage-cantrips label,
-fieldset#damage-spells label {
+fieldset#damage-spells label,
+fieldset#healing-spells label {
     font-size: 9px;
     font-family: "waverly-cf";
     color: #7e848c;
@@ -690,7 +693,8 @@ fieldset#damage-spells label {
 
 fieldset#weapons label[for="weapons"],
 fieldset#damage-cantrips label[for="damage-cantrips"],
-fieldset#damage-spells label[for="damage-spells"] {
+fieldset#damage-spells label[for="damage-spells"],
+fieldset#healing-spells label[for="healing-spells"] {
     font-size: 16px;
     text-align: center;
     padding: 7.5px;
