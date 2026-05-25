@@ -648,7 +648,13 @@ fieldset#heroic-inspiration {
 fieldset#weapons,
 fieldset#damage-cantrips,
 fieldset#damage-spells,
-fieldset#healing-spells {
+fieldset#healing-spells,
+fieldset#conjuration-spells,
+fieldset#divination-spells,
+fieldset#enchantment-spells,
+fieldset#evocation-spells,
+fieldset#illusion-spells,
+fieldset#transmutation-spells {
     border-radius: 25px 25px 25px 25px;
     height: fit-content;
     width: 650px;
@@ -666,10 +672,7 @@ fieldset#healing-spells {
     padding: 0 auto;
 }
 
-fieldset#weapons input,
-fieldset#damage-cantrips input,
-fieldset#damage-spells input,
-fieldset#healing-spells input {
+fieldset#weapons input {
     background-color: rgb(43, 43, 43);
     text-align: left;
     color: #8099a9;
@@ -679,10 +682,34 @@ fieldset#healing-spells input {
     margin: 0 5px 10px;
 }
 
+fieldset#damage-cantrips input,
+fieldset#damage-spells input,
+fieldset#healing-spells input,
+fieldset#conjuration-spells input,
+fieldset#divination-spells input,
+fieldset#enchantment-spells input,
+fieldset#evocation-spells input,
+fieldset#illusion-spells input,
+fieldset#transmutation-spells input {
+    background-color: rgb(43, 43, 43);
+    text-align: left;
+    color: #8099a9;
+    font-family: "waverly-cf";
+    font-weight: bold;
+    font-size: 10px;
+    margin: 0 5px 10px;
+}
+
 fieldset#weapons label,
 fieldset#damage-cantrips label,
 fieldset#damage-spells label,
-fieldset#healing-spells label {
+fieldset#healing-spells label,
+fieldset#conjuration-spells label,
+fieldset#divination-spells label,
+fieldset#enchantment-spells label,
+fieldset#evocation-spells label,
+fieldset#illusion-spells label,
+fieldset#transmutation-spells label {
     font-size: 9px;
     font-family: "waverly-cf";
     color: #7e848c;
@@ -694,12 +721,54 @@ fieldset#healing-spells label {
 fieldset#weapons label[for="weapons"],
 fieldset#damage-cantrips label[for="damage-cantrips"],
 fieldset#damage-spells label[for="damage-spells"],
-fieldset#healing-spells label[for="healing-spells"] {
+fieldset#healing-spells label[for="healing-spells"],
+fieldset#conjuration-spells label[for="conjuration-spells"],
+fieldset#divination-spells label[for="divination-spells"],
+fieldset#enchantment-spells label[for="enchantment-spells"],
+fieldset#evocation-spells label[for="evocation-spells"],
+fieldset#illusion-spells label[for="illusion-spells"],
+fieldset#transmutation-spells label[for="transmutation-spells"] {
     font-size: 16px;
     text-align: center;
     padding: 7.5px;
     color:#8099a9;
     font-weight: bold;
+}
+
+div#spell-comp div.flex-box.comp-checkboxes,
+div#h-spell-comp div.flex-box.comp-checkboxes,
+div#c-spell-comp div.flex-box.comp-checkboxes,
+div#d-spell-comp div.flex-box.comp-checkboxes,
+div#en-spell-comp div.flex-box.comp-checkboxes,
+div#ev-spell-comp div.flex-box.comp-checkboxes,
+div#i-spell-comp div.flex-box.comp-checkboxes,
+div#t-spell-comp div.flex-box.comp-checkboxes {
+    margin: 9px 2px 11px 0;
+}
+
+fieldset#damage-spells input.checkboxes,
+fieldset#healing-spells input.checkboxes,
+fieldset#conjuration-spells input.checkboxes,
+fieldset#divination-spells input.checkboxes,
+fieldset#enchantment-spells input.checkboxes,
+fieldset#evocation-spells input.checkboxes,
+fieldset#illusion-spells input.checkboxes,
+fieldset#transmutation-spells input.checkboxes {
+    border-radius: 50%;
+    corner-shape: bevel;
+    margin: 0px 2px 0px 1px;
+    transform: scale(0.8);
+}
+
+fieldset#damage-spells input.checkboxes::before,
+fieldset#healing-spells input.checkboxes::before,
+fieldset#conjuration-spells input.checkboxes::before,
+fieldset#divination-spells input.checkboxes::before,
+fieldset#enchantment-spells input.checkboxes::before,
+fieldset#evocation-spells input.checkboxes::before,
+fieldset#illusion-spells input.checkboxes::before,
+fieldset#transmutation-spells input.checkboxes::before {
+   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 fieldset#equipment {
@@ -816,4 +885,6 @@ span#seperator-dot {
     font-weight: bolder;
     letter-spacing: 10px;
 }
+
+
 /*End Equipment & Spells*/
