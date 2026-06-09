@@ -640,7 +640,7 @@ fieldset#heroic-inspiration {
 
 /*Begin Equipment & Spells*/
 
-#equip-spells, #weap-att-spells {
+#equip, #weap-att-spells {
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -786,7 +786,7 @@ fieldset#equipment {
     box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
 }
 
-fieldset#equipment input { 
+div#equip input { 
     background-color: rgb(43, 43, 43);
     text-align: left;
     color: #8099a9;
@@ -796,7 +796,7 @@ fieldset#equipment input {
     margin: 5px 5px;
 }
 
-fieldset#equipment label {
+div#equip label {
     font-size: 9px;
     font-family: "waverly-cf";
     color: #7e848c;
@@ -806,22 +806,26 @@ fieldset#equipment label {
     align-self: center;
 }
 
-fieldset#equipment label[for="equipment"] {
-    font-size: 16px;
-    text-align: center;
-    color:#8099a9;
-    font-weight: bold;
-}
-
-fieldset#equipment label[for="carry-cap"],
-fieldset#equipment label.total-weight {
+div#equip label.total-weight {
     font-style: italic;
     font-size: 12px;
 }
 
-fieldset#equipment div.equip-title-box {
+div#equip label[for="carry-cap"],
+div#equip label[for="carry-cap-eg-weight-total"] {
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+div#equip div.equip-title-box {
     padding: 7.5px 7.5px 7.5px 0;
     justify-content: space-between;
+}
+
+div#equip input#carry-cap-eg-weight-total {
+    margin: 18px 0px 18px 10px;
+    font-size: 15px;
 }
 
 fieldset#equipped-gear,
@@ -853,9 +857,6 @@ fieldset#backpack label[for="backpack"] {
     margin: 0;
 }
 
-fieldset#equipment div.total-weight-box {
-    justify-content: center;
-}
 
 fieldset#backpack label[for="start-pack"] {
     font-style: italic;
