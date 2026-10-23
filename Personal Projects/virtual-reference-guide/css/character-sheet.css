@@ -78,6 +78,9 @@ body {
     width: 20%;
     padding: 3.5%;
     background-color: #8099a9;
+    border-right: rgb(43, 43, 43) double 10px;
+    z-index: 3;
+    position: relative;
 }
 
 .sidebar h2 {
@@ -92,10 +95,12 @@ body {
     text-decoration: none;
     color: rgb(43, 43, 43);
     transition: .5s ease-in-out;
+    border-bottom: transparent solid 2px;
 }
 
 .sidebar h3 a:hover {
     color: azure;
+    border-bottom: azure solid 2px;
 }
 /*End Sidebar*/
 
@@ -140,7 +145,18 @@ body {
     margin: 0 0 1%;
 }
 
+#backstory.content-section {
+    z-index: 2;
+    position: relative;
+}
+
 /*Begin Character Details*/
+#character-details.content-section {
+    margin-bottom: 0;
+    z-index: 2;
+    position: relative;
+}
+
 .content-column h3 span.fill {
     color: #7e848c;
     font-weight: normal;
@@ -163,729 +179,37 @@ body {
 }
 /*End Character Details*/
 
-/*Begin Character Stats*/
-#character-stats {
-    padding-left: 5%;
-    padding-right: 5%;
+/*Begin Download Sheets*/
+#download_sheet.banner {
+    background-color: #8099a93b;
+    width: 125%;
+    justify-self: center;
+    padding: 5%;
+    z-index: 1;
+    position: relative;
 }
 
-#character-stats .flex-box {
+#download_sheet .flex-box {
     justify-content: space-between;
-    align-items: center;
+    margin: 2% 15% 0;
 }
 
-input {
-    display: block;
-}
-
-#level-xp {
-    border-radius: 60px;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: bevel;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-}
-
-#level-xp input {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
+#download_sheet a {
+    font-family: "waverly-cf";
     color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-}
-
-#level-xp input#level {
-    font-size: 24px;
-    margin: 40px 15px 0;
-}
-
-#level-xp input#xp {
-    font-size: 14px;
-    margin: 3px 15px 0;
-}
-
-label {
-    font-family: "waverly-cf";
-    color: #7e848c;
-    font-size: 14px;
-    display: block;
-    padding: 3px 0 8px;
-}
-
-label#level-id {
-    font-size: 18px;
-}
-
-label[for="xp"] {
-    padding-bottom: 15px;;
-}
-
-#armor-class {
-    border-radius: 55px;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: square square scoop scoop;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    padding-bottom: 37px;
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-}
-
-legend {
-    font-size: 18px;
-    font-family: "waverly-cf";
-    color: #7e848c;
-    padding: 0px 10px;
-    line-height: 1.15;
-}
-
-#armor-class input#ac {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 24px;
-    margin: 5px auto 5px;
-}
-
-label[for="shield"] {
-    padding: 8px 0 3px;
-}
-
-.checkboxes {   
-    -webkit-appearance: none;
-    appearance: none;
-    background-color: rgb(43, 43, 43);
-    width: 12px;
-    height: 12px;
-    border: inset rgb(43, 43, 43) 1.5px;
-    border-radius: 1.75px;
-    display: grid;
-    place-content: center;
-    margin: 0 auto;
-}
-
-.checkboxes::before {
-    content: "";
-    width: 0.65em;
-    height: 0.65em;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--form-control-color);
-    background-color: #8099a9;
-    clip-path: polygon(0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 14% 44%, 43% 62%, 80% 0%, 100% 16%, 50% 100%, 0% 65%, 14% 44%);
-}
-
-.fail.checkboxes::before {
-    clip-path: polygon(
-    /* Outer Frame */
-    0% 0%, 0% 100%, 100% 100%, 100% 0%, 0% 0%, 
-    /* The "Middle Ground" X Cutout */
-    20% 0%, 50% 30%, 80% 0%, 100% 20%, 70% 50%, 100% 80%, 80% 100%, 50% 70%, 20% 100%, 0% 80%, 30% 50%, 0% 20%, 20% 0%
-  );
-}
-
-.checkboxes:checked::before {
-    transform: scale(1);
-}
-
-#hp-hd-ds {
-    border-radius: 20px;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: squircle squircle squircle squircle;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-}
-
-#hp-hd-ds input {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 14px;
-}
-
-#hp,
-#hd {
-    align-self: flex-start;
-    border-right: solid #8099a9 2px;
-}
-
-#hd,
-#ds {
-    padding: 0 15px;
-    justify-items: center;
-}
-
-#ds {
-    align-self: flex-start;
-    padding-right: 0;
-}
-
-#hp label,
-#hd label,
-#ds label {    
-    font-size: 14px;
-    font-family: "waverly-cf";
-    color: #7e848c;
-}
-
-#hp label[for=hp],
-#hd label[for=hd],
-#ds label[for=ds] {
-    font-size: 18px;
-}
-
-#hp input#current {    
-    font-size: 24px;
-}
-
-#hp .flex-box .flex-item {
-    padding: 0 15px 0 0;
-}
-
-#hp #current-div {
-    padding-top: 12px;
-}
-
-#hp #temp-max-div {
-    padding-left: 15px;
-    border-left: solid #7e848c 1.5px;
-    padding-top: 12px;
-}
-
-#hd input#spent {
-    margin-top: 12px;
-}
-
-label[for="ds"] {
-    padding-bottom: 25px;
-}
-
-label[for="success-1 success-2 success-3"] {
-    padding-bottom: 15px;
-}
-
-#ds .flex-box {
-    gap: 10px;
-}
-
-.init-sp-size-pp fieldset {
-    border-radius: 10px 10px 15px 15px;
-    height: fit-content;
-    width: 150px;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: scoop scoop bevel bevel;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin-top: 30px;
-}
-
-.init-sp-size-pp fieldset label {
-    font-size: 16px;
-    font-family: "waverly-cf";
-    color: #7e848c;
-}
-
-.init-sp-size-pp fieldset input {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 20px;
-    margin: 0 auto;
-    border-radius: 50px;
-}
-
-fieldset#prof-bonus,
-fieldset#strength,
-fieldset#dexterity,
-fieldset#constitution,
-fieldset#heroic-inspiration,
-fieldset#intelligence,
-fieldset#wisdom,
-fieldset#charisma,
-fieldset#armor-prof,
-fieldset#tool-prof,
-fieldset#languages {
-    border-radius: 10px 10px 15px 15px;
-    height: fit-content;
-    width: 210px;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: scoop scoop bevel bevel;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin-top: 40px;
-}
-
-fieldset#prof-bonus input,
-fieldset#strength input,
-fieldset#dexterity input,
-fieldset#constitution input,
-fieldset#intelligence input,
-fieldset#wisdom input,
-fieldset#charisma input {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 16px;
-    margin: 5px;
-}
-
-fieldset#prof-bonus input {
-    margin: 0 auto;
-}
-
-fieldset#strength input.checkboxes,
-fieldset#dexterity input.checkboxes,
-fieldset#constitution input.checkboxes,
-fieldset#intelligence input.checkboxes,
-fieldset#wisdom input.checkboxes,
-fieldset#charisma input.checkboxes,
-fieldset#armor-prof input.checkboxes  {
-    border-radius: 50%;
-    margin: 5px;
-}
-
-fieldset#prof-bonus input.mod,
-fieldset#strength input.mod,
-fieldset#dexterity input.mod,
-fieldset#constitution input.mod,
-fieldset#intelligence input.mod,
-fieldset#wisdom input.mod,
-fieldset#charisma input.mod {
-    border-style: double;
-    border-width: 2.5px;
-    border-color: #8099a9;
-    box-shadow: inset #7e848c 0px 0px 4px 0px;
-    font-size: 24px;
-    border-radius: 50%;
-    margin: 0 5px;
-}
-
-fieldset#prof-bonus input.score,
-fieldset#strength input.score,
-fieldset#dexterity input.score,
-fieldset#constitution input.score,
-fieldset#intelligence input.score,
-fieldset#wisdom input.score,
-fieldset#charisma input.score {
-    font-size: 18px;
-}
-
-fieldset#prof-bonus label[for="pb"],
-fieldset#strength label[for="strength"],
-fieldset#dexterity label[for="dexterity"],
-fieldset#constitution label[for="constitution"],
-fieldset#intelligence label[for="intelligence"],
-fieldset#wisdom label[for="wisdom"],
-fieldset#charisma label[for="charisma"],
-fieldset#heroic-inspiration label[for="hi"],
-fieldset#armor-prof label[for="armor-prof"],
-fieldset#tool-prof label[for="tool-prof"],
-fieldset#languages label[for="languages"] {
-    font-size: 18px;
-}
-
-fieldset#prof-bonus input.checkboxes::before,
-fieldset#strength input.checkboxes::before,
-fieldset#dexterity input.checkboxes::before,
-fieldset#constitution input.checkboxes::before,
-fieldset#intelligence input.checkboxes::before,
-fieldset#wisdom input.checkboxes::before,
-fieldset#charisma input.checkboxes::before,
-fieldset#armor-prof input.checkboxes::before  {
-   clip-path: circle(25%);
-}
-
-#character-stats .flex-box fieldset#strength .flex-box,
-#character-stats .flex-box fieldset#dexterity .flex-box,
-#character-stats .flex-box fieldset#constitution .flex-box,
-#character-stats .flex-box fieldset#intelligence .flex-box,
-#character-stats .flex-box fieldset#wisdom .flex-box,
-#character-stats .flex-box fieldset#charisma .flex-box{
-    justify-content: left;
-    text-align: left;
-    align-items: center;
-}
-
-#character-stats .flex-box fieldset#strength .flex-box label.fill-label,
-#character-stats .flex-box fieldset#dexterity .flex-box label.fill-label,
-#character-stats .flex-box fieldset#constitution .flex-box label.fill-label,
-#character-stats .flex-box fieldset#intelligence .flex-box label.fill-label,
-#character-stats .flex-box fieldset#wisdom .flex-box label.fill-label,
-#character-stats .flex-box fieldset#charisma .flex-box label.fill-label {
-    padding: 5px;
-}
-
-.score,
-.mod,
-.mod-score {
-    justify-self: center;
-}
-
-#character-stats .flex-box.stats {
-    align-items: flex-start;
-}
-
-fieldset#prof-bonus,
-fieldset#heroic-inspiration,
-fieldset#armor-prof,
-fieldset#tool-prof,
-fieldset#languages {
-    width: 160px;
-}
-
-fieldset#armor-prof div div.list-outer div.flex-box.list {
-    justify-content: left;
-}
-
-fieldset#armor-prof div div.list-outer {
-    justify-self: center;
-}
-
-fieldset#armor-prof div div.list-outer div.flex-box.list label{
-    padding: 3px;
-}
-
-fieldset#armor-prof label[for="armor-boxes"] {
-    padding: 0;
-    margin: 0;
-}
-
-fieldset#armor-prof label[for="weap-prof"] {
-    padding: 10px 0 0;
-    margin: 0;
-}
-
-fieldset#armor-prof div[contenteditable="true"],
-fieldset#tool-prof div[contenteditable="true"],
-fieldset#languages div[contenteditable="true"] {
-    background-color: rgb(43, 43, 43);
-    text-align: center;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 14px;
-    margin: 5px 0 2.75px;
-    padding: 0;
-    overflow: hidden;
-    resize: none;
-    border-style: inset;
-    border-color: light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
-    border-width: 2px;
-}
-
-span.dialect {
-    font-size: 12px;
-}
-
-fieldset#tool-prof label[for="tool-prof"],
-fieldset#languages label[for="languages"] {
-    padding: 0;
-}
-
-fieldset#armor-prof input.checkboxes.armor-boxes {
-    margin: 5px 2px 5px 10px;
-}
-fieldset#armor-prof input.checkboxes.armor-boxes-1 {
-    margin-left: 5px;
-}
-
-fieldset#armor-prof,
-fieldset#tool-prof,
-fieldset#languages,
-fieldset#heroic-inspiration {
-    corner-shape: scoop scoop round round;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-/*End Character Stats*/
-
-/*Begin Equipment & Spells*/
-
-#equip, #weap-att-spells {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-fieldset#weapons,
-fieldset#damage-cantrips,
-fieldset#damage-spells,
-fieldset#healing-spells,
-fieldset#conjuration-spells,
-fieldset#divination-spells,
-fieldset#enchantment-spells,
-fieldset#evocation-spells,
-fieldset#illusion-spells,
-fieldset#transmutation-spells {
-    border-radius: 25px 25px 25px 25px;
-    height: fit-content;
-    width: 650px;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: scoop scoop round round;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin: 0px auto 40px;
-    padding: 0 auto;
-}
-
-fieldset#weapons input {
-    background-color: rgb(43, 43, 43);
-    text-align: left;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 11px;
-    margin: 0 5px 10px;
-}
-
-fieldset#damage-cantrips input,
-fieldset#damage-spells input,
-fieldset#healing-spells input,
-fieldset#conjuration-spells input,
-fieldset#divination-spells input,
-fieldset#enchantment-spells input,
-fieldset#evocation-spells input,
-fieldset#illusion-spells input,
-fieldset#transmutation-spells input {
-    background-color: rgb(43, 43, 43);
-    text-align: left;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 10px;
-    margin: 0 5px 10px;
-}
-
-fieldset#weapons label,
-fieldset#damage-cantrips label,
-fieldset#damage-spells label,
-fieldset#healing-spells label,
-fieldset#conjuration-spells label,
-fieldset#divination-spells label,
-fieldset#enchantment-spells label,
-fieldset#evocation-spells label,
-fieldset#illusion-spells label,
-fieldset#transmutation-spells label {
-    font-size: 9px;
-    font-family: "waverly-cf";
-    color: #7e848c;
-    text-align: left;
-    margin: 0 0 5px 5px;
-    padding: 0;
-}
-
-fieldset#weapons label[for="weapons"],
-fieldset#damage-cantrips label[for="damage-cantrips"],
-fieldset#damage-spells label[for="damage-spells"],
-fieldset#healing-spells label[for="healing-spells"],
-fieldset#conjuration-spells label[for="conjuration-spells"],
-fieldset#divination-spells label[for="divination-spells"],
-fieldset#enchantment-spells label[for="enchantment-spells"],
-fieldset#evocation-spells label[for="evocation-spells"],
-fieldset#illusion-spells label[for="illusion-spells"],
-fieldset#transmutation-spells label[for="transmutation-spells"] {
-    font-size: 16px;
-    text-align: center;
-    padding: 7.5px;
-    color:#8099a9;
-    font-weight: bold;
-}
-
-div#spell-comp div.flex-box.comp-checkboxes,
-div#h-spell-comp div.flex-box.comp-checkboxes,
-div#c-spell-comp div.flex-box.comp-checkboxes,
-div#d-spell-comp div.flex-box.comp-checkboxes,
-div#en-spell-comp div.flex-box.comp-checkboxes,
-div#ev-spell-comp div.flex-box.comp-checkboxes,
-div#i-spell-comp div.flex-box.comp-checkboxes,
-div#t-spell-comp div.flex-box.comp-checkboxes {
-    margin: 9px 2px 11px 0;
-}
-
-fieldset#damage-spells input.checkboxes,
-fieldset#healing-spells input.checkboxes,
-fieldset#conjuration-spells input.checkboxes,
-fieldset#divination-spells input.checkboxes,
-fieldset#enchantment-spells input.checkboxes,
-fieldset#evocation-spells input.checkboxes,
-fieldset#illusion-spells input.checkboxes,
-fieldset#transmutation-spells input.checkboxes {
-    border-radius: 50%;
-    corner-shape: bevel;
-    margin: 0px 2px 0px 1px;
-    transform: scale(0.8);
-}
-
-fieldset#damage-spells input.checkboxes::before,
-fieldset#healing-spells input.checkboxes::before,
-fieldset#conjuration-spells input.checkboxes::before,
-fieldset#divination-spells input.checkboxes::before,
-fieldset#enchantment-spells input.checkboxes::before,
-fieldset#evocation-spells input.checkboxes::before,
-fieldset#illusion-spells input.checkboxes::before,
-fieldset#transmutation-spells input.checkboxes::before {
-   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-fieldset#equipment {
-    border-radius: 25px 25px 25px 25px;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: scoop scoop round round;
-    border-top: ridge #8099a9 5px;
-    border-left: ridge #8099a9 5px;
-    border-right: groove #8099a9 5px;
-    border-bottom: groove #8099a9 5px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-}
-
-div#equip input { 
-    background-color: rgb(43, 43, 43);
-    text-align: left;
-    color: #8099a9;
-    font-family: "waverly-cf";
-    font-weight: bold;
-    font-size: 11px;
-    margin: 5px 5px;
-}
-
-div#equip label {
-    font-size: 9px;
-    font-family: "waverly-cf";
-    color: #7e848c;
-    text-align: left;
-    margin: 0px 0 0px 5px;
-    padding: 0;
-    align-self: center;
-}
-
-div#equip label.total-weight {
+    font-size: 1.75vw;
     font-style: italic;
-    font-size: 12px;
+    font-weight: 550;
+    text-decoration: none;
+    transition: .5s ease-in-out;
+    border-top: transparent solid 2px;
+    border-bottom: transparent solid 2px;
+    padding: 1% 0;
 }
 
-div#equip label[for="carry-cap"],
-div#equip label[for="carry-cap-eg-weight-total"] {
-    font-size: 15px;
-    font-weight: bold;
-    font-style: italic;
+#download_sheet a:hover {
+    color: azure;
+    border-top: azure solid 2px;
+    border-bottom: azure solid 2px;
 }
-
-div#equip div.equip-title-box {
-    padding: 7.5px 7.5px 7.5px 0;
-    justify-content: space-between;
-}
-
-div#equip input#carry-cap-eg-weight-total {
-    margin: 18px 0px 18px 10px;
-    font-size: 15px;
-}
-
-fieldset#equipped-gear,
-fieldset#backpack,
-fieldset#pouch,
-fieldset#coinpurse {
-    border-radius: 15px 15px 15px 15px;
-    height: fit-content;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    corner-shape: notch notch notch notch;
-    border-top: groove #77818f 3px;
-    border-left: groove #77818f 3px;
-    border-right: ridge #77818f 3px;
-    border-bottom: ridge #77818f 3px;
-    background-color: rgba(36, 41, 48, 0.154);
-    box-shadow: rgb(43, 43, 43) 1px 1px 15px 2px;
-    margin-bottom: 25px;
-}
-
-fieldset#equipped-gear label[for="equipped-gear"],
-fieldset#backpack label[for="backpack"] {
-    color: #8099a9;
-    font-size: 12px;
-    font-weight: bold;
-    justify-self: center;
-    padding: 5px 0 0;
-    margin: 0;
-}
-
-
-fieldset#backpack label[for="start-pack"] {
-    font-style: italic;
-    font-size: 10px;
-    justify-self: center;
-    padding: 0 35px 5px 0;
-    margin: 0;
-}
-
-fieldset#backpack label[for="bp-exterior"],
-fieldset#backpack label[for="bp-interior"] {
-    font-size: 12px;
-    font-weight: bold;
-    justify-self: center;
-    padding: 0 0 5px;
-    margin: 0;
-}
-
-fieldset#backpack label[for="bpi-max-weight"] {
-    font-size: 10px;
-    font-style: italic;
-    justify-self: center;
-    padding: 10px 0 0;
-}
-
-span#seperator-dot {
-    font-weight: bolder;
-    letter-spacing: 10px;
-}
-
-
-/*End Equipment & Spells*/
+/*End Download Sheets*/
