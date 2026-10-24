@@ -21,3 +21,42 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    // Existing Carousel Nav logic stays exactly as it is...
+    const track = document.querySelector("#wild-shapes .carousel");
+    const prevBtn = document.querySelector("#wild-shapes .prev-btn");
+    const nextBtn = document.querySelector("#wild-shapes .next-btn");
+
+    if (track && prevBtn && nextBtn) {
+        nextBtn.addEventListener("click", () => { track.scrollBy({ left: track.clientWidth, behavior: "smooth" }); });
+        prevBtn.addEventListener("click", () => { track.scrollBy({ left: -track.clientWidth, behavior: "smooth" }); });
+    }
+
+    // NEW: Interactive Target Link Dynamic Drawer Logic
+    const shapeLinks = document.querySelectorAll(".shape-link");
+    const previewWindow = document.getElementById("shape-preview-window");
+    const previewFrame = document.getElementById("preview-frame");
+    const previewTitle = document.getElementById("preview-window-title");
+    const closeBtn = document.getElementById("close-preview-btn");
+
+    shapeLinks.forEach(link => {
+        link.addEventListener("click", (event) => {
+            event.preventDefault(); // Prevents browser from switching tabs completely
+            
+            const targetUrl = link.getAttribute("href");
+            const windowTitle = link.getAttribute("data-title");
+
+            // Direct data to iframe and unveil the display block layout
+            previewFrame.src = targetUrl;
+            previewTitle.textContent = windowTitle;
+            previewWindow.classList.remove("preview-hidden");
+        });
+    });
+
+    // Close preview window logic block
+    closeBtn.addEventListener("click", () => {
+        previewWindow.classList.add("preview-hidden");
+        previewFrame.src = "about:blank"; // Unloads page weights instantly
+    });
+});
