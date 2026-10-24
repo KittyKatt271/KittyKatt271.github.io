@@ -320,8 +320,21 @@ body {
 #wild-shapes .slide {
     scroll-snap-align: start;
     scroll-snap-stop: always;
-    display: flex;
     padding: 3% 0;
+}
+
+#wild-shapes .slide h3 {
+    font-family: "maku";
+    font-weight: 500;
+    font-size: 2.5vw;
+    justify-self: center;
+    letter-spacing: 2pt;
+    padding-top: 1%;
+}
+
+#wild-shapes .slide-links {
+    display: flex;
+    padding: 0;
 }
 
 /* Standardize image formatting */
