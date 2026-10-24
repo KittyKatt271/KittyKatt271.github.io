@@ -342,9 +342,14 @@ body {
     border-bottom: #8099a9 ridge 6.5px;
     border-top: #8099a9 groove 6.5px;
     transition: .5s ease-in-out;
+    opacity: 60%;
 }
 
-#wild-shapes .slide img:hover {
+#wild-shapes .slide .known img {
+    opacity: 100%;
+}
+
+#wild-shapes .slide .known img:hover {
     transform: scale(125%);
     z-index: 3;
     border-right: transparent ridge 6.5px;
