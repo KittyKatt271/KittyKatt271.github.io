@@ -1,0 +1,23 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector("#wild-shapes .carousel");
+    const prevBtn = document.querySelector("#wild-shapes .prev-btn");
+    const nextBtn = document.querySelector("#wild-shapes .next-btn");
+
+    if (track && prevBtn && nextBtn) {
+        // Move tracking frame to the right
+        nextBtn.addEventListener("click", () => {
+            track.scrollBy({
+                left: track.clientWidth,
+                behavior: "smooth"
+            });
+        });
+
+        // Move tracking frame to the left
+        prevBtn.addEventListener("click", () => {
+            track.scrollBy({
+                left: -track.clientWidth,
+                behavior: "smooth"
+            });
+        });
+    }
+});

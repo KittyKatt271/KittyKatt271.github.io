@@ -79,7 +79,7 @@ body {
     padding: 3.5%;
     background-color: #8099a9;
     border-right: rgb(43, 43, 43) double 10px;
-    z-index: 3;
+    z-index: 5;
     position: relative;
 }
 
@@ -280,5 +280,108 @@ body {
 /*End Spll List*/
 
 /*Begin Wild Shapes*/
+#wild-shapes h2 {
+    padding: 4% 0 0;
+    margin: 0;
+}
 
+#wild-shapes.carousel-container {
+    width: 125%;
+    height: auto;
+    justify-self: center;
+    overflow: hidden;
+    border-top: groove rgb(43, 43, 43) 6.5px;
+    border-bottom: ridge rgb(43, 43, 43) 6.5px;
+    box-shadow: rgba(27, 27, 27, 0.575) 1px 1px 25px 0;
+    z-index: 2;
+}
+
+#wild-shapes .carousel {
+    display: grid;
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    margin: 0 3.5px;
+    
+    /* Enable Scroll Snapping */
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    -ms-overflow-style: none;  
+    scrollbar-width: none;  
+}
+
+
+#wild-shapes .slide {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    padding: 3% 0;
+}
+
+/* Standardize image formatting */
+#wild-shapes .slide img {
+    width: 25%;
+    height: 75%;
+    object-fit: cover;
+    display: block;
+    border-right: #8099a9 ridge 6.5px;
+    border-left: #8099a9 groove 6.5px;
+    border-bottom: #8099a9 ridge 6.5px;
+    border-top: #8099a9 groove 6.5px;
+    transition: .5s ease-in-out;
+}
+
+#wild-shapes .slide img:hover {
+    transform: scale(125%);
+    z-index: 3;
+    border-right: transparent ridge 6.5px;
+    border-left: transparent groove 6.5px;
+    border-bottom: transparent ridge 6.5px;
+    border-top: transparent groove 6.5px;
+    border-radius: 25px;
+}
+
+/* Navigation Arrow Base Styling */
+#wild-shapes .carousel-wrapper {
+    position: relative;
+    width: 100%;
+    z-index: 4;
+}
+
+#wild-shapes .nav-arrow {
+    position: absolute;
+    top: 30%;
+    background: rgba(27, 27, 27, 0.8);
+    color: #8099a9;
+    border: groove rgb(43, 43, 43) 2px;
+    font-size: 2rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 4; /* Sits permanently above the layout slides block */
+    transition: background 0.3s, color 0.3s;
+    user-select: none;
+}
+
+/* Individual Edge Overrides */
+#wild-shapes .prev-btn {
+    left: 0px;
+}
+
+#wild-shapes .next-btn {
+    right: 0px;
+}
+
+/* Hover Interactive Accent States */
+#wild-shapes .nav-arrow:hover {
+    background: rgb(43, 43, 43);
+    color: azure;
+    border-color: azure;
+}
 /*End Wild Shapes*/
