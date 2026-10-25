@@ -341,7 +341,7 @@ body {
 
 #wild-shapes .slide a {
     width: 25%;
-    height: 75%;
+    height: auto;
     object-fit: cover;
 }
 
