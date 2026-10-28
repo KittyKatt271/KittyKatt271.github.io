@@ -302,7 +302,8 @@ body {
     grid-auto-flow: column;
     overflow-x: auto;
     margin: 0 3.5px;
-    
+    height: 575px; 
+
     /* Enable Scroll Snapping */
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -381,7 +382,7 @@ body {
 
 #wild-shapes .nav-arrow {
     position: absolute;
-    top: 30%;
+    top: 38%;
     background: rgba(27, 27, 27, 0.8);
     color: #8099a9;
     border: groove rgb(43, 43, 43) 2px;
