@@ -302,7 +302,7 @@ body {
     grid-auto-flow: column;
     overflow-x: auto;
     margin: 0 3.5px;
-    height: 575px; 
+    height: 1000px; 
 
     /* Enable Scroll Snapping */
     scroll-snap-type: x mandatory;
